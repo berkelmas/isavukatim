@@ -1,22 +1,39 @@
 import Head from 'next/head';
 import React from 'react';
 
+import fetch from 'isomorphic-unfetch';
+
 import Footer from '../components/Footer';
 import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
 import MenuBar from '../components/MenuBar';
 
 class index extends React.Component {
-
+  static async getInitialProps(){
+    const res = await fetch('http://localhost:8000/makaleler');
+    const result = await res.json();
+    const articles = result.results;
+    const nextPage = result.next;
+    const prevPage = result.prev;
+    return {articles, nextPage, prevPage}
+  }
 
   render() {
     return(
       <div>
-      <Head>
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
-        <link rel="stylesheet" href="/static/css/style.css"/>
-      </Head>
+        <Head>
+          <title>İş Avukatından İş Hukuku</title>
+          <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+          <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
+          <link rel="stylesheet" href="/static/css/style.css"/>
+          <script dangerouslySetInnerHTML={{ __html:`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;
+            s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+            `}}/>
+        </Head>
         <header className="header">
           <TopHeader/>
           <NavbarUst/>
@@ -27,17 +44,18 @@ class index extends React.Component {
         <main>
           <br/>
 
+          {/* HERO SECTION */}
             <section className="hero-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-12">
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
-                                    <a href="#"><img src="/static/img/hero/part1/hero1.jpg" alt="hero image"/></a>
+                                    <a href="#"><img src={'/static/img/hero/part1/hero1.jpg'} alt="hero image"/></a>
                                 </div>
                                 <div className="hero__text">
-                                    <span className="post-cat mb-10"><a href="#">Kıdem Tazminatı</a></span>
-                                    <h3 className="pr-100"><a href="#">Kıdem Tazminatı Hesaplanırken Nelere Dikkat Edilmelidir?</a></h3>
+                                    <span className="post-cat mb-10"><a href="#">{this.props.articles[0].makale_kategori}</a></span>
+                                    <h3 className="pr-100"><a href="#">{this.props.articles[0].makale_baslik}</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -50,10 +68,10 @@ class index extends React.Component {
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">
-                                        <a href="#">İhbar tazminatı</a>
+                                        <a href="#">{this.props.articles[1].makale_kategori}</a>
                                     </span>
                                     <h3 className="pr-0">
-                                        <a href="#">İhbar Tazminatındaki Yenilikler</a>
+                                        <a href="#">{this.props.articles[1].makale_baslik}</a>
                                     </h3>
                                 </div>
                             </div>
@@ -67,10 +85,10 @@ class index extends React.Component {
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">
-                                        <a href="#">İşe iade</a>
+                                        <a href="#">{this.props.articles[2].makale_kategori}</a>
                                     </span>
                                     <h3 className="pr-0">
-                                        <a href="#">Kimler İşe İade Davası Açabilirler?</a>
+                                        <a href="#">{this.props.articles[2].makale_baslik}</a>
                                     </h3>
                                 </div>
                             </div>
@@ -79,8 +97,9 @@ class index extends React.Component {
                 </div>
             </section>
 
-            <section className="news-area pt-30 pb-30">
 
+
+            <section className="news-area pt-30 pb-30">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

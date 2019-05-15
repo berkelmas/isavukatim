@@ -7,22 +7,22 @@ function Footer() {
                     <div className="row">
                         <div className="col-xl-2 col-lg-12">
                             <div className="footer-logo mb-30">
-                                <a href="#"><img src="/static/img/logo/footer-logo.png" alt=""/></a>
+                                <a href="#"><img src="/static/img/kucuklogo.png" alt=""/></a>
                             </div>
                         </div>
                         <div className="col-xl-10 col-lg-12">
                             <div className="row">
                                 <div className="col-xl-7 col-lg-7">
                                     <div className="subscribe-title">
-                                        <h2>subscribe our newsletter</h2>
+                                        <h2>Bültenİmİze Abone Olun</h2>
                                     </div>
                                 </div>
                                 <div className="col-xl-5 col-lg-5">
                                     <div className="subscribe-form mb-30">
                                         <form action="#">
-                                            <input type="email" placeholder="Enter your email"/>
+                                            <input type="email" placeholder="Email Adresinizi Girin"/>
                                             <button type="submit">
-                                                subscribe
+                                                Abone Ol
                                             </button>
                                         </form>
                                     </div>
