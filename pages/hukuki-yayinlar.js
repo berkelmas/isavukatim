@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
 import MenuBar from '../components/MenuBar';
@@ -151,11 +152,11 @@ function hukukiyayinlar(props) {
                       <div className="widget widget-border mb-40">
                           <h3 className="widget-title">Yayın Türleri</h3>
                           <div className="tagcloud">
-                              <a href="#">Kıdem Tazminatı</a>
-                              <a href="#">İhbar Tazminatı</a>
-                              <a href="#">İşe İade Davası</a>
-                              <a href="#">Hizmet Tespit Davaları</a>
-                              <a href="#">Genel Sağlık Sigortası</a>
+                              <Link href="?kategori=kidemtazminati"><a>Kıdem Tazminatı</a></Link>
+                              <Link href="?kategori=ihbartazminati"><a>İhbar Tazminatı</a></Link>
+                              <Link href="?kategori=iseiadedavasi"><a>İşe İade Davasi</a></Link>
+                              <Link href="?kategori=hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link>
+                              <Link href="?kategori=genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link>
                           </div>
                       </div>
                   </div>
@@ -166,19 +167,19 @@ function hukukiyayinlar(props) {
                       <div className="pagination">
                           <ul>
                               <li>
-                                  {props.articles.previous && <a href={'?page=' + (parseInt(props.page)-1)}>Önceki</a> }
+                                  {props.articles.previous && <a href={props.kategori ? `?page=${parseInt(props.page)-1}&kategori=${props.kategori}` : `?page=${parseInt(props.page)-1}`}>Önceki</a> }
                               </li>
 
                               {[...Array(props.articles.totalpages)].map((res, i) =>
                                 <li key={i} className={props.page == i+1 && 'active'}>
-                                    <a href={'?page=' + (i+1)}>
+                                    <a href={props.kategori ? `?page=${i+1}&kategori=${props.kategori}` : `?page=${i+1}`}>
                                         <span>{i+1}</span>
                                     </a>
                                 </li>
                               )}
 
                               <li>
-                                  {props.articles.next && <a href={'?page=' + (parseInt(props.page)+1)} >Sonraki</a> }
+                                  {props.articles.next && <a href={props.kategori ? `?page=${parseInt(props.page)+1}&kategori=${props.kategori}` : `?page=${parseInt(props.page)+1}`}>Sonraki</a> }
                               </li>
                           </ul>
                       </div>
@@ -195,13 +196,36 @@ function hukukiyayinlar(props) {
 
 hukukiyayinlar.getInitialProps = async({query}) => {
 
-      const resArticles = await fetch(query.page ? 'http://localhost:8000/yayinlarpage/?page=' + query.page : 'http://localhost:8000/yayinlarpage/' );
+      //const resArticles = await fetch(query.kategori ? query.page ? `http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}` : `http://localhost:8000/kategorifilter/?page=${query.page}` : `http://localhost:8000/kategorifilter/` );
+      const deneme =  () => {
+
+        if (query.kategori) {
+          if (query.page) {
+
+            const resArticles =  fetch(`http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}`)
+            return resArticles;
+          } else {
+          const resArticles =  fetch(`http://localhost:8000/kategorifilter/?kategori=${query.kategori}`)
+          return resArticles;
+          }
+        } else {
+          if (query.page){
+            const resArticles =  fetch(`http://localhost:8000/kategorifilter/?page=${query.page}`)
+            return resArticles;
+          } else {
+            const resArticles =  fetch(`http://localhost:8000/kategorifilter/`)
+            return resArticles;
+          }
+        }
+
+      }
+      const resArticles = await deneme();
       const articles = await resArticles.json();
 
       const resPopular = await fetch('http://localhost:8000/yayinlarpage/');
       const popularArticles = await resPopular.json();
 
-      return ({articles, popularArticles, page: parseInt(query.page) ? query.page : 1})
+      return ({articles, popularArticles, page: parseInt(query.page) ? query.page : 1, kategori: query.kategori && query.kategori})
   }
 
 export default hukukiyayinlar;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import {
   Collapse,
   Navbar,
@@ -40,31 +41,50 @@ class MenuBar extends React.Component {
                           <NavbarToggler className="ml-auto float-sm-right" onClick={this.toggle} />
                           <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
-                              <li><a href="#">Ana Sayfa</a></li>
+                              <li><Link href="/"><a>Ana Sayfa</a></Link></li>
                               <li><a href="#">Avukata Danışın</a></li>
                               <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color : 'black', padding: '20px'}} nav caret>
                                   Hukuki İçerikler
                                 </DropdownToggle>
                                 <DropdownMenu style={{backgroundColor: '#f8f9fa', border: 'none'}} className="submenu" left="true">
-                                <DropdownItem style={{backgroundColor : '#d8d8d8'}} className='custom-dropdown'>
-                                  Tümünü Gör
-                                </DropdownItem>
-                                  <DropdownItem className='custom-dropdown'>
-                                    Kıdem Tazminatı
-                                  </DropdownItem>
-                                  <DropdownItem className='custom-dropdown'>
-                                    İhbar Tazminatı
-                                  </DropdownItem>
-                                  <DropdownItem className='custom-dropdown'>
-                                    İşe İade Davası
-                                  </DropdownItem>
-                                  <DropdownItem className='custom-dropdown'>
-                                    Hizmet Tespit Davaları
-                                  </DropdownItem>
-                                  <DropdownItem className='custom-dropdown'>
-                                    Genel Sağlık Sigortası
-                                  </DropdownItem>
+
+                                  <Link href="/hukuki-yayinlar">
+                                    <DropdownItem style={{backgroundColor : '#d8d8d8'}} className='custom-dropdown'>
+                                      Tümünü Gör
+                                    </DropdownItem>
+                                  </Link>
+
+                                  <Link href="/hukuki-yayinlar?kategori=kidemtazminati">
+                                    <DropdownItem className='custom-dropdown'>
+                                      Kıdem Tazminatı
+                                    </DropdownItem>
+                                  </Link>
+
+                                  <Link href="/hukuki-yayinlar?kategori=ihbartazminati">
+                                    <DropdownItem className='custom-dropdown'>
+                                      İhbar Tazminatı
+                                    </DropdownItem>
+                                  </Link>
+
+                                  <Link href="/hukuki-yayinlar?kategori=iseiadedavasi">
+                                    <DropdownItem className='custom-dropdown'>
+                                      İşe İade Davası
+                                    </DropdownItem>
+                                  </Link>
+
+                                  <Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi">
+                                    <DropdownItem className='custom-dropdown'>
+                                      Hizmet Tespit Davaları
+                                    </DropdownItem>
+                                  </Link>
+
+                                  <Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi">
+                                    <DropdownItem className='custom-dropdown'>
+                                      Genel Sağlık Sigortası
+                                    </DropdownItem>
+                                  </Link>
+
                                 </DropdownMenu>
                               </UncontrolledDropdown>
                             </Nav>
