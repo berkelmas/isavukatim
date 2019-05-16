@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 
 import fetch from 'isomorphic-unfetch';
+import getConfig from 'next/config';
 
 import Footer from '../components/Footer';
 import TopHeader from '../components/TopHeader';
@@ -10,7 +11,8 @@ import MenuBar from '../components/MenuBar';
 
 class index extends React.Component {
   static async getInitialProps(){
-    const res = await fetch('http://localhost:8000/makaleler');
+    const {publicRuntimeConfig} = getConfig();
+    const res = await fetch(`${publicRuntimeConfig.apiEndpoint}makaleler`);
     const result = await res.json();
     const articles = result.results;
     const nextPage = result.next;

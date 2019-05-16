@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2175,10 +2175,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
-/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
-/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/config */ "next/config");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
+/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
+/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
 
 
 
@@ -2187,6 +2189,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/berkelmas/Desktop/isavukatim/pages/index.js";
+
 
 
 
@@ -2212,19 +2215,19 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         },
         __self: this
       }, "\u0130\u015F Avukat\u0131ndan \u0130\u015F Hukuku"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2232,7 +2235,7 @@ function (_React$Component) {
         href: "/static/css/bootstrap.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2240,7 +2243,7 @@ function (_React$Component) {
         href: "/static/css/fontawesome-all.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 29
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2248,7 +2251,7 @@ function (_React$Component) {
         href: "/static/css/style.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 30
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
@@ -2257,79 +2260,79 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 31
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("header", {
         className: "header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 39
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("main", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "hero-area",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-lg-6 col-md-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero pos-relative mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -2337,14 +2340,14 @@ function (_React$Component) {
         "data-overlay": "dark-gradient",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2352,56 +2355,56 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero__text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat mb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 59
         },
         __self: this
       }, this.props.articles[0].makale_kategori)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
         className: "pr-100",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 60
         },
         __self: this
       }, this.props.articles[0].makale_baslik))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-lg-3 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero pos-relative mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -2409,14 +2412,14 @@ function (_React$Component) {
         "data-overlay": "dark-gradient",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2424,56 +2427,56 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 68
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero__text hero__text-small",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat mb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 73
         },
         __self: this
       }, this.props.articles[1].makale_kategori)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }, this.props.articles[1].makale_baslik))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-lg-3 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero pos-relative mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 82
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -2481,14 +2484,14 @@ function (_React$Component) {
         "data-overlay": "dark-gradient",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 83
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2496,125 +2499,125 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 85
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "hero__text hero__text-small",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat mb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 90
         },
         __self: this
       }, this.props.articles[2].makale_kategori)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 93
         },
         __self: this
       }, this.props.articles[2].makale_baslik)))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "news-area pt-30 pb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 104
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "col-12",
+        className: "container",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "section-title mb-30",
+        className: "row",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 106
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "col-12",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 107
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "section-title mb-30",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
         },
         __self: this
       }, "G\xFCncel Haberler"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row row-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 117
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 118
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 119
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2622,100 +2625,100 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 120
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 123
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 124
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 125
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 126
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 127
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 128
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 130
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 131
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130
+          lineNumber: 132
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134
+          lineNumber: 136
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 137
         },
         __self: this
       }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial Documents")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 141
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 142
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 143
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2723,100 +2726,100 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142
+          lineNumber: 144
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 147
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 148
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 150
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 151
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 152
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 154
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 155
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 156
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 160
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 161
         },
         __self: this
       }, "Rina Sawayama Is Not the Asian Britney Spears")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 165
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 166
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 167
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2824,107 +2827,107 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 168
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 171
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 173
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 174
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 175
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 176
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 178
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 179
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 180
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 182
+          lineNumber: 184
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 185
         },
         __self: this
       }, "Receiving the Summer Sols tice the Swedish Way"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-40",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188
+          lineNumber: 190
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189
+          lineNumber: 191
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 192
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 193
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -2932,114 +2935,114 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
+          lineNumber: 194
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat post-absolute",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 196
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 197
         },
         __self: this
       }, "politic"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 198
+          lineNumber: 200
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 201
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 202
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 201
+          lineNumber: 203
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 202
+          lineNumber: 204
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 203
+          lineNumber: 205
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 207
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 208
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 207
+          lineNumber: 209
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 213
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 212
+          lineNumber: 214
         },
         __self: this
       }, "Trump\u2019s Inaccurate Claims About High ways the world, Immigration and Beyonc\xE9.")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 219
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 220
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 219
+          lineNumber: 221
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3047,121 +3050,121 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 222
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat post-absolute",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222
+          lineNumber: 224
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 223
+          lineNumber: 225
         },
         __self: this
       }, "travel"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 228
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 229
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 228
+          lineNumber: 230
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 231
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 232
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 233
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 235
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 236
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 235
+          lineNumber: 237
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 241
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 242
         },
         __self: this
       }, "Moving From Buyer to Seller, Major League Soccer Revenue In The World Wide Claims About."))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-20 d-md-none d-xl-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 247
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 246
+          lineNumber: 248
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 247
+          lineNumber: 249
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 250
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3169,95 +3172,95 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 249
+          lineNumber: 251
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 254
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 255
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 256
         },
         __self: this
       }, "K\u0131dem Tazminat\u0131")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 258
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 257
+          lineNumber: 259
         },
         __self: this
       }, "K\u0131dem Tazminat\u0131ndaki Yenilikler")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 259
+          lineNumber: 261
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 262
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 263
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 264
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 265
         },
         __self: this
       }, "01 Eyl 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 271
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 270
+          lineNumber: 272
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 271
+          lineNumber: 273
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3265,95 +3268,95 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 274
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 275
+          lineNumber: 277
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 278
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 277
+          lineNumber: 279
         },
         __self: this
       }, "\u0130hbar Tazminat\u0131")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 281
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 280
+          lineNumber: 282
         },
         __self: this
       }, "\u0130hbar Tazminat\u0131 Nas\u0131l Hesaplan\u0131r?")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 284
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 283
+          lineNumber: 285
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 284
+          lineNumber: 286
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 285
+          lineNumber: 287
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 286
+          lineNumber: 288
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 294
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 295
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 296
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3361,95 +3364,95 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 295
+          lineNumber: 297
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 298
+          lineNumber: 300
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 299
+          lineNumber: 301
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 300
+          lineNumber: 302
         },
         __self: this
       }, "Fashion")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 302
+          lineNumber: 304
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 303
+          lineNumber: 305
         },
         __self: this
       }, "Nahan dow plays Lieral lership..")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 305
+          lineNumber: 307
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 306
+          lineNumber: 308
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 307
+          lineNumber: 309
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 308
+          lineNumber: 310
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 311
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 315
+          lineNumber: 317
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 316
+          lineNumber: 318
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 317
+          lineNumber: 319
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3457,95 +3460,95 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 318
+          lineNumber: 320
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 321
+          lineNumber: 323
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 322
+          lineNumber: 324
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 323
+          lineNumber: 325
         },
         __self: this
       }, "Travel")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 325
+          lineNumber: 327
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 326
+          lineNumber: 328
         },
         __self: this
       }, "Weinstein pushs for dismissal.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 328
+          lineNumber: 330
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 329
+          lineNumber: 331
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 330
+          lineNumber: 332
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 331
+          lineNumber: 333
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 332
+          lineNumber: 334
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 338
+          lineNumber: 340
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 339
+          lineNumber: 341
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 340
+          lineNumber: 342
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3553,95 +3556,95 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 341
+          lineNumber: 343
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 344
+          lineNumber: 346
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 345
+          lineNumber: 347
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 346
+          lineNumber: 348
         },
         __self: this
       }, "Politic")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 348
+          lineNumber: 350
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 349
+          lineNumber: 351
         },
         __self: this
       }, "New Season Tiets Seat Optional.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 351
+          lineNumber: 353
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
+          lineNumber: 354
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 353
+          lineNumber: 355
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 354
+          lineNumber: 356
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 355
+          lineNumber: 357
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 361
+          lineNumber: 363
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 364
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 363
+          lineNumber: 365
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3649,81 +3652,81 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 364
+          lineNumber: 366
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 367
+          lineNumber: 369
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "sm-cat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 368
+          lineNumber: 370
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 369
+          lineNumber: 371
         },
         __self: this
       }, "Study")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-13 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 371
+          lineNumber: 373
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 372
+          lineNumber: 374
         },
         __self: this
       }, "For Marilyn St Any Place Can Be..")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 374
+          lineNumber: 376
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 375
+          lineNumber: 377
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 376
+          lineNumber: 378
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 377
+          lineNumber: 379
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 378
+          lineNumber: 380
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post-btn mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 384
+          lineNumber: 386
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -3731,35 +3734,35 @@ function (_React$Component) {
         className: "btn btn-border",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 385
+          lineNumber: 387
         },
         __self: this
       }, "view more"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-20 ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 388
+          lineNumber: 390
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 389
+          lineNumber: 391
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 390
+          lineNumber: 392
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 391
+          lineNumber: 393
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3767,100 +3770,100 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 392
+          lineNumber: 394
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 395
+          lineNumber: 397
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 396
+          lineNumber: 398
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 397
+          lineNumber: 399
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 398
+          lineNumber: 400
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 399
+          lineNumber: 401
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 400
+          lineNumber: 402
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 402
+          lineNumber: 404
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 403
+          lineNumber: 405
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 404
+          lineNumber: 406
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 408
+          lineNumber: 410
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 409
+          lineNumber: 411
         },
         __self: this
       }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial Documents")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 413
+          lineNumber: 415
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 414
+          lineNumber: 416
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 415
+          lineNumber: 417
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3868,100 +3871,100 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 416
+          lineNumber: 418
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 419
+          lineNumber: 421
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 420
+          lineNumber: 422
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 421
+          lineNumber: 423
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 422
+          lineNumber: 424
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 423
+          lineNumber: 425
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 424
+          lineNumber: 426
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 426
+          lineNumber: 428
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 427
+          lineNumber: 429
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 428
+          lineNumber: 430
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 432
+          lineNumber: 434
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 433
+          lineNumber: 435
         },
         __self: this
       }, "Rina Sawayama Is Not the Asian Britney Spears")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 437
+          lineNumber: 439
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 438
+          lineNumber: 440
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 439
+          lineNumber: 441
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -3969,148 +3972,148 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 440
+          lineNumber: 442
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 443
+          lineNumber: 445
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 444
+          lineNumber: 446
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 445
+          lineNumber: 447
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 446
+          lineNumber: 448
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 447
+          lineNumber: 449
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 448
+          lineNumber: 450
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 450
+          lineNumber: 452
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 451
+          lineNumber: 453
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 452
+          lineNumber: 454
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 456
+          lineNumber: 458
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 457
+          lineNumber: 459
         },
         __self: this
       }, "Receiving the Summer Sols tice the Swedish Way")))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "cat-area pb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 468
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 469
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 470
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "col-12",
+        className: "container",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 471
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "section-title mb-30",
+        className: "row",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 472
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "col-12",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 473
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "section-title mb-30",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 474
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 475
         },
         __self: this
       }, "video news"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 478
+          lineNumber: 480
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 479
+          lineNumber: 481
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-6 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 480
+          lineNumber: 482
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 481
+          lineNumber: 483
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -4119,14 +4122,14 @@ function (_React$Component) {
         "data-opacity": "2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 482
+          lineNumber: 484
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 483
+          lineNumber: 485
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4134,14 +4137,14 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 484
+          lineNumber: 486
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "video-play",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 486
+          lineNumber: 488
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -4149,100 +4152,100 @@ function (_React$Component) {
         className: "popup-video",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 487
+          lineNumber: 489
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-play",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 487
+          lineNumber: 489
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 490
+          lineNumber: 492
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-22 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 491
+          lineNumber: 493
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 492
+          lineNumber: 494
         },
         __self: this
       }, "Group continues to sell and market memberships to Premier country club despite.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 494
+          lineNumber: 496
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 495
+          lineNumber: 497
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 496
+          lineNumber: 498
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 497
+          lineNumber: 499
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 498
+          lineNumber: 500
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 500
+          lineNumber: 502
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 501
+          lineNumber: 503
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 502
+          lineNumber: 504
         },
         __self: this
       }, "(03)"))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-6 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 509
+          lineNumber: 511
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 510
+          lineNumber: 512
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -4251,14 +4254,14 @@ function (_React$Component) {
         "data-opacity": "2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 511
+          lineNumber: 513
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 512
+          lineNumber: 514
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4266,14 +4269,14 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 513
+          lineNumber: 515
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "video-play",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 515
+          lineNumber: 517
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -4281,148 +4284,148 @@ function (_React$Component) {
         className: "popup-video",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 518
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-play",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 516
+          lineNumber: 518
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 519
+          lineNumber: 521
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-22 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 520
+          lineNumber: 522
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 521
+          lineNumber: 523
         },
         __self: this
       }, "Group continues to sell and market memberships to Premier country club despite.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 523
+          lineNumber: 525
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 524
+          lineNumber: 526
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 525
+          lineNumber: 527
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 526
+          lineNumber: 528
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 527
+          lineNumber: 529
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 529
+          lineNumber: 531
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 530
+          lineNumber: 532
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 531
+          lineNumber: 533
         },
         __self: this
       }, "(03)")))))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "cat-area pb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 543
+          lineNumber: 545
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 544
+          lineNumber: 546
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 545
+          lineNumber: 547
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-4 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 546
+          lineNumber: 548
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 547
+          lineNumber: 549
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 548
+          lineNumber: 550
         },
         __self: this
       }, "Science")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 551
+          lineNumber: 553
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 552
+          lineNumber: 554
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 553
+          lineNumber: 555
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4430,107 +4433,107 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 554
+          lineNumber: 556
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 557
+          lineNumber: 559
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-18 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 558
+          lineNumber: 560
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 559
+          lineNumber: 561
         },
         __self: this
       }, "Mustify Winner Is Rtired Because of Weaths Bads Ankle World Wide.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 561
+          lineNumber: 563
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 562
+          lineNumber: 564
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 563
+          lineNumber: 565
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 564
+          lineNumber: 566
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 565
+          lineNumber: 567
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 567
+          lineNumber: 569
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568
+          lineNumber: 570
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 569
+          lineNumber: 571
         },
         __self: this
       }, "(03)")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "cat-sm-post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 576
+          lineNumber: 578
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 577
+          lineNumber: 579
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 578
+          lineNumber: 580
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 579
+          lineNumber: 581
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4538,81 +4541,81 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 580
+          lineNumber: 582
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 583
+          lineNumber: 585
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 584
+          lineNumber: 586
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 585
+          lineNumber: 587
         },
         __self: this
       }, "Hobots or Job Training: Mnutuers Grapple With How to Improve.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 587
+          lineNumber: 589
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 588
+          lineNumber: 590
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 589
+          lineNumber: 591
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 590
+          lineNumber: 592
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 591
+          lineNumber: 593
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 597
+          lineNumber: 599
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 598
+          lineNumber: 600
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 599
+          lineNumber: 601
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4620,101 +4623,101 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 600
+          lineNumber: 602
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 603
+          lineNumber: 605
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 604
+          lineNumber: 606
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 605
+          lineNumber: 607
         },
         __self: this
       }, "Robots or Job Training: Manutues Grapple With How to Improve..")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 607
+          lineNumber: 609
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 608
+          lineNumber: 610
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 609
+          lineNumber: 611
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 610
+          lineNumber: 612
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 611
+          lineNumber: 613
         },
         __self: this
       }, "01 Sep 2018")))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-4 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 619
+          lineNumber: 621
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 620
+          lineNumber: 622
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 621
+          lineNumber: 623
         },
         __self: this
       }, "travel")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 624
+          lineNumber: 626
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 625
+          lineNumber: 627
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 626
+          lineNumber: 628
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4722,107 +4725,107 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 627
+          lineNumber: 629
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 630
+          lineNumber: 632
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-18 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 631
+          lineNumber: 633
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 632
+          lineNumber: 634
         },
         __self: this
       }, "Robots or Job Training: Manutues Grapple With How to Improve.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 634
+          lineNumber: 636
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 635
+          lineNumber: 637
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 636
+          lineNumber: 638
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 637
+          lineNumber: 639
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 638
+          lineNumber: 640
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 640
+          lineNumber: 642
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 641
+          lineNumber: 643
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 642
+          lineNumber: 644
         },
         __self: this
       }, "(03)")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "cat-sm-post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 649
+          lineNumber: 651
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 650
+          lineNumber: 652
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 651
+          lineNumber: 653
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 652
+          lineNumber: 654
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4830,81 +4833,81 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 653
+          lineNumber: 655
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 656
+          lineNumber: 658
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 657
+          lineNumber: 659
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 658
+          lineNumber: 660
         },
         __self: this
       }, "Canadian Shoppers Pay When Visa and MasterCard.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 660
+          lineNumber: 662
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 661
+          lineNumber: 663
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 662
+          lineNumber: 664
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 663
+          lineNumber: 665
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 664
+          lineNumber: 666
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 670
+          lineNumber: 672
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 671
+          lineNumber: 673
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 672
+          lineNumber: 674
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4912,101 +4915,101 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 673
+          lineNumber: 675
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 676
+          lineNumber: 678
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 677
+          lineNumber: 679
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 678
+          lineNumber: 680
         },
         __self: this
       }, "Who is next football Super Hero. Check the future star")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 680
+          lineNumber: 682
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 681
+          lineNumber: 683
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 682
+          lineNumber: 684
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 683
+          lineNumber: 685
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 684
+          lineNumber: 686
         },
         __self: this
       }, "01 Sep 2018")))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-4 col-md-6 d-md-none d-lg-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 692
+          lineNumber: 694
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 693
+          lineNumber: 695
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 694
+          lineNumber: 696
         },
         __self: this
       }, "lifestyle")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 697
+          lineNumber: 699
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 698
+          lineNumber: 700
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 699
+          lineNumber: 701
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5014,107 +5017,107 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 700
+          lineNumber: 702
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 703
+          lineNumber: 705
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-18 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 704
+          lineNumber: 706
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 705
+          lineNumber: 707
         },
         __self: this
       }, "Denying passports to Americans along the border throwing their citizens.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 707
+          lineNumber: 709
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 708
+          lineNumber: 710
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 709
+          lineNumber: 711
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 710
+          lineNumber: 712
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 711
+          lineNumber: 713
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 713
+          lineNumber: 715
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 714
+          lineNumber: 716
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 715
+          lineNumber: 717
         },
         __self: this
       }, "(03)")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "cat-sm-post",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 722
+          lineNumber: 724
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 723
+          lineNumber: 725
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 724
+          lineNumber: 726
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 725
+          lineNumber: 727
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5122,81 +5125,81 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 726
+          lineNumber: 728
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 729
+          lineNumber: 731
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 730
+          lineNumber: 732
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 731
+          lineNumber: 733
         },
         __self: this
       }, "Hobots or Job Training: Mnutuers Grapple With How to Improve.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 733
+          lineNumber: 735
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 734
+          lineNumber: 736
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 735
+          lineNumber: 737
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 736
+          lineNumber: 738
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 737
+          lineNumber: 739
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 743
+          lineNumber: 745
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 744
+          lineNumber: 746
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 745
+          lineNumber: 747
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5204,115 +5207,115 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 746
+          lineNumber: 748
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 749
+          lineNumber: 751
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 750
+          lineNumber: 752
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 751
+          lineNumber: 753
         },
         __self: this
       }, "Robots or Job Training: Manutues Grapple With How to Improve..")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 753
+          lineNumber: 755
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 754
+          lineNumber: 756
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 755
+          lineNumber: 757
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 756
+          lineNumber: 758
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 757
+          lineNumber: 759
         },
         __self: this
       }, "01 Sep 2018"))))))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "add-area pb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 770
+          lineNumber: 772
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 771
+          lineNumber: 773
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 772
+          lineNumber: 774
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-4 col-md-6 d-md-none d-xl-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 773
+          lineNumber: 775
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 774
+          lineNumber: 776
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 775
+          lineNumber: 777
         },
         __self: this
       }, "advertisement")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "add-banner mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 777
+          lineNumber: 779
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 778
+          lineNumber: 780
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5320,55 +5323,55 @@ function (_React$Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 778
+          lineNumber: 780
         },
         __self: this
       })))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-8 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 781
+          lineNumber: 783
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 782
+          lineNumber: 784
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 783
+          lineNumber: 785
         },
         __self: this
       }, "Magazine")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "cat-sm-post mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 785
+          lineNumber: 787
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 786
+          lineNumber: 788
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-thumb f-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 787
+          lineNumber: 789
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 788
+          lineNumber: 790
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5376,214 +5379,214 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 789
+          lineNumber: 791
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix pl-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 792
+          lineNumber: 794
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 793
+          lineNumber: 795
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 794
+          lineNumber: 796
         },
         __self: this
       }, "Robots or Job Training: Manuturers Grapple With How to Improve Their Economic Fortunes")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 796
+          lineNumber: 798
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 797
+          lineNumber: 799
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 798
+          lineNumber: 800
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 799
+          lineNumber: 801
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 800
+          lineNumber: 802
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 806
+          lineNumber: 808
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 807
+          lineNumber: 809
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 808
+          lineNumber: 810
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 809
+          lineNumber: 811
         },
         __self: this
       }, "Japanese Medical School Accused of With How to Improve Their Economic Fortunes Riggmisions to Keep Women Out world.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 811
+          lineNumber: 813
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 812
+          lineNumber: 814
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 813
+          lineNumber: 815
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 814
+          lineNumber: 816
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 815
+          lineNumber: 817
         },
         __self: this
       }, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small mb-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 821
+          lineNumber: 823
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text fix",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 822
+          lineNumber: 824
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0 mt-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 823
+          lineNumber: 825
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 824
+          lineNumber: 826
         },
         __self: this
       }, "Leslie Moonves Speaks on CBS Earnings Cabunsot About Harassment Allegations")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "post__small-text-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 826
+          lineNumber: 828
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 827
+          lineNumber: 829
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 828
+          lineNumber: 830
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 829
+          lineNumber: 831
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 830
+          lineNumber: 832
         },
         __self: this
       }, "01 Sep 2018")))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-4 col-lg-4 col-md-6 d-md-none d-xl-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 839
+          lineNumber: 841
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 840
+          lineNumber: 842
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 841
+          lineNumber: 843
         },
         __self: this
       }, "advertisement")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "add-banner mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 843
+          lineNumber: 845
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 844
+          lineNumber: 846
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5591,65 +5594,51 @@ function (_React$Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 844
+          lineNumber: 846
         },
         __self: this
       }))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "latest-area pb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 853
+          lineNumber: 855
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 854
+          lineNumber: 856
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 855
+          lineNumber: 857
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 856
+          lineNumber: 858
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "section-title mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 857
+          lineNumber: 859
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 858
+          lineNumber: 860
         },
         __self: this
       }, "latest news")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 862
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "col-xl-7 col-lg-12",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 863
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
@@ -5657,31 +5646,45 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "col-xl-6 col-lg-4 col-md-6",
+        className: "col-xl-7 col-lg-12",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 865
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "postbox mb-30",
+        className: "row",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 866
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "postbox__thumb",
+        className: "col-xl-6 col-lg-4 col-md-6",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 867
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "postbox mb-30",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 868
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "postbox__thumb",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 869
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 868
+          lineNumber: 870
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5689,113 +5692,113 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 869
+          lineNumber: 871
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat post-absolute",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 871
+          lineNumber: 873
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 872
+          lineNumber: 874
         },
         __self: this
       }, "politic"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-8 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 877
+          lineNumber: 879
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 878
+          lineNumber: 880
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 879
+          lineNumber: 881
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 880
+          lineNumber: 882
         },
         __self: this
       }, "Succession finale: jeremy strong keall\u2019s struggles what comes next.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 882
+          lineNumber: 884
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 883
+          lineNumber: 885
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 884
+          lineNumber: 886
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 885
+          lineNumber: 887
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 886
+          lineNumber: 888
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 888
+          lineNumber: 890
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 889
+          lineNumber: 891
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 890
+          lineNumber: 892
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "desc-text mb-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 894
+          lineNumber: 896
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 895
+          lineNumber: 897
         },
         __self: this
       }, "But I must explain to you how all this mistaken idea of denouncing sure and praising pain was born and I will give you a complete account.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -5803,42 +5806,42 @@ function (_React$Component) {
         className: "btn btn-soft",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 898
+          lineNumber: 900
         },
         __self: this
       }, "read more")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 902
+          lineNumber: 904
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-4 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 903
+          lineNumber: 905
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 904
+          lineNumber: 906
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 905
+          lineNumber: 907
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 906
+          lineNumber: 908
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5846,113 +5849,113 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 907
+          lineNumber: 909
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat post-absolute",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 909
+          lineNumber: 911
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 910
+          lineNumber: 912
         },
         __self: this
       }, "politic"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-8 col-md-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 915
+          lineNumber: 917
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 916
+          lineNumber: 918
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 917
+          lineNumber: 919
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 918
+          lineNumber: 920
         },
         __self: this
       }, "Critic\u2019s notebook: deep dives into jutice from shakespeare and atticus finch")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 920
+          lineNumber: 922
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 921
+          lineNumber: 923
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 922
+          lineNumber: 924
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 923
+          lineNumber: 925
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 924
+          lineNumber: 926
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 926
+          lineNumber: 928
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 927
+          lineNumber: 929
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 928
+          lineNumber: 930
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "desc-text mb-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 932
+          lineNumber: 934
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 933
+          lineNumber: 935
         },
         __self: this
       }, "But I must explain to you how all this mistaken idea of denouncing sure and praising pain was born and I will give you a complete account.")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -5960,35 +5963,35 @@ function (_React$Component) {
         className: "btn btn-soft",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 936
+          lineNumber: 938
         },
         __self: this
       }, "read more"))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 941
+          lineNumber: 943
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox mb-30",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 942
+          lineNumber: 944
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__thumb",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 943
+          lineNumber: 945
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 944
+          lineNumber: 946
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -5997,106 +6000,106 @@ function (_React$Component) {
         alt: "hero image",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 945
+          lineNumber: 947
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "post-cat post-absolute",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 947
+          lineNumber: 949
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 948
+          lineNumber: 950
         },
         __self: this
       }, "politic"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text pt-25",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 951
+          lineNumber: 953
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h4", {
         className: "title-16 pr-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 952
+          lineNumber: 954
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 953
+          lineNumber: 955
         },
         __self: this
       }, "Trump administration officials, have used veto power over other companies, forcing them to buy their products instead of .")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "postbox__text-meta pb-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 957
+          lineNumber: 959
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 958
+          lineNumber: 960
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 959
+          lineNumber: 961
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-calendar-alt",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 960
+          lineNumber: 962
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 961
+          lineNumber: 963
         },
         __self: this
       }, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 963
+          lineNumber: 965
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "far fa-comment",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 964
+          lineNumber: 966
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 965
+          lineNumber: 967
         },
         __self: this
       }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "desc-text mb-20",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 969
+          lineNumber: 971
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 970
+          lineNumber: 972
         },
         __self: this
       }, "But I must explain to you how all this mistaken idea of denouncing sure and praising Group continues to sell and market memberships to Premier country club despite. pain was born and I will give you a complete account. ")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
@@ -6104,82 +6107,82 @@ function (_React$Component) {
         className: "btn btn-soft",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 974
+          lineNumber: 976
         },
         __self: this
       }, "read more"))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         className: "app-area pb-60",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 983
+          lineNumber: 985
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 984
+          lineNumber: 986
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "grey-bg pt-55 pb-55 pl-60 pr-60",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 985
+          lineNumber: 987
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 986
+          lineNumber: 988
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 987
+          lineNumber: 989
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "app-text text-center text-xl-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 988
+          lineNumber: 990
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 989
+          lineNumber: 991
         },
         __self: this
       }, "Bizi Cepten Takip Edin"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 990
+          lineNumber: 992
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "col-xl-6 col-lg-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 993
+          lineNumber: 995
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "app-store text-center text-xl-right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 994
+          lineNumber: 996
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 995
+          lineNumber: 997
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -6187,14 +6190,14 @@ function (_React$Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 995
+          lineNumber: 997
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 996
+          lineNumber: 998
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -6202,13 +6205,13 @@ function (_React$Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 996
+          lineNumber: 998
         },
         __self: this
-      }))))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }))))))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 1006
+          lineNumber: 1008
         },
         __self: this
       }));
@@ -6219,20 +6222,22 @@ function (_React$Component) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var res, result, articles, nextPage, prevPage;
+        var _getConfig, publicRuntimeConfig, res, result, articles, nextPage, prevPage;
+
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default()('http://localhost:8000/makaleler');
+                _getConfig = next_config__WEBPACK_IMPORTED_MODULE_10___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+                _context.next = 3;
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default()("".concat(publicRuntimeConfig.apiEndpoint, "makaleler"));
 
-              case 2:
+              case 3:
                 res = _context.sent;
-                _context.next = 5;
+                _context.next = 6;
                 return res.json();
 
-              case 5:
+              case 6:
                 result = _context.sent;
                 articles = result.results;
                 nextPage = result.next;
@@ -6243,7 +6248,7 @@ function (_React$Component) {
                   prevPage: prevPage
                 });
 
-              case 10:
+              case 11:
               case "end":
                 return _context.stop();
             }
@@ -6266,7 +6271,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -6385,6 +6390,17 @@ module.exports = require("isomorphic-unfetch");
 /***/ (function(module, exports) {
 
 module.exports = require("next-server/dist/lib/utils");
+
+/***/ }),
+
+/***/ "next/config":
+/*!******************************!*\
+  !*** external "next/config" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/config");
 
 /***/ }),
 

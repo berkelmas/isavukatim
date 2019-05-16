@@ -15693,7 +15693,7 @@ Tokenizer.prototype._emitPartial = function(value) {
 module.exports = Stream;
 
 var Parser = __webpack_require__(/*! ./Parser.js */ "./node_modules/htmlparser2/lib/Parser.js");
-var WritableStream = __webpack_require__(/*! readable-stream */ 3).Writable;
+var WritableStream = __webpack_require__(/*! readable-stream */ 1).Writable;
 var StringDecoder = __webpack_require__(/*! string_decoder */ "./node_modules/string_decoder/lib/string_decoder.js").StringDecoder;
 var Buffer = __webpack_require__(/*! buffer */ "./node_modules/buffer/index.js").Buffer;
 
@@ -53025,6 +53025,33 @@ exports.default = Router;
 
 /***/ }),
 
+/***/ "./node_modules/next-server/dist/lib/runtime-config.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/runtime-config.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports.default = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
+
+/***/ }),
+
 /***/ "./node_modules/next-server/dist/lib/side-effect.js":
 /*!**********************************************************!*\
   !*** ./node_modules/next-server/dist/lib/side-effect.js ***!
@@ -71862,6 +71889,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var truncate_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! truncate-html */ "./node_modules/truncate-html/dist/truncate.es.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_15__);
 
 
 
@@ -71879,17 +71908,18 @@ var _jsxFileName = "/Users/berkelmas/Desktop/isavukatim/pages/hukuki-yayinlar.js
 
 
 
+
 function hukukiyayinlar(props) {
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
@@ -71897,7 +71927,7 @@ function hukukiyayinlar(props) {
     href: "/static/css/bootstrap.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
@@ -71905,7 +71935,7 @@ function hukukiyayinlar(props) {
     href: "/static/css/fontawesome-all.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
@@ -71913,94 +71943,94 @@ function hukukiyayinlar(props) {
     href: "/static/css/style.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "page-banner-area mt-60",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "col-12",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "page-title-bar text-center pt-60 pb-60 makale-title-bar",
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "col-12",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "page-title-bar text-center pt-60 pb-60 makale-title-bar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
     },
     __self: this
   }, "\u0130\u015F Hukuku Yay\u0131nlar\u0131m\u0131z")))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("section", {
     className: "news-area pt-60 pb-60",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "col-xl-8 col-lg-8 col-md-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
     },
     __self: this
   }, props.articles.results.map(function (res, index) {
@@ -72009,21 +72039,21 @@ function hukukiyayinlar(props) {
       className: "postbox mb-40",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 52
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "postbox__thumb mb-25",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 53
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 54
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
@@ -72031,106 +72061,106 @@ function hukukiyayinlar(props) {
       alt: "hero image",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 55
       },
       __self: this
     }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "postbox__text",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 58
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "postbox__text-meta pb-20",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 59
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 60
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 61
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       className: "post-cat",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 62
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 63
       },
       __self: this
     }, res.makale_kategori))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 66
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
       className: "fas fa-calendar-alt",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 67
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 68
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
       fromNow: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 68
       },
       __self: this
     }, res.makale_yayintarihi))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 70
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
       className: "far fa-comment",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 71
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 72
       },
       __self: this
     }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
       className: "title-30 font-600 pr-0",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 76
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 77
       },
       __self: this
     }, res.makale_baslik)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -72142,7 +72172,7 @@ function hukukiyayinlar(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 80
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
@@ -72150,7 +72180,7 @@ function hukukiyayinlar(props) {
       className: "read-more",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 82
       },
       __self: this
     }, "Daha Fazla Oku")));
@@ -72158,21 +72188,21 @@ function hukukiyayinlar(props) {
     className: "col-xl-4 col-lg-4 col-md-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 89
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "widget mb-40",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 90
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 91
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
@@ -72180,21 +72210,21 @@ function hukukiyayinlar(props) {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 92
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "widget widget-border mb-40",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 95
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
     className: "widget-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "Pop\xFCler Yay\u0131nlar"), props.popularArticles.results.map(function (res, index) {
@@ -72203,21 +72233,21 @@ function hukukiyayinlar(props) {
       className: "post__small mb-30",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 100
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "post__small-thumb f-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 101
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 102
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
@@ -72225,74 +72255,74 @@ function hukukiyayinlar(props) {
       alt: "hero image",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 103
       },
       __self: this
     }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "post__small-text fix pl-10",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 106
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       className: "sm-cat",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 107
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106
+        lineNumber: 108
       },
       __self: this
     }, res.makale_kategori)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
       className: "title-13 pr-0",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108
+        lineNumber: 110
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 111
       },
       __self: this
     }, res.makale_baslik)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: "post__small-text-meta",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111
+        lineNumber: 113
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112
+        lineNumber: 114
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113
+        lineNumber: 115
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
       className: "fas fa-calendar-alt",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114
+        lineNumber: 116
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115
+        lineNumber: 117
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
@@ -72300,7 +72330,7 @@ function hukukiyayinlar(props) {
       fromNow: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115
+        lineNumber: 117
       },
       __self: this
     }, res.makale_yayintarihi)))))));
@@ -72308,35 +72338,35 @@ function hukukiyayinlar(props) {
     className: "widget widget-border mb-40",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 127
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
     className: "widget-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 128
     },
     __self: this
   }, "En \xC7ok Okunan"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "postbox",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 129
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "postbox__thumb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 130
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 131
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
@@ -72344,212 +72374,212 @@ function hukukiyayinlar(props) {
     alt: "hero image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 132
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "postbox__text pt-15",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 135
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "postbox__text-meta pb-10",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 137
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 138
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
     className: "fas fa-calendar-alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 139
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 140
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
     fromNow: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 140
     },
     __self: this
   }, props.popularArticles.results[0].makale_yayintarihi))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 142
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
     className: "far fa-comment",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 143
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 144
     },
     __self: this
   }, "(03)")))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
     className: "title-16 pr-0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 148
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 149
     },
     __self: this
   }, props.popularArticles.results[0].makale_baslik))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "widget widget-border mb-40",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 154
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
     className: "widget-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 155
     },
     __self: this
   }, "Yay\u0131n T\xFCrleri"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "tagcloud",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 156
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "?kategori=kidemtazminati",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 157
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 157
     },
     __self: this
   }, "K\u0131dem Tazminat\u0131")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "?kategori=ihbartazminati",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 158
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 158
     },
     __self: this
   }, "\u0130hbar Tazminat\u0131")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "?kategori=iseiadedavasi",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 159
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 159
     },
     __self: this
   }, "\u0130\u015Fe \u0130ade Davasi")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "?kategori=hizmettespitdavasi",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 160
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 160
     },
     __self: this
   }, "Hizmet Tespit Davas\u0131")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "?kategori=genelsagliksigortasi",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 161
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 161
     },
     __self: this
   }, "Genel Sa\u011Fl\u0131k Sigortas\u0131")))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "row mt-10",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 167
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "col-xl-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 168
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "pagination",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 169
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 170
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 171
     },
     __self: this
   }, props.articles.previous && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     href: props.kategori ? "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1, "&kategori=").concat(props.kategori) : "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 172
     },
     __self: this
   }, "\xD6nceki")), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(Array(props.articles.totalpages)).map(function (res, i) {
@@ -72558,40 +72588,40 @@ function hukukiyayinlar(props) {
       className: props.page == i + 1 && 'active',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174
+        lineNumber: 176
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
       href: props.kategori ? "?page=".concat(i + 1, "&kategori=").concat(props.kategori) : "?page=".concat(i + 1),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 175
+        lineNumber: 177
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 176
+        lineNumber: 178
       },
       __self: this
     }, i + 1)));
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181
+      lineNumber: 183
     },
     __self: this
   }, props.articles.next && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
     href: props.kategori ? "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1, "&kategori=").concat(props.kategori) : "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182
+      lineNumber: 184
     },
     __self: this
   }, "Sonraki")))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191
+      lineNumber: 193
     },
     __self: this
   }));
@@ -72603,57 +72633,58 @@ function () {
   var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
   /*#__PURE__*/
   _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
-    var query, deneme, resArticles, articles, resPopular, popularArticles;
+    var query, _getConfig, publicRuntimeConfig, deneme, resArticles, articles, resPopular, popularArticles;
+
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             query = _ref.query;
+            _getConfig = next_config__WEBPACK_IMPORTED_MODULE_15___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig; //const resArticles = await fetch(query.kategori ? query.page ? `http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}` : `http://localhost:8000/kategorifilter/?page=${query.page}` : `http://localhost:8000/kategorifilter/` );
 
-            //const resArticles = await fetch(query.kategori ? query.page ? `http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}` : `http://localhost:8000/kategorifilter/?page=${query.page}` : `http://localhost:8000/kategorifilter/` );
             deneme = function deneme() {
               if (query.kategori) {
                 if (query.page) {
-                  var _resArticles = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("http://localhost:8000/kategorifilter/?kategori=".concat(query.kategori, "&page=").concat(query.page));
+                  var _resArticles = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?kategori=").concat(query.kategori, "&page=").concat(query.page));
 
                   return _resArticles;
                 } else {
-                  var _resArticles2 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("http://localhost:8000/kategorifilter/?kategori=".concat(query.kategori));
+                  var _resArticles2 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?kategori=").concat(query.kategori));
 
                   return _resArticles2;
                 }
               } else {
                 if (query.page) {
-                  var _resArticles3 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("http://localhost:8000/kategorifilter/?page=".concat(query.page));
+                  var _resArticles3 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?page=").concat(query.page));
 
                   return _resArticles3;
                 } else {
-                  var _resArticles4 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("http://localhost:8000/kategorifilter/");
+                  var _resArticles4 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
 
                   return _resArticles4;
                 }
               }
             };
 
-            _context.next = 4;
+            _context.next = 5;
             return deneme();
 
-          case 4:
+          case 5:
             resArticles = _context.sent;
-            _context.next = 7;
+            _context.next = 8;
             return resArticles.json();
 
-          case 7:
+          case 8:
             articles = _context.sent;
-            _context.next = 10;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()('http://localhost:8000/yayinlarpage/');
+            _context.next = 11;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
 
-          case 10:
+          case 11:
             resPopular = _context.sent;
-            _context.next = 13;
+            _context.next = 14;
             return resPopular.json();
 
-          case 13:
+          case 14:
             popularArticles = _context.sent;
             return _context.abrupt("return", {
               articles: articles,
@@ -72662,7 +72693,7 @@ function () {
               kategori: query.kategori && query.kategori
             });
 
-          case 15:
+          case 16:
           case "end":
             return _context.stop();
         }
@@ -72679,7 +72710,7 @@ function () {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhukuki-yayinlar&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fhukuki-yayinlar.js ***!
   \********************************************************************************************************************************************************/
@@ -72691,7 +72722,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhukuki
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
   \*********************************/
@@ -72713,5 +72744,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=hukuki-yayinlar.js.map

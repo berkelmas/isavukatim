@@ -10,6 +10,8 @@ import 'moment/locale/tr';
 import fetch from 'isomorphic-unfetch';
 import truncateHtml from 'truncate-html';
 
+import getConfig from 'next/config';
+
 function hukukiyayinlar(props) {
   return(
     <div>
@@ -195,25 +197,25 @@ function hukukiyayinlar(props) {
 }
 
 hukukiyayinlar.getInitialProps = async({query}) => {
-
+      const {publicRuntimeConfig} = getConfig();
       //const resArticles = await fetch(query.kategori ? query.page ? `http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}` : `http://localhost:8000/kategorifilter/?page=${query.page}` : `http://localhost:8000/kategorifilter/` );
       const deneme =  () => {
 
         if (query.kategori) {
           if (query.page) {
 
-            const resArticles =  fetch(`http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}`)
+            const resArticles =  fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/?kategori=${query.kategori}&page=${query.page}`)
             return resArticles;
           } else {
-          const resArticles =  fetch(`http://localhost:8000/kategorifilter/?kategori=${query.kategori}`)
+          const resArticles =  fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/?kategori=${query.kategori}`)
           return resArticles;
           }
         } else {
           if (query.page){
-            const resArticles =  fetch(`http://localhost:8000/kategorifilter/?page=${query.page}`)
+            const resArticles =  fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/?page=${query.page}`)
             return resArticles;
           } else {
-            const resArticles =  fetch(`http://localhost:8000/kategorifilter/`)
+            const resArticles =  fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/`)
             return resArticles;
           }
         }
@@ -222,7 +224,7 @@ hukukiyayinlar.getInitialProps = async({query}) => {
       const resArticles = await deneme();
       const articles = await resArticles.json();
 
-      const resPopular = await fetch('http://localhost:8000/yayinlarpage/');
+      const resPopular = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/`);
       const popularArticles = await resPopular.json();
 
       return ({articles, popularArticles, page: parseInt(query.page) ? query.page : 1, kategori: query.kategori && query.kategori})
