@@ -2586,9 +2586,9 @@ label {
 
 /* 6. Breadcrumb */
 .breadcrumb {
-  background: #f7f7fd;
+  background: white;
   border-radius: 0;
-  padding: 50px 0;
+  padding: 25px;
   margin: 0; }
   .breadcrumb li {
     font-size: 14px;

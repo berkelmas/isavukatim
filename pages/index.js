@@ -12,12 +12,10 @@ import MenuBar from '../components/MenuBar';
 class index extends React.Component {
   static async getInitialProps(){
     const {publicRuntimeConfig} = getConfig();
-    const res = await fetch(`${publicRuntimeConfig.apiEndpoint}makaleler`);
+    const res = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter`);
     const result = await res.json();
     const articles = result.results;
-    const nextPage = result.next;
-    const prevPage = result.prev;
-    return {articles, nextPage, prevPage}
+    return {articles}
   }
 
   render() {
