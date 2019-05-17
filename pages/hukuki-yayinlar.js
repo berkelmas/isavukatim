@@ -74,7 +74,9 @@ function hukukiyayinlar(props) {
                                   </ul>
                               </div>
                               <h4 className="title-30 font-600 pr-0">
-                                  <a href="#">{res.makale_baslik}</a>
+                                <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                                  <a>{res.makale_baslik}</a>
+                                </Link>
                               </h4>
 
                                 <div className="desc-text mb-20" dangerouslySetInnerHTML={{ __html: truncateHtml(res.makale_mesaj, 1, {byWords : true}) }} />
@@ -154,11 +156,11 @@ function hukukiyayinlar(props) {
                       <div className="widget widget-border mb-40">
                           <h3 className="widget-title">Yayın Türleri</h3>
                           <div className="tagcloud">
-                              <Link href="?kategori=kidemtazminati"><a>Kıdem Tazminatı</a></Link>
-                              <Link href="?kategori=ihbartazminati"><a>İhbar Tazminatı</a></Link>
-                              <Link href="?kategori=iseiadedavasi"><a>İşe İade Davasi</a></Link>
-                              <Link href="?kategori=hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link>
-                              <Link href="?kategori=genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link>
+                              <Link href="/hukuki-yayinlar?kategori=kidemtazminati" as="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link>
+                              <Link href="/hukuki-yayinlar?kategori=ihbartazminati" as="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link>
+                              <Link href="/hukuki-yayinlar?kategori=iseiadedavasi" as="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davasi</a></Link>
+                              <Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi" as="/hukuki-yayinlar/kategori/hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link>
+                              <Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi" as="/hukuki-yayinlar/kategori/genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link>
                           </div>
                       </div>
                   </div>
@@ -169,19 +171,59 @@ function hukukiyayinlar(props) {
                       <div className="pagination">
                           <ul>
                               <li>
-                                  {props.articles.previous && <a href={props.kategori ? `?page=${parseInt(props.page)-1}&kategori=${props.kategori}` : `?page=${parseInt(props.page)-1}`}>Önceki</a> }
+                                  {props.articles.previous &&
+                                    <Link
+                                      href={props.kategori ?
+                                        `?page=${parseInt(props.page)-1}&kategori=${props.kategori}`
+                                        :
+                                        `?page=${parseInt(props.page)-1}`
+                                            }
+                                      as={props.kategori ?
+                                        `/hukuki-yayinlar/kategori/${props.kategori}/${parseInt(props.page)-1}`
+                                        :
+                                        `/hukuki-yayinlar/${parseInt(props.page) - 1}`
+                                      }>
+                                        <a>Önceki</a>
+                                    </Link>
+                                  }
                               </li>
 
                               {[...Array(props.articles.totalpages)].map((res, i) =>
-                                <li key={i} className={props.page == i+1 && 'active'}>
-                                    <a href={props.kategori ? `?page=${i+1}&kategori=${props.kategori}` : `?page=${i+1}`}>
+                                <li key={i} className={props.page == i+1 ? 'active' : 'none'}>
+                                  <Link
+                                    href={props.kategori ?
+                                      `?page=${i+1}&kategori=${props.kategori}`
+                                      :
+                                      `?page=${i+1}`
+                                          }
+                                     as={props.kategori ?
+                                       `/hukuki-yayinlar/kategori/${props.kategori}/${i+1}`
+                                       :
+                                       `/hukuki-yayinlar/${i+1}`
+                                     }>
+                                    <a>
                                         <span>{i+1}</span>
                                     </a>
+                                  </Link>
                                 </li>
                               )}
 
                               <li>
-                                  {props.articles.next && <a href={props.kategori ? `?page=${parseInt(props.page)+1}&kategori=${props.kategori}` : `?page=${parseInt(props.page)+1}`}>Sonraki</a> }
+                                  {props.articles.next &&
+                                    <Link
+                                      href={props.kategori ?
+                                        `?page=${parseInt(props.page)+1}&kategori=${props.kategori}`
+                                        :
+                                        `?page=${parseInt(props.page)+1}`
+                                            }
+                                      as={props.kategori ?
+                                      `/hukuki-yayinlar/kategori/${props.kategori}/${parseInt(props.page)+1}`
+                                      :
+                                      `/hukuki-yayinlar/${parseInt(props.page) + 1}`
+                                        }>
+                                            <a>Sonraki</a>
+                                    </Link>
+                                  }
                               </li>
                           </ul>
                       </div>
