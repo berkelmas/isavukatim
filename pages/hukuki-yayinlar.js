@@ -60,7 +60,9 @@ function hukukiyayinlar(props) {
                                   <ul>
                                       <li>
                                           <span className="post-cat">
-                                              <a href="#">{res.makale_kategori}</a>
+                                            <Link href={`/hukuki-yayinlar?kategori=${res.makale_kategori_nondisplay}`} as={`/hukuki-yayinlar/kategori/${res.makale_kategori_nondisplay}`}>
+                                              <a>{res.makale_kategori}</a>
+                                            </Link>
                                           </span>
                                       </li>
                                       <li>
@@ -156,6 +158,7 @@ function hukukiyayinlar(props) {
                       <div className="widget widget-border mb-40">
                           <h3 className="widget-title">Yayın Türleri</h3>
                           <div className="tagcloud">
+                              <Link href="/hukuki-yayinlar"><a className="all-category">Tümünü Gör</a></Link>
                               <Link href="/hukuki-yayinlar?kategori=kidemtazminati" as="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link>
                               <Link href="/hukuki-yayinlar?kategori=ihbartazminati" as="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link>
                               <Link href="/hukuki-yayinlar?kategori=iseiadedavasi" as="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davasi</a></Link>

@@ -43,9 +43,12 @@ class MenuBar extends React.Component {
                             <Nav className="mr-auto" navbar>
                               <li><Link href="/"><a>Ana Sayfa</a></Link></li>
                               <li><a href="#">Avukata Danışın</a></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=iseiadedavasi"><a>İşe İade</a></Link></li>
                               <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color : 'black', padding: '20px'}} nav caret>
-                                  Hukuki İçerikler
+                                  Yayınlar
                                 </DropdownToggle>
                                 <DropdownMenu style={{backgroundColor: '#f8f9fa', border: 'none'}} className="submenu" left="true">
 

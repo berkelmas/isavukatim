@@ -3053,3 +3053,12 @@ blockquote {
     color: black;
     background-image: url(/static/img/bg/page-itle.jpg)
   }
+
+  .all-category {
+    background-color : gray!important;
+    color : white!important;
+  }
+  .all-category:hover {
+    background-color : white!important;
+    color: black!important;
+  }
