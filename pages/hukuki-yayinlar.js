@@ -155,17 +155,19 @@ function hukukiyayinlar(props) {
                               </div>
                           </div>
                       </div>
+
                       <div className="widget widget-border mb-40">
-                          <h3 className="widget-title">Yayın Türleri</h3>
-                          <div className="tagcloud">
-                              <Link href="/hukuki-yayinlar"><a className="all-category">Tümünü Gör</a></Link>
-                              <Link href="/hukuki-yayinlar?kategori=kidemtazminati" as="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link>
-                              <Link href="/hukuki-yayinlar?kategori=ihbartazminati" as="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link>
-                              <Link href="/hukuki-yayinlar?kategori=iseiadedavasi" as="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davasi</a></Link>
-                              <Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi" as="/hukuki-yayinlar/kategori/hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link>
-                              <Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi" as="/hukuki-yayinlar/kategori/genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link>
-                          </div>
+                          <h3 className="widget-title">Yayın Kategorileri</h3>
+                          <ul>
+                              <li><Link href="/hukuki-yayinlar"><a>Tümünü Gör</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=kidemtazminati" as="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=ihbartazminati" as="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=iseiadedavasi" as="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davasi</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi" as="/hukuki-yayinlar/kategori/hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi" as="/hukuki-yayinlar/kategori/genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link></li>
+                          </ul>
                       </div>
+
                   </div>
               </div>
 

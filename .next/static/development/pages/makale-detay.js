@@ -25622,6 +25622,33 @@ exports.default = Router;
 
 /***/ }),
 
+/***/ "./node_modules/next-server/dist/lib/runtime-config.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/runtime-config.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports.default = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
+
+/***/ }),
+
 /***/ "./node_modules/next-server/dist/lib/side-effect.js":
 /*!**********************************************************!*\
   !*** ./node_modules/next-server/dist/lib/side-effect.js ***!
@@ -43835,10 +43862,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_moment__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! moment/locale/tr */ "./node_modules/moment/locale/tr.js");
 /* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(moment_locale_tr__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
-/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
-/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
+/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
+/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
+
 
 
 
@@ -43866,7 +43896,7 @@ function makaledetay(props) {
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
       rel: "stylesheet",
       href: "/static/css/style.css"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_11__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_11__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_13__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "page-title-area"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "container"
@@ -43911,9 +43941,25 @@ function makaledetay(props) {
       className: "fas fa-calendar-alt"
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
       fromNow: true
-    }, props.makale.makale_yayintarihi))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "far fa-comment"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(03)")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, props.makale.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "post-thumb mb-25"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: "/static/img/details/post.jpg",
+      alt: ""
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "post-content",
+      dangerouslySetInnerHTML: {
+        __html: props.makale.makale_mesaj
+      }
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "content__tags mt-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Anahtar Kelimeler:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+      className: "tags-list"
+    }, props.makale.tag.map(function (res, index) {
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+        key: index
+      }, res);
+    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "share-post-link mb-30"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
       className: "facebook",
@@ -43930,46 +43976,7 @@ function makaledetay(props) {
       href: "#"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
       className: "fab fa-instagram"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      className: "dribbble",
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fab fa-dribbble"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      className: "pinterest",
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fab fa-pinterest-p"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      className: "google-plus",
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fab fa-google-plus-g"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      className: "pinterest",
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fab fa-pinterest-p"
     }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post-thumb mb-25"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/details/post.jpg",
-      alt: ""
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post-content"
-    }, props.makale.makale_mesaj), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "content__tags mt-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Post Tags:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-      className: "content__tags-list"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#0"
-    }, "orci"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#0"
-    }, "lectus"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#0"
-    }, "varius"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#0"
-    }, "turpis"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "author-meta  mt-60"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "media flex-column flex-md-row"
@@ -44032,163 +44039,37 @@ function makaledetay(props) {
       className: "also-like mt-30"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "section-title mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null, "You may also like")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null, "\xD6ner\u0130lenler")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "row"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-lg-4 col-md-4"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__thumb"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      className: "img-100",
-      src: "/static/img/trendy/sm1.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text pt-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text-meta pb-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "far fa-comment"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(03)")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-lg-4 col-md-4"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__thumb"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      className: "img-100",
-      src: "/static/img/trendy/sm2.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text pt-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text-meta pb-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "far fa-comment"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(03)")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-lg-4 col-md-4"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__thumb"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      className: "img-100",
-      src: "/static/img/trendy/sm3.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text pt-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "postbox__text-meta pb-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "far fa-comment"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(03)")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial"))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post-comments mt-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "section-title mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null, "Recent Comments")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "latest-comments"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-box"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-avatar"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/user/user-01.jpg",
-      alt: ""
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-text"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "avatar-name"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h5", null, "Omar Elnagar"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "September 13, 2018 at 10:38 AM")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They call him Flipper Flipper the faster than lightning. No one you see is smarter than he"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-reply-all"
-    }), " Reply"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
-      className: "comments-reply"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-box"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-avatar"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/user/user-02.jpg",
-      alt: ""
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-text"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "avatar-name"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h5", null, "Omar Elnagar"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "September 13, 2018 at 10:38 AM")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They call him Flipper Flipper the faster than lightning. No one you see is smarter than he"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-reply-all"
-    }), " Reply")))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-box"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-avatar"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/user/user-05.jpg",
-      alt: ""
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "comments-text"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "avatar-name"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h5", null, "Omar Elnagar"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "September 13, 2018 at 10:38 AM")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They call him Flipper Flipper the faster than lightning. No one you see is smarter than he"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-reply-all"
-    }), " Reply"))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post-comments-form mt-40 mb-40"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "section-title mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null, "Recent Comments")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("form", {
-      action: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "row"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-xl-6"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
-      type: "text",
-      placeholder: "Your Name"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-xl-6"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
-      type: "text",
-      placeholder: "Your Email"
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "col-xl-12"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
-      name: "comments",
-      id: "comments",
-      cols: "30",
-      rows: "10",
-      placeholder: "Your Comments"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
-      className: "btn brand-btn",
-      type: "submit"
-    }, "Send message"))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, props.articles.map(function (res, index) {
+      return index !== 3 && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        key: index,
+        className: "col-lg-4 col-md-4"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__thumb"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+        className: "img-100",
+        src: "/static/img/trendy/sm3.jpg",
+        alt: "hero image"
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__text pt-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__text-meta pb-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+        className: "fas fa-calendar-alt"
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        fromNow: true
+      }, res.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+        className: "pr-0"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+        as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, res.makale_baslik))))));
+    }))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "col-xl-4 col-lg-4"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "widget mb-40"
@@ -44201,119 +44082,59 @@ function makaledetay(props) {
       className: "widget widget-border mb-40"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
       className: "widget-title"
-    }, "Popular posts"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-thumb f-left"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/trendy/xs/xs-1.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text fix pl-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-      className: "sm-cat"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Fashion")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "title-13 pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Husar asks expenses authority to entitlements after Bruno")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text-meta"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-thumb f-left"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/trendy/xs/xs-2.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text fix pl-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-      className: "sm-cat"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Fashion")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "title-13 pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Researchers claim majo throug in the fight to cure fibrosis")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text-meta"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small mb-30"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-thumb f-left"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/trendy/xs/xs-3.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text fix pl-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-      className: "sm-cat"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Fashion")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "title-13 pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Nahan downplays Liberal lership tensions after white ant")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text-meta"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-thumb f-left"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: "/static/img/trendy/xs/xs-4.jpg",
-      alt: "hero image"
-    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text fix pl-10"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-      className: "sm-cat"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Travel")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
-      className: "title-13 pr-0"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Farmers plead for bullets to put down emaciated stock")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "post__small-text-meta"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018"))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, "Pop\xFCler Yay\u0131nlar"), props.articles.map(function (res, index) {
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: index !== 3 ? 'post__small mb-30' : 'post__small'
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-thumb f-left"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+        src: "/static/img/trendy/xs/xs-3.jpg",
+        alt: "hero image"
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-text fix pl-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "sm-cat"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "#"
+      }, res.makale_kategori_nondisplay)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+        className: "title-13 pr-0"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "#"
+      }, res.makale_baslik)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-text-meta"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+        className: "fas fa-calendar-alt"
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        fromNow: true
+      }, res.makale_yayintarihi)))))));
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "widget widget-border mb-40"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
       className: "widget-title"
-    }, "Categories"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Business ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "02"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Politic ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "05"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Fashion ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Corporate ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "03"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Football ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "07"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Magazine ", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "06"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, "Yay\u0131n Kategorileri"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "T\xFCm\xFCn\xFC G\xF6r"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=kidemtazminati",
+      as: "/hukuki-yayinlar/kategori/kidemtazminati"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "K\u0131dem Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=ihbartazminati",
+      as: "/hukuki-yayinlar/kategori/ihbartazminati"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "\u0130hbar Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=iseiadedavasi",
+      as: "/hukuki-yayinlar/kategori/iseiadedavasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "\u0130\u015Fe \u0130ade Davasi"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=hizmettespitdavasi",
+      as: "/hukuki-yayinlar/kategori/hizmettespitdavasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "Hizmet Tespit Davas\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=genelsagliksigortasi",
+      as: "/hukuki-yayinlar/kategori/genelsagliksigortasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "Genel Sa\u011Fl\u0131k Sigortas\u0131"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "widget widget-border mb-40"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
       className: "widget-title"
-    }, "Most visited"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, "En \xC7ok Ziyaret Edilen"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "postbox"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "postbox__thumb"
@@ -44328,35 +44149,13 @@ function makaledetay(props) {
       className: "postbox__text-meta pb-10"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
       className: "fas fa-calendar-alt"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "01 Sep 2018")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
-      className: "far fa-comment"
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(03)")))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      fromNow: true
+    }, props.articles[0].makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
       className: "title-16 pr-0"
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
       href: "#"
-    }, "Paul Manafort\u2019s Accountant Testifies She Helped Alter Financial Documents"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "widget widget-border mb-40"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
-      className: "widget-title"
-    }, "Popular Tags"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: "tagcloud"
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Fashion"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Politic"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Modern"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Tips"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Nav"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Jason"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Roster"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "#"
-    }, "Boat"))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], null));
+    }, props.articles[0].makale_baslik))))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null));
   }
 }
 
@@ -44366,55 +44165,68 @@ function () {
   var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
   /*#__PURE__*/
   _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
-    var query, makale;
+    var query, _getConfig, publicRuntimeConfig, makale, resArticles, articles;
+
     return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             query = _ref.query;
+            _getConfig = next_config__WEBPACK_IMPORTED_MODULE_9___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig;
 
             if (!query.makaleid) {
-              _context.next = 7;
+              _context.next = 8;
               break;
             }
 
-            _context.next = 4;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("http://localhost:8000/makale/".concat(query.makaleid));
+            _context.next = 5;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("".concat(publicRuntimeConfig.apiEndpoint, "makale/").concat(query.makaleid));
 
-          case 4:
+          case 5:
             _context.t0 = _context.sent;
-            _context.next = 8;
+            _context.next = 9;
             break;
 
-          case 7:
+          case 8:
             _context.t0 = "null";
 
-          case 8:
+          case 9:
             makale = _context.t0;
 
             if (!(makale !== 'null')) {
-              _context.next = 15;
+              _context.next = 16;
               break;
             }
 
-            _context.next = 12;
+            _context.next = 13;
             return makale.json();
 
-          case 12:
+          case 13:
             _context.t1 = _context.sent;
-            _context.next = 16;
+            _context.next = 17;
             break;
 
-          case 15:
+          case 16:
             _context.t1 = 'null';
 
-          case 16:
+          case 17:
             makale = _context.t1;
+            _context.next = 20;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
+
+          case 20:
+            resArticles = _context.sent;
+            _context.next = 23;
+            return resArticles.json();
+
+          case 23:
+            articles = _context.sent;
             return _context.abrupt("return", {
-              makale: makale
+              makale: makale,
+              articles: articles.results
             });
 
-          case 18:
+          case 25:
           case "end":
             return _context.stop();
         }
@@ -44431,7 +44243,7 @@ function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmakale-detay&absolutePagePath=C%3A%5CUsers%5CITopya%5CDesktop%5Cisavukatim%5Cpages%5Cmakale-detay.js ***!
   \***************************************************************************************************************************************************/
@@ -44454,5 +44266,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=makale-detay.js.map

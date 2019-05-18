@@ -6,6 +6,8 @@ import fetch from 'isomorphic-unfetch';
 import Moment from 'react-moment';
 import 'moment/locale/tr';
 
+import getConfig from 'next/config';
+
 import Footer from '../components/Footer';
 import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
@@ -75,14 +77,24 @@ function makaledetay(props){
                                         <i className="fas fa-calendar-alt"></i>
                                         <span><Moment fromNow>{props.makale.makale_yayintarihi}</Moment></span>
                                     </li>
-                                    <li>
-                                        <i className="far fa-comment"></i>
-                                        <span>(03)</span>
-                                    </li>
+
                                 </ul>
                             </div>
 
+                            <div className="post-thumb mb-25">
+                                <img src="/static/img/details/post.jpg" alt=""/>
+                            </div>
 
+
+                            <div className="post-content" dangerouslySetInnerHTML={{ __html: props.makale.makale_mesaj }} />
+
+                            <div className="content__tags mt-30">
+                                <span>Anahtar Kelimeler:</span>
+                                <span className="tags-list">
+                                    {props.makale.tag.map((res, index) => <p key={index}>{res}</p>)}
+                                </span>
+                            </div>
+                            <br/>
                             <div className="share-post-link mb-30">
                                 <a className="facebook" href="#">
                                     <i className="fab fa-facebook-f"></i>
@@ -93,41 +105,7 @@ function makaledetay(props){
                                 <a className="instagram" href="#">
                                     <i className="fab fa-instagram"></i>
                                 </a>
-                                <a className="dribbble" href="#">
-                                    <i className="fab fa-dribbble"></i>
-                                </a>
-                                <a className="pinterest" href="#">
-                                    <i className="fab fa-pinterest-p"></i>
-                                </a>
-                                <a className="google-plus" href="#">
-                                    <i className="fab fa-google-plus-g"></i>
-                                </a>
-                                <a className="pinterest" href="#">
-                                    <i className="fab fa-pinterest-p"></i>
-                                </a>
                             </div>
-
-
-                            <div className="post-thumb mb-25">
-                                <img src="/static/img/details/post.jpg" alt=""/>
-                            </div>
-
-
-                            <div className="post-content">
-                              {props.makale.makale_mesaj}
-                            </div>
-
-
-                            <div className="content__tags mt-30">
-                                <span>Post Tags:</span>
-                                <span className="content__tags-list">
-                                    <a href="#0">orci</a>
-                                    <a href="#0">lectus</a>
-                                    <a href="#0">varius</a>
-                                    <a href="#0">turpis</a>
-                                </span>
-                            </div>
-
 
                             <div className="author-meta  mt-60">
                                 <div className="media flex-column flex-md-row">
@@ -184,62 +162,13 @@ function makaledetay(props){
 
                             <div className="also-like mt-30">
                                 <div className="section-title mb-30">
-                                    <h2>You may also like</h2>
+                                    <h2>Önerİlenler</h2>
                                 </div>
                                 <div className="row">
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="postbox mb-30">
-                                            <div className="postbox__thumb">
-                                                <a href="#">
-                                                    <img className="img-100" src="/static/img/trendy/sm1.jpg" alt="hero image"/>
-                                                </a>
-                                            </div>
-                                            <div className="postbox__text pt-10">
-                                                <div className="postbox__text-meta pb-10">
-                                                    <ul>
-                                                        <li>
-                                                            <i className="fas fa-calendar-alt"></i>
-                                                            <span>01 Sep 2018</span>
-                                                        </li>
-                                                        <li>
-                                                            <i className="far fa-comment"></i>
-                                                            <span>(03)</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4 className="pr-0">
-                                                    <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4">
-                                        <div className="postbox mb-30">
-                                            <div className="postbox__thumb">
-                                                <a href="#">
-                                                    <img className="img-100" src="/static/img/trendy/sm2.jpg" alt="hero image"/>
-                                                </a>
-                                            </div>
-                                            <div className="postbox__text pt-10">
-                                                <div className="postbox__text-meta pb-10">
-                                                    <ul>
-                                                        <li>
-                                                            <i className="fas fa-calendar-alt"></i>
-                                                            <span>01 Sep 2018</span>
-                                                        </li>
-                                                        <li>
-                                                            <i className="far fa-comment"></i>
-                                                            <span>(03)</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4 className="pr-0">
-                                                    <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-4">
+                                  {/* Makale sayısını 3 yapmak için index ile şart koydum. */}
+                                  {props.articles.map((res, index) => index !== 3 &&
+
+                                    <div key={index} className="col-lg-4 col-md-4">
                                         <div className="postbox mb-30">
                                             <div className="postbox__thumb">
                                                 <a href="#">
@@ -251,104 +180,27 @@ function makaledetay(props){
                                                     <ul>
                                                         <li>
                                                             <i className="fas fa-calendar-alt"></i>
-                                                            <span>01 Sep 2018</span>
+                                                            <span><Moment fromNow>{res.makale_yayintarihi}</Moment></span>
                                                         </li>
-                                                        <li>
-                                                            <i className="far fa-comment"></i>
-                                                            <span>(03)</span>
-                                                        </li>
+
                                                     </ul>
                                                 </div>
                                                 <h4 className="pr-0">
-                                                    <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial</a>
+                                                  <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`}
+                                                        as={`/makale-detay/${res.makale_slug}/${res.id}`}
+                                                        >
+                                                    <a>{res.makale_baslik}</a>
+                                                  </Link>
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
+
+                                   )}
+
                                 </div>
                             </div>
 
-
-                            <div className="post-comments mt-30">
-                                <div className="section-title mb-30">
-                                    <h2>Recent Comments</h2>
-                                </div>
-                                <div className="latest-comments">
-                                    <ul>
-                                        <li>
-                                            <div className="comments-box">
-                                                <div className="comments-avatar">
-                                                    <img src="/static/img/user/user-01.jpg" alt=""/>
-                                                </div>
-                                                <div className="comments-text">
-                                                    <div className="avatar-name">
-                                                        <h5>Omar Elnagar</h5>
-                                                        <span>September 13, 2018 at 10:38 AM</span>
-                                                    </div>
-                                                    <p>They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They call
-                                                        him Flipper Flipper the faster than lightning. No one you see is smarter than he</p>
-                                                    <a href="#"><i className="fas fa-reply-all"></i> Reply</a>
-                                                </div>
-                                            </div>
-                                            <ul className="comments-reply">
-                                                <li>
-                                                    <div className="comments-box">
-                                                        <div className="comments-avatar">
-                                                            <img src="/static/img/user/user-02.jpg" alt=""/>
-                                                        </div>
-                                                        <div className="comments-text">
-                                                            <div className="avatar-name">
-                                                                <h5>Omar Elnagar</h5>
-                                                                <span>September 13, 2018 at 10:38 AM</span>
-                                                            </div>
-                                                            <p>They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They
-                                                                call him Flipper Flipper the faster than lightning. No one you see is smarter than he</p>
-                                                            <a href="#"><i className="fas fa-reply-all"></i> Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <div className="comments-box">
-                                                <div className="comments-avatar">
-                                                    <img src="/static/img/user/user-05.jpg" alt=""/>
-                                                </div>
-                                                <div className="comments-text">
-                                                    <div className="avatar-name">
-                                                        <h5>Omar Elnagar</h5>
-                                                        <span>September 13, 2018 at 10:38 AM</span>
-                                                    </div>
-                                                    <p>They call him Flipper Flipper faster than lightning. No one you see is smarter than he. They call
-                                                        him Flipper Flipper the faster than lightning. No one you see is smarter than he</p>
-                                                    <a href="#"><i className="fas fa-reply-all"></i> Reply</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-                            <div className="post-comments-form mt-40 mb-40">
-                                <div className="section-title mb-30">
-                                    <h2>Recent Comments</h2>
-                                </div>
-                                <form action="#">
-                                    <div className="row">
-                                        <div className="col-xl-6">
-                                            <input type="text" placeholder="Your Name"/>
-                                        </div>
-                                        <div className="col-xl-6">
-                                            <input type="text" placeholder="Your Email"/>
-                                        </div>
-                                        <div className="col-xl-12">
-                                            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Comments"></textarea>
-                                            <button className="btn brand-btn" type="submit">Send message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4">
@@ -356,54 +208,10 @@ function makaledetay(props){
                             <a href="#"><img src="/static/img/add/add-sidebar.jpg" alt=""/></a>
                         </div>
                         <div className="widget widget-border mb-40">
-                            <h3 className="widget-title">Popular posts</h3>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-1.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Fashion</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">Husar asks expenses authority to entitlements after Bruno</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-2.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Fashion</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">Researchers claim majo throug in the fight to cure fibrosis</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
+                            <h3 className="widget-title">Popüler Yayınlar</h3>
+
+                          {props.articles.map((res, index) =>
+                            <div className={index !== 3 ? 'post__small mb-30' : 'post__small'}>
                                 <div className="post__small-thumb f-left">
                                     <a href="#">
                                         <img src="/static/img/trendy/xs/xs-3.jpg" alt="hero image"/>
@@ -411,59 +219,40 @@ function makaledetay(props){
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">
-                                        <a href="#">Fashion</a>
+                                        <a href="#">{res.makale_kategori_nondisplay}</a>
                                     </span>
                                     <h4 className="title-13 pr-0">
-                                        <a href="#">Nahan downplays Liberal lership tensions after white ant</a>
+                                        <a href="#">{res.makale_baslik}</a>
                                     </h4>
                                     <div className="post__small-text-meta">
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
+                                                <span><Moment fromNow>{res.makale_yayintarihi}</Moment></span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="post__small">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-4.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Travel</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">Farmers plead for bullets to put down emaciated stock</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                          )}
+
+
                         </div>
+
                         <div className="widget widget-border mb-40">
-                            <h3 className="widget-title">Categories</h3>
+                            <h3 className="widget-title">Yayın Kategorileri</h3>
                             <ul>
-                                <li><a href="#">Business <span>02</span></a></li>
-                                <li><a href="#">Politic <span>05</span></a></li>
-                                <li><a href="#">Fashion <span>01</span></a></li>
-                                <li><a href="#">Corporate <span>03</span></a></li>
-                                <li><a href="#">Football <span>07</span></a></li>
-                                <li><a href="#">Magazine <span>06</span></a></li>
+                                <li><Link href="/hukuki-yayinlar"><a>Tümünü Gör</a></Link></li>
+                                <li><Link href="/hukuki-yayinlar?kategori=kidemtazminati" as="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
+                                <li><Link href="/hukuki-yayinlar?kategori=ihbartazminati" as="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
+                                <li><Link href="/hukuki-yayinlar?kategori=iseiadedavasi" as="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davasi</a></Link></li>
+                                <li><Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi" as="/hukuki-yayinlar/kategori/hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link></li>
+                                <li><Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi" as="/hukuki-yayinlar/kategori/genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link></li>
                             </ul>
                         </div>
 
                         <div className="widget widget-border mb-40">
-                            <h3 className="widget-title">Most visited</h3>
+                            <h3 className="widget-title">En Çok Ziyaret Edilen</h3>
                             <div className="postbox">
                                 <div className="postbox__thumb">
                                     <a href="#">
@@ -475,33 +264,19 @@ function makaledetay(props){
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
+                                                <span><Moment fromNow>{props.articles[0].makale_yayintarihi}</Moment></span>
                                             </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
+
                                         </ul>
                                     </div>
                                     <h4 className="title-16 pr-0">
-                                        <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial Documents</a>
+                                        <a href="#">{props.articles[0].makale_baslik}</a>
                                     </h4>
                                 </div>
                             </div>
                         </div>
-                        <div className="widget widget-border mb-40">
-                            <h3 className="widget-title">Popular Tags</h3>
-                            <div className="tagcloud">
-                                <a href="#">Fashion</a>
-                                <a href="#">Politic</a>
-                                <a href="#">Modern</a>
-                                <a href="#">Tips</a>
-                                <a href="#">Nav</a>
-                                <a href="#">Jason</a>
-                                <a href="#">Roster</a>
-                                <a href="#">Boat</a>
-                            </div>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -515,9 +290,15 @@ function makaledetay(props){
 }
 
 makaledetay.getInitialProps = async({query}) => {
-  let makale = query.makaleid ? await fetch(`http://localhost:8000/makale/${query.makaleid}`) : "null"
+  const {publicRuntimeConfig} = getConfig();
+
+  let makale = query.makaleid ? await fetch(`${publicRuntimeConfig.apiEndpoint}makale/${query.makaleid}`) : "null"
   makale = makale !== 'null' ? await makale.json() : 'null'
-  return{makale}
+
+  const resArticles = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter/`)
+  const articles = await resArticles.json()
+
+  return{makale, articles: articles.results}
 }
 
 export default makaledetay;
