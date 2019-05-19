@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ITopya\\Desktop\\isavukatim\\components\\Footer.js";
+var _jsxFileName = "/Users/berkelmas/Desktop/isavukatim/components/Footer.js";
 
 
 function Footer() {
@@ -913,7 +913,7 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ITopya\\Desktop\\isavukatim\\components\\NavbarUst.js";
+var _jsxFileName = "/Users/berkelmas/Desktop/isavukatim/components/NavbarUst.js";
 
 
 function NavbarUst() {
@@ -1014,7 +1014,7 @@ function NavbarUst() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ITopya\\Desktop\\isavukatim\\components\\TopHeader.js";
+var _jsxFileName = "/Users/berkelmas/Desktop/isavukatim/components/TopHeader.js";
 
 
 function TopHeader() {
@@ -2561,14 +2561,14 @@ function () {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*************************************!*\
   !*** multi ./pages/makale-detay.js ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ITopya\Desktop\isavukatim\pages\makale-detay.js */"./pages/makale-detay.js");
+module.exports = __webpack_require__(/*! /Users/berkelmas/Desktop/isavukatim/pages/makale-detay.js */"./pages/makale-detay.js");
 
 
 /***/ }),
