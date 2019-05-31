@@ -54,10 +54,6 @@ function hukukiyayinlar(props) {
                                           <i className="fas fa-calendar-alt"></i>
                                           <span><Moment fromNow>{res.makale_yayintarihi}</Moment></span>
                                       </li>
-                                      <li>
-                                          <i className="far fa-comment"></i>
-                                          <span>(03)</span>
-                                      </li>
                                   </ul>
                               </div>
                               <h4 className="title-30 font-600 pr-0">
@@ -67,8 +63,9 @@ function hukukiyayinlar(props) {
                               </h4>
 
                                 <div className="desc-text mb-20" dangerouslySetInnerHTML={{ __html: truncateHtml(res.makale_mesaj, 1, {byWords : true}) }} />
-
-                              <a href="#" className="read-more">Daha Fazla Oku</a>
+                            <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                              <a className="read-more">Daha Fazla Oku</a>
+                            </Link>
                           </div>
                       </div>
                     )
@@ -117,9 +114,11 @@ function hukukiyayinlar(props) {
                           <h3 className="widget-title">En Çok Okunan</h3>
                           <div className="postbox">
                               <div className="postbox__thumb">
-                                  <a href="#">
-                                      <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
+                                <Link href={`/makale-detay?makaleid=${props.popularArticles.results[0].id}&makaleslug=${props.popularArticles.results[0].makale_slug}`} as={`/makale-detay/${props.popularArticles.results[0].makale_slug}/${props.popularArticles.results[0].id}`}>
+                                  <a>
+                                    <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
                                   </a>
+                                </Link>
                               </div>
                               <div className="postbox__text pt-15">
                                   <div className="postbox__text-meta pb-10">
@@ -128,14 +127,14 @@ function hukukiyayinlar(props) {
                                               <i className="fas fa-calendar-alt"></i>
                                               <span><Moment fromNow>{props.popularArticles.results[0].makale_yayintarihi}</Moment></span>
                                           </li>
-                                          <li>
-                                              <i className="far fa-comment"></i>
-                                              <span>(03)</span>
-                                          </li>
                                       </ul>
                                   </div>
                                   <h4 className="title-16 pr-0">
-                                      <a href="#">{props.popularArticles.results[0].makale_baslik}</a>
+                                    <Link href={`/makale-detay?makaleid=${props.popularArticles.results[0].id}&makaleslug=${props.popularArticles.results[0].makale_slug}`} as={`/makale-detay/${props.popularArticles.results[0].makale_slug}/${props.popularArticles.results[0].id}`}>
+                                      <a>
+                                        {props.popularArticles.results[0].makale_baslik}
+                                      </a>
+                                    </Link>
                                   </h4>
                               </div>
                           </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function TopHeader() {
   return(
     <div className="header__top-area grey-bg">
@@ -7,13 +9,19 @@ function TopHeader() {
                     <div className="header__top-menu top-menu-black">
                         <ul>
                             <li>
-                                <a href="#">Hakkımızda </a>
+                              <Link href="/">
+                                <a>Ana Sayfa </a>
+                              </Link>
                             </li>
                             <li>
-                                <a href="#">Gizlilik Politikası</a>
+                              <Link href="#">
+                                <a>Gizlilik Politikası</a>
+                              </Link>
                             </li>
                             <li>
-                                <a href="#">Bize Ulaşın</a>
+                              <Link href="/hukuki-yayinlar">
+                                <a>Yayınlar </a>
+                              </Link>
                             </li>
                         </ul>
                     </div>
