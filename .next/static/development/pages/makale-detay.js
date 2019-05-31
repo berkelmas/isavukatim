@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/makale-detay.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -25369,21 +25369,33 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Findex.js!./":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/next-server/head.js":
+/*!******************************************!*\
+  !*** ./node_modules/next-server/head.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next-server/dist/lib/head.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmakale-detay&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fmakale-detay.js!./":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmakale-detay&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fmakale-detay.js ***!
+  \**********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/makale-detay", function() {
+      var page = __webpack_require__(/*! ./pages/makale-detay.js */ "./pages/makale-detay.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/makale-detay.js */ "./pages/makale-detay.js", function() {
+          if(!next.router.components["/makale-detay"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/makale-detay.js */ "./pages/makale-detay.js")
+          next.router.update("/makale-detay", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -25908,6 +25920,146 @@ function withRouter(ComposedComponent) {
 }
 
 exports.default = withRouter;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/pages/_error.js":
+/*!************************************************!*\
+  !*** ./node_modules/next/dist/pages/_error.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js"));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js"));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js"));
+
+var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var head_1 = __importDefault(__webpack_require__(/*! next-server/head */ "./node_modules/next-server/head.js"));
+
+var statusCodes = {
+  400: 'Bad Request',
+  404: 'This page could not be found',
+  500: 'Internal Server Error',
+  501: 'Not Implemented'
+};
+
+var Error =
+/*#__PURE__*/
+function (_react_1$default$Comp) {
+  (0, _inherits2.default)(Error, _react_1$default$Comp);
+
+  function Error() {
+    (0, _classCallCheck2.default)(this, Error);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Error).apply(this, arguments));
+  }
+
+  (0, _createClass2.default)(Error, [{
+    key: "render",
+    value: function render() {
+      var statusCode = this.props.statusCode;
+      var title = statusCodes[statusCode] || 'An unexpected error has occurred';
+      return react_1.default.createElement("div", {
+        style: styles.error
+      }, react_1.default.createElement(head_1.default, null, react_1.default.createElement("title", null, statusCode, ": ", title)), react_1.default.createElement("div", null, react_1.default.createElement("style", {
+        dangerouslySetInnerHTML: {
+          __html: 'body { margin: 0 }'
+        }
+      }), statusCode ? react_1.default.createElement("h1", {
+        style: styles.h1
+      }, statusCode) : null, react_1.default.createElement("div", {
+        style: styles.desc
+      }, react_1.default.createElement("h2", {
+        style: styles.h2
+      }, title, "."))));
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(_ref) {
+      var res = _ref.res,
+          err = _ref.err;
+      var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+      return {
+        statusCode: statusCode
+      };
+    }
+  }]);
+  return Error;
+}(react_1.default.Component);
+
+Error.displayName = 'ErrorPage';
+exports.default = Error;
+var styles = {
+  error: {
+    color: '#000',
+    background: '#fff',
+    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
+    height: '100vh',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  desc: {
+    display: 'inline-block',
+    textAlign: 'left',
+    lineHeight: '49px',
+    height: '49px',
+    verticalAlign: 'middle'
+  },
+  h1: {
+    display: 'inline-block',
+    borderRight: '1px solid rgba(0, 0, 0,.3)',
+    margin: 0,
+    marginRight: '20px',
+    padding: '10px 23px 10px 0',
+    fontSize: '24px',
+    fontWeight: 500,
+    verticalAlign: 'top'
+  },
+  h2: {
+    fontSize: '14px',
+    fontWeight: 'normal',
+    lineHeight: 'inherit',
+    margin: 0,
+    padding: 0
+  }
+};
+
+/***/ }),
+
+/***/ "./node_modules/next/error.js":
+/*!************************************!*\
+  !*** ./node_modules/next/error.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/pages/_error */ "./node_modules/next/dist/pages/_error.js")
+
 
 /***/ }),
 
@@ -43132,10 +43284,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/makale-detay.js":
+/*!*******************************!*\
+  !*** ./pages/makale-detay.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -43144,29 +43296,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-moment */ "./node_modules/react-moment/dist/index.js");
-/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_moment__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! moment/locale/tr */ "./node_modules/moment/locale/tr.js");
-/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(moment_locale_tr__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
-/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
-/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
-/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
-/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-moment */ "./node_modules/react-moment/dist/index.js");
+/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_moment__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! moment/locale/tr */ "./node_modules/moment/locale/tr.js");
+/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(moment_locale_tr__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
+/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
+/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
 
 
 
@@ -43182,627 +43331,354 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-var index =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(index, _React$Component);
-
-  function index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, index);
-
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(index).apply(this, arguments));
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(index, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("title", null, "\u0130\u015F Avukat\u0131ndan \u0130\u015F Hukuku"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
-        rel: "stylesheet",
-        href: "/static/css/bootstrap.min.css"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
-        rel: "stylesheet",
-        href: "/static/css/fontawesome-all.min.css"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("link", {
-        rel: "stylesheet",
-        href: "/static/css/style.css"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("script", {
-        dangerouslySetInnerHTML: {
-          __html: "var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];s1.async=true;\n            s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';\n            s1.charset='UTF-8';\n            s1.setAttribute('crossorigin','*');\n            s0.parentNode.insertBefore(s1,s0);\n            })();\n            "
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("header", {
-        className: "header"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_15__["default"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_16__["default"], null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_17__["default"], null)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("section", {
-        className: "hero-area"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-lg-6 col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero pos-relative mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__thumb",
-        "data-overlay": "dark-gradient"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[0].id, "&makaleslug=").concat(this.props.articles[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[0].makale_slug, "/").concat(this.props.articles[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: '/static/img/hero/part1/hero1.jpg',
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__text"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: "post-cat mb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, this.props.articles[0].makale_kategori)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", {
-        className: "pr-100"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[0].id, "&makaleslug=").concat(this.props.articles[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[0].makale_slug, "/").concat(this.props.articles[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articles[0].makale_baslik)))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-lg-3 col-md-6"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero pos-relative mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__thumb",
-        "data-overlay": "dark-gradient"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/hero/part1/hero2.jpg",
-        alt: "hero image"
-      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__text hero__text-small"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: "post-cat mb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[1].id, "&makaleslug=").concat(this.props.articles[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[1].makale_slug, "/").concat(this.props.articles[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articles[1].makale_kategori))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", {
-        className: "pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[1].id, "&makaleslug=").concat(this.props.articles[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[1].makale_slug, "/").concat(this.props.articles[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articles[1].makale_baslik)))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-lg-3 col-md-6"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero pos-relative mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__thumb",
-        "data-overlay": "dark-gradient"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/hero/part1/hero3.jpg",
-        alt: "hero image"
-      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "hero__text hero__text-small"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-        className: "post-cat mb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[2].id, "&makaleslug=").concat(this.props.articles[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[2].makale_slug, "/").concat(this.props.articles[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articles[2].makale_kategori))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h3", {
-        className: "pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articles[2].id, "&makaleslug=").concat(this.props.articles[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articles[2].makale_slug, "/").concat(this.props.articles[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articles[2].makale_baslik))))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("section", {
-        className: "news-area pt-30 pb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-12"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "section-title mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", null, "G\xFCncel Haberler"))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "row row-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-20"
-      }, this.props.articlesKidem.map(function (articleKidem, index) {
-        if (index < 3) {
-          return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            key: index,
-            className: "postbox mb-25"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__thumb"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(articleKidem.id, "&makaleslug=").concat(articleKidem.makale_slug),
-            as: "/makale-detay/".concat(articleKidem.makale_slug, "/").concat(articleKidem.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-            src: "/static/img/trendy/sm1.jpg",
-            alt: "hero image"
-          })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text pt-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text-meta pb-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-            className: "fas fa-calendar-alt"
-          }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-            format: "D MMM YYYY"
-          }, articleKidem.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-            className: "pr-0"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(articleKidem.id, "&makaleslug=").concat(articleKidem.makale_slug),
-            as: "/makale-detay/".concat(articleKidem.makale_slug, "/").concat(articleKidem.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, articleKidem.makale_baslik)))));
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-40"
-      }, this.props.articlesIseiade.map(function (articleIseiade, index) {
-        if (index < 2) {
-          return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            key: index,
-            className: "postbox mb-25"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__thumb"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(articleIseiade.id, "&makaleslug=").concat(articleIseiade.makale_slug),
-            as: "/makale-detay/".concat(articleIseiade.makale_slug, "/").concat(articleIseiade.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-            src: "/static/img/trendy/lg1.jpg",
-            alt: "hero image"
-          }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-            className: "post-cat post-absolute"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(articleIseiade.id, "&makaleslug=").concat(articleIseiade.makale_slug),
-            as: "/makale-detay/".concat(articleIseiade.makale_slug, "/").concat(articleIseiade.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, articleIseiade.makale_kategori)))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text pt-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text-meta pb-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-            className: "fas fa-calendar-alt"
-          }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-            format: "D MMM YYYY"
-          }, articleIseiade.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-            className: "title-16 pr-0"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(articleIseiade.id, "&makaleslug=").concat(articleIseiade.makale_slug),
-            as: "/makale-detay/".concat(articleIseiade.makale_slug, "/").concat(articleIseiade.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, articleIseiade.makale_baslik)))));
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-20 d-md-none d-xl-block"
-      }, this.props.articles.map(function (article, index) {
-        return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          key: index,
-          className: "post__small mb-30"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "post__small-thumb f-left"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-          href: "/makale-detay?makaleid=".concat(article.id, "&makaleslug=").concat(article.makale_slug),
-          as: "/makale-detay/".concat(article.makale_slug, "/").concat(article.id)
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-          src: "/static/img/trendy/xs/xs-1.jpg",
-          alt: "hero image"
-        }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "post__small-text fix pl-10"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", {
-          className: "sm-cat"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-          href: "#"
-        }, article.makale_kategori)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-          className: "title-13 pr-0"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-          href: "/makale-detay?makaleid=".concat(article.id, "&makaleslug=").concat(article.makale_slug),
-          as: "/makale-detay/".concat(article.makale_slug, "/").concat(article.id)
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, article.makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-          className: "post__small-text-meta"
-        }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-          className: "fas fa-calendar-alt"
-        }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-          format: "DD MMM YYYY"
-        }, article.makale_yayintarihi)))))));
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-20 "
-      }, this.props.articlesGenelsaglik.map(function (article, index) {
-        if (index < 3) {
-          return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            key: index,
-            className: "postbox mb-25"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__thumb"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(article.id, "&makaleslug=").concat(article.makale_slug),
-            as: "/makale-detay/".concat(article.makale_slug, "/").concat(article.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-            src: "/static/img/trendy/sm4.jpg",
-            alt: "hero image"
-          })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text pt-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-            className: "postbox__text-meta pb-10"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-            className: "fas fa-calendar-alt"
-          }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-            format: "DD MMM YYYY"
-          }, article.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-            className: "pr-0"
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-            href: "/makale-detay?makaleid=".concat(article.id, "&makaleslug=").concat(article.makale_slug),
-            as: "/makale-detay/".concat(article.makale_slug, "/").concat(article.id)
-          }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, article.makale_baslik)))));
-        }
-      }))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("section", {
-        className: "cat-area pb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-xl-4 col-lg-4 col-md-6"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "section-title mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", null, "KIDEM TAZM\u0130NATI")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox mb-25"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__thumb"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[0].id, "&makaleslug=").concat(this.props.articlesKidem[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[0].makale_slug, "/").concat(this.props.articlesKidem[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/cat/cat1.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text pt-20"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-18 pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[0].id, "&makaleslug=").concat(this.props.articlesKidem[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[0].makale_slug, "/").concat(this.props.articlesKidem[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesKidem[0].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text-meta pb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesKidem[0].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "cat-sm-post"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[1].id, "&makaleslug=").concat(this.props.articlesKidem[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[1].makale_slug, "/").concat(this.props.articlesKidem[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-12.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[1].id, "&makaleslug=").concat(this.props.articlesKidem[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[1].makale_slug, "/").concat(this.props.articlesKidem[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesKidem[1].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesKidem[1].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[2].id, "&makaleslug=").concat(this.props.articlesKidem[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[2].makale_slug, "/").concat(this.props.articlesKidem[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-11.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesKidem[2].id, "&makaleslug=").concat(this.props.articlesKidem[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesKidem[2].makale_slug, "/").concat(this.props.articlesKidem[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesKidem[2].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesKidem[2].makale_yayintarihi))))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-xl-4 col-lg-4 col-md-6"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "section-title mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", null, "\u0130\u015EE \u0130ADE DAVASI")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox mb-25"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__thumb"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[0].id, "&makaleslug=").concat(this.props.articlesIseiade[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[0].makale_slug, "/").concat(this.props.articlesIseiade[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/cat/cat2.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text pt-20"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-18 pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[0].id, "&makaleslug=").concat(this.props.articlesIseiade[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[0].makale_slug, "/").concat(this.props.articlesIseiade[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIseiade[0].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text-meta pb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIseiade[0].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "cat-sm-post"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[1].id, "&makaleslug=").concat(this.props.articlesIseiade[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[1].makale_slug, "/").concat(this.props.articlesIseiade[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-7.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[1].id, "&makaleslug=").concat(this.props.articlesIseiade[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[1].makale_slug, "/").concat(this.props.articlesIseiade[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIseiade[1].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIseiade[1].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[2].id, "&makaleslug=").concat(this.props.articlesIseiade[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[2].makale_slug, "/").concat(this.props.articlesIseiade[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-8.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIseiade[2].id, "&makaleslug=").concat(this.props.articlesIseiade[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIseiade[2].makale_slug, "/").concat(this.props.articlesIseiade[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIseiade[2].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIseiade[2].makale_yayintarihi))))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-xl-4 col-lg-4 col-md-6 d-md-none d-lg-block"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "section-title mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", null, "\u0130HBAR TAZM\u0130NATI")), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox mb-25"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__thumb"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[0].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[0].makale_slug, "/").concat(this.props.articlesIhbartazminati[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/cat/cat3.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text pt-20"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-18 pr-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[0].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[0].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[0].makale_slug, "/").concat(this.props.articlesIhbartazminati[0].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIhbartazminati[0].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "postbox__text-meta pb-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIhbartazminati[0].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "cat-sm-post"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[1].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[1].makale_slug, "/").concat(this.props.articlesIhbartazminati[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-10.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[1].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[1].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[1].makale_slug, "/").concat(this.props.articlesIhbartazminati[1].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIhbartazminati[1].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIhbartazminati[1].makale_yayintarihi))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small mb-30"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-thumb f-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[2].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[2].makale_slug, "/").concat(this.props.articlesIhbartazminati[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/trendy/xs/xs-9.jpg",
-        alt: "hero image"
-      })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text fix pl-10"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h4", {
-        className: "title-16 pr-0 mt-0"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/makale-detay?makaleid=".concat(this.props.articlesIhbartazminati[2].id, "&makaleslug=").concat(this.props.articlesIhbartazminati[2].makale_slug),
-        as: "/makale-detay/".concat(this.props.articlesIhbartazminati[2].makale_slug, "/").concat(this.props.articlesIhbartazminati[2].id)
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", null, this.props.articlesIhbartazminati[2].makale_baslik))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "post__small-text-meta"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("i", {
-        className: "fas fa-calendar-alt"
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_10___default.a, {
-        format: "DD MMM YYYY"
-      }, this.props.articlesIhbartazminati[2].makale_yayintarihi)))))))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("section", {
-        className: "app-area pb-60"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "grey-bg pt-55 pb-55 pl-60 pr-60"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-xl-6 col-lg-12"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "app-text text-center text-xl-left"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("h2", null, "Bizi Cepten Takip Edin"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("br", null))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "col-xl-6 col-lg-12"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
-        className: "app-store text-center text-xl-right"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/store/apple.png",
-        alt: ""
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: "/static/img/store/google.png",
-        alt: ""
-      })))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_14__["default"], null));
-    }
-  }], [{
-    key: "getInitialProps",
-    value: function () {
-      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-      /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var _getConfig, publicRuntimeConfig, res, result, articles, resKidem, resultKidem, articlesKidem, resIseiade, resultIseiade, articlesIseiade, resGenelsaglik, resultGenelsaglik, articlesGenelsaglik, resIhbartazminati, resultIhbartazminati, articlesIhbartazminati;
-
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _getConfig = next_config__WEBPACK_IMPORTED_MODULE_13___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig; // gets the last 6 articles
-
-                _context.next = 3;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()("".concat(publicRuntimeConfig.apiEndpoint, "makalesixitem"));
-
-              case 3:
-                res = _context.sent;
-                _context.next = 6;
-                return res.json();
-
-              case 6:
-                result = _context.sent;
-                articles = result.results; // gets the kidem tazminati articles
-
-                _context.next = 10;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter?kategori=kidemtazminati"));
-
-              case 10:
-                resKidem = _context.sent;
-                _context.next = 13;
-                return resKidem.json();
-
-              case 13:
-                resultKidem = _context.sent;
-                articlesKidem = resultKidem.results; // gets the ise iade davasi articles
-
-                _context.next = 17;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter?kategori=iseiadedavasi"));
-
-              case 17:
-                resIseiade = _context.sent;
-                _context.next = 20;
-                return resIseiade.json();
-
-              case 20:
-                resultIseiade = _context.sent;
-                articlesIseiade = resultIseiade.results; // gets genel saglik sigortasi articles
-
-                _context.next = 24;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter?kategori=genelsagliksigortasi"));
-
-              case 24:
-                resGenelsaglik = _context.sent;
-                _context.next = 27;
-                return resGenelsaglik.json();
-
-              case 27:
-                resultGenelsaglik = _context.sent;
-                articlesGenelsaglik = resultGenelsaglik.results; // gets ihbar tazminati articles
-
-                _context.next = 31;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter?kategori=ihbartazminati"));
-
-              case 31:
-                resIhbartazminati = _context.sent;
-                _context.next = 34;
-                return resIhbartazminati.json();
-
-              case 34:
-                resultIhbartazminati = _context.sent;
-                articlesIhbartazminati = resultIhbartazminati.results;
-                return _context.abrupt("return", {
-                  articles: articles,
-                  articlesKidem: articlesKidem,
-                  articlesIseiade: articlesIseiade,
-                  articlesGenelsaglik: articlesGenelsaglik,
-                  articlesIhbartazminati: articlesIhbartazminati
-                });
-
-              case 37:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      function getInitialProps() {
-        return _getInitialProps.apply(this, arguments);
+function makaledetay(props) {
+  if (props.makale === 'null') {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_error__WEBPACK_IMPORTED_MODULE_5___default.a, null);
+  } else {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, "\u0130\u015F Avukat\u0131ndan Makale Detay"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+      rel: "stylesheet",
+      href: "/static/css/bootstrap.min.css"
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+      rel: "stylesheet",
+      href: "/static/css/fontawesome-all.min.css"
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+      rel: "stylesheet",
+      href: "/static/css/style.css"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_11__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_13__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("section", {
+      className: "post-details-area pb-30 pt-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "container"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "row"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "col-xl-8 col-lg-8"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "post-details"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+      className: "details-title mb-15"
+    }, props.makale.makale_baslik), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "postbox__text-meta pb-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "far fa-user-circle"
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, props.makale.yazaravukat.avukat_name)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fas fa-calendar-alt"
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      fromNow: true
+    }, props.makale.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "post-thumb mb-25"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: "/static/img/details/post.jpg",
+      alt: ""
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "post-content",
+      dangerouslySetInnerHTML: {
+        __html: props.makale.makale_mesaj
       }
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "content__tags mt-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Anahtar Kelimeler:"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+      className: "tags-list"
+    }, props.makale.tag.map(function (res, index) {
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+        key: index
+      }, res);
+    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "share-post-link mb-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      className: "facebook",
+      href: "#"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-facebook-f"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      className: "twitter",
+      href: "#"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-twitter"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      className: "instagram",
+      href: "#"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-instagram"
+    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "author-meta  mt-60"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "media flex-column flex-md-row"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "media-left"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "#"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: "/static/img/user/user-03.jpg",
+      alt: ""
+    }), " ")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "media-body"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+      className: "media-heading"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "#"
+    }, props.makale.yazaravukat.avukat_name)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, props.makale.yazaravukat.avukat_bio), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "social"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "https://www.facebook.com/",
+      target: "_blank"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-facebook-f"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "https://twitter.com/",
+      target: "_blank"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-twitter"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "https://plus.google.com/discover",
+      target: "_blank"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-google-plus-g"
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "https://www.instagram.com/",
+      target: "_blank"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fab fa-linkedin-in"
+    })))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "s-content__pagenav mt-60"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "s-content__nav"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "row"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "col-md-6"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "s-content__prev mb-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "#0",
+      rel: "prev"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Previous Post"), "Farmers plead for bullets to put down emaciated stock"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "col-md-6"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "s-content__next mb-30 text-left text-md-right"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "#0",
+      rel: "next"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Next Post"), "Nahan downplays Liberal lership tensions after white ant")))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "also-like mt-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "section-title mb-30"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null, "\xD6ner\u0130lenler")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "row"
+    }, props.articles.map(function (res, index) {
+      return index !== 3 && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        key: index,
+        className: "col-lg-4 col-md-4"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__thumb"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+        as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+        className: "img-100",
+        src: "/static/img/trendy/sm3.jpg",
+        alt: "hero image"
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__text pt-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "postbox__text-meta pb-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+        className: "fas fa-calendar-alt"
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        fromNow: true
+      }, res.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+        className: "pr-0"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+        as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, res.makale_baslik))))));
+    }))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "col-xl-4 col-lg-4"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "widget mb-40"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      href: "#"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: "/static/img/add/add-sidebar.jpg",
+      alt: ""
+    }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "widget widget-border mb-40"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+      className: "widget-title"
+    }, "Pop\xFCler Yay\u0131nlar"), props.articles.map(function (res, index) {
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        key: index,
+        className: index !== 3 ? 'post__small mb-30' : 'post__small'
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-thumb f-left"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+        src: "/static/img/trendy/xs/xs-3.jpg",
+        alt: "hero image"
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-text fix pl-10"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+        className: "sm-cat"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        href: "/hukuki-yayinlar/kategori/".concat(res.makale_kategori_nondisplay)
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, res.makale_kategori))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+        className: "title-13 pr-0"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+        as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, res.makale_baslik))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "post__small-text-meta"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+        className: "fas fa-calendar-alt"
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        fromNow: true
+      }, res.makale_yayintarihi)))))));
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "widget widget-border mb-40"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+      className: "widget-title"
+    }, "Yay\u0131n Kategorileri"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "T\xFCm\xFCn\xFC G\xF6r"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=kidemtazminati",
+      as: "/hukuki-yayinlar/kategori/kidemtazminati"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "K\u0131dem Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=ihbartazminati",
+      as: "/hukuki-yayinlar/kategori/ihbartazminati"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "\u0130hbar Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=iseiadedavasi",
+      as: "/hukuki-yayinlar/kategori/iseiadedavasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "\u0130\u015Fe \u0130ade Davasi"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=hizmettespitdavasi",
+      as: "/hukuki-yayinlar/kategori/hizmettespitdavasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "Hizmet Tespit Davas\u0131"))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/hukuki-yayinlar?kategori=genelsagliksigortasi",
+      as: "/hukuki-yayinlar/kategori/genelsagliksigortasi"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, "Genel Sa\u011Fl\u0131k Sigortas\u0131"))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "widget widget-border mb-40"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+      className: "widget-title"
+    }, "En \xC7ok Ziyaret Edilen"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "postbox"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "postbox__thumb"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/makale-detay?makaleid=".concat(props.articles[0].id, "&makaleslug=").concat(props.articles[0].makale_slug),
+      as: "/makale-detay/".concat(props.articles[0].makale_slug, "/").concat(props.articles[0].id)
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: "/static/img/details/sidebar-post.jpg",
+      alt: "hero image"
+    })))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "postbox__text pt-15"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: "postbox__text-meta pb-10"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+      className: "fas fa-calendar-alt"
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      fromNow: true
+    }, props.articles[0].makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h4", {
+      className: "title-16 pr-0"
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/makale-detay?makaleid=".concat(props.articles[0].id, "&makaleslug=").concat(props.articles[0].makale_slug),
+      as: "/makale-detay/".concat(props.articles[0].makale_slug, "/").concat(props.articles[0].id)
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, props.articles[0].makale_baslik)))))))))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+  }
+}
 
-      return getInitialProps;
-    }()
-  }]);
+makaledetay.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+    var query, _getConfig, publicRuntimeConfig, makale, resArticles, articles;
 
-  return index;
-}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            query = _ref.query;
+            _getConfig = next_config__WEBPACK_IMPORTED_MODULE_9___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig;
 
-/* harmony default export */ __webpack_exports__["default"] = (index);
+            if (!query.makaleid) {
+              _context.next = 8;
+              break;
+            }
+
+            _context.next = 5;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("".concat(publicRuntimeConfig.apiEndpoint, "makale/").concat(query.makaleid));
+
+          case 5:
+            _context.t0 = _context.sent;
+            _context.next = 9;
+            break;
+
+          case 8:
+            _context.t0 = "null";
+
+          case 9:
+            makale = _context.t0;
+
+            if (!(makale !== 'null')) {
+              _context.next = 16;
+              break;
+            }
+
+            _context.next = 13;
+            return makale.json();
+
+          case 13:
+            _context.t1 = _context.sent;
+            _context.next = 17;
+            break;
+
+          case 16:
+            _context.t1 = 'null';
+
+          case 17:
+            makale = _context.t1;
+            _context.next = 20;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
+
+          case 20:
+            resArticles = _context.sent;
+            _context.next = 23;
+            return resArticles.json();
+
+          case 23:
+            articles = _context.sent;
+            return _context.abrupt("return", {
+              makale: makale,
+              articles: articles.results
+            });
+
+          case 25:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function (_x) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (makaledetay);
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Findex.js ***!
-  \*******************************************************************************************************************************/
+/***/ 0:
+/*!**************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fmakale-detay&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fmakale-detay.js ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fmakale-detay&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fmakale-detay.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmakale-detay&absolutePagePath=%2FUsers%2Fberkelmas%2FDesktop%2Fisavukatim%2Fpages%2Fmakale-detay.js!./");
 
 
 /***/ }),
@@ -43818,5 +43694,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[0,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=makale-detay.js.map

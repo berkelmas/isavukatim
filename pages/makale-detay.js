@@ -149,7 +149,7 @@ function makaledetay(props){
                                     <div key={index} className="col-lg-4 col-md-4">
                                         <div className="postbox mb-30">
                                             <div className="postbox__thumb">
-                                                <a href="#">
+                                                <a href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
                                                     <img className="img-100" src="/static/img/trendy/sm3.jpg" alt="hero image"/>
                                                 </a>
                                             </div>
@@ -197,10 +197,18 @@ function makaledetay(props){
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">
-                                        <a href="#">{res.makale_kategori_nondisplay}</a>
+                                      <Link href={`/hukuki-yayinlar/kategori/${res.makale_kategori_nondisplay}`}>
+                                        <a>
+                                          {res.makale_kategori}
+                                        </a>
+                                      </Link>
                                     </span>
                                     <h4 className="title-13 pr-0">
-                                        <a href="#">{res.makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                                        <a>
+                                          {res.makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h4>
                                     <div className="post__small-text-meta">
                                         <ul>
@@ -233,9 +241,11 @@ function makaledetay(props){
                             <h3 className="widget-title">En Çok Ziyaret Edilen</h3>
                             <div className="postbox">
                                 <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
+                                  <Link href={`/makale-detay?makaleid=${props.articles[0].id}&makaleslug=${props.articles[0].makale_slug}`} as={`/makale-detay/${props.articles[0].makale_slug}/${props.articles[0].id}`}>
+                                    <a>
+                                      <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="postbox__text pt-15">
                                     <div className="postbox__text-meta pb-10">
@@ -248,7 +258,11 @@ function makaledetay(props){
                                         </ul>
                                     </div>
                                     <h4 className="title-16 pr-0">
-                                        <a href="#">{props.articles[0].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${props.articles[0].id}&makaleslug=${props.articles[0].makale_slug}`} as={`/makale-detay/${props.articles[0].makale_slug}/${props.articles[0].id}`}>
+                                        <a>
+                                          {props.articles[0].makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h4>
                                 </div>
                             </div>

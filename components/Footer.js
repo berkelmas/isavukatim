@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function Footer() {
   return(
     <footer className="footer-bg">
@@ -35,72 +37,35 @@ function Footer() {
         </div>
         <div className="footer-bottom-area pb-70">
             <div className="container">
-                <div className="row">
+                <div className="row d-flex justify-content-between">
                     <div className="col-xl-4">
                         <div className="footer-widget mb-30">
-                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will give you
-                                a complete account of the system, and expound the actual teachings of the great explorer of
-                                the truth, the master-builder
-                                of human happiness.</p>
+                            <p>isavukatim.com hem avukatlara hem işçi-işveren tarafı gerçek ve tüzel kişilere yardımcı olmak ve hukuki yönlendirmeler yapmak amacıyla 2018 yılında kurulmuştur. Gerek İş Kanunu gerek ilgili mevzuatlar ve içtihatlar çerçevesinde size en doğru şekilde hukuki destek olmayi ilke haline getirmiştir.</p>
                             <div className="footer-social">
                                 <a className="facebook" href="#"><i className="fab fa-facebook-f"></i></a>
                                 <a className="twitter" href="#"><i className="fab fa-twitter"></i></a>
                                 <a className="instagram" href="#"><i className="fab fa-instagram"></i></a>
-                                <a className="dribbble" href="#"><i className="fab fa-dribbble"></i></a>
-                                <a className="pinterest" href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a className="google-plus" href="#"><i className="fab fa-google-plus-g"></i></a>
-                                <a className="pinterest" href="#"><i className="fab fa-pinterest-p"></i></a>
+
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-8">
+                    <div className="col-xl-3">
                         <div className="widget-box mb-30">
                             <div className="row">
-                                <div className="col-xl-3 col-lg-3">
+                                <div className="col-xl-6 col-lg-6">
                                     <div className="footer-widget mb-30">
-                                        <h3>Quick Link</h3>
+                                        <h3>Yayın Kategorileri</h3>
                                         <ul>
-                                            <li><a href="#">Politic</a></li>
-                                            <li><a href="#">Travel</a></li>
-                                            <li><a href="#">Study</a></li>
-                                            <li><a href="#">Country</a></li>
-                                            <li><a href="#">Sports</a></li>
+                                            <li><Link href="/hukuki-yayinlar"><a>Tüm Makaleler</a></Link></li>
+                                            <li><Link href="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
+                                            <li><Link href="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
+                                            <li><Link href="/hukuki-yayinlar/kategori/genelsagliksigortasi"><a>Genel Sağlık Sigortası</a></Link></li>
+                                            <li><Link href="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade Davası</a></Link></li>
+                                            <li><Link href="/hukuki-yayinlar/kategori/hizmettespitdavasi"><a>Hizmet Tespit Davası</a></Link></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-3">
-                                    <div className="footer-widget mb-30">
-                                        <h3>Most Visited</h3>
-                                        <ul>
-                                            <li><a href="#">Latest News </a></li>
-                                            <li><a href="#">Most Visited</a></li>
-                                            <li><a href="#">Recent News</a></li>
-                                            <li><a href="#">International</a></li>
-                                            <li><a href="#">Entertainment</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-3">
-                                    <div className="footer-widget mb-30">
-                                        <h3>About Us</h3>
-                                        <ul>
-                                            <li><a href="#">Feature</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Life Style</a></li>
-                                            <li><a href="#">Economic</a></li>
-                                            <li><a href="#">Business</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-3">
-                                    <div className="footer-widget pt-50 mb-30">
-                                        <ul>
-                                            <li><a href="#"><i className="fas fa-video"></i> Video</a></li>
-                                            <li><a href="#"><i className="fas fa-camera-retro"></i> Picture</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>

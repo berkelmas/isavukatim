@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 import Moment from 'react-moment';
 import 'moment/locale/tr';
@@ -76,11 +77,21 @@ class index extends React.Component {
                         <div className="col-lg-6 col-md-12">
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
-                                    <a href="#"><img src={'/static/img/hero/part1/hero1.jpg'} alt="hero image"/></a>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
+                                    <a>
+                                      <img src={'/static/img/hero/part1/hero1.jpg'} alt="hero image"/>
+                                    </a>
+                                  </Link>
                                 </div>
                                 <div className="hero__text">
                                     <span className="post-cat mb-10"><a href="#">{this.props.articles[0].makale_kategori}</a></span>
-                                    <h3 className="pr-100"><a href="#">{this.props.articles[0].makale_baslik}</a></h3>
+                                    <h3 className="pr-100">
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
+                                        <a>
+                                          {this.props.articles[0].makale_baslik}
+                                        </a>
+                                      </Link>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -93,10 +104,16 @@ class index extends React.Component {
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">
-                                        <a href="#">{this.props.articles[1].makale_kategori}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[1].id}&makaleslug=${this.props.articles[1].makale_slug}`} as={`/makale-detay/${this.props.articles[1].makale_slug}/${this.props.articles[1].id}`}>
+                                        <a>{this.props.articles[1].makale_kategori}</a>
+                                      </Link>
                                     </span>
                                     <h3 className="pr-0">
-                                        <a href="#">{this.props.articles[1].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[1].id}&makaleslug=${this.props.articles[1].makale_slug}`} as={`/makale-detay/${this.props.articles[1].makale_slug}/${this.props.articles[1].id}`}>
+                                        <a>
+                                          {this.props.articles[1].makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -110,10 +127,18 @@ class index extends React.Component {
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">
-                                        <a href="#">{this.props.articles[2].makale_kategori}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[2].id}&makaleslug=${this.props.articles[2].makale_slug}`} as={`/makale-detay/${this.props.articles[2].makale_slug}/${this.props.articles[2].id}`}>
+                                        <a>
+                                          {this.props.articles[2].makale_kategori}
+                                        </a>
+                                      </Link>
                                     </span>
                                     <h3 className="pr-0">
-                                        <a href="#">{this.props.articles[2].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[2].id}&makaleslug=${this.props.articles[2].makale_slug}`} as={`/makale-detay/${this.props.articles[2].makale_slug}/${this.props.articles[2].id}`}>
+                                        <a>
+                                          {this.props.articles[2].makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h3>
                                 </div>
                             </div>
@@ -143,9 +168,11 @@ class index extends React.Component {
                                 return (
                                   <div key={index} className="postbox mb-25">
                                       <div className="postbox__thumb">
-                                          <a href="#">
-                                              <img src="/static/img/trendy/sm1.jpg" alt="hero image"/>
+                                        <Link href={`/makale-detay?makaleid=${articleKidem.id}&makaleslug=${articleKidem.makale_slug}`} as={`/makale-detay/${articleKidem.makale_slug}/${articleKidem.id}`}>
+                                          <a>
+                                            <img src="/static/img/trendy/sm1.jpg" alt="hero image"/>
                                           </a>
+                                        </Link>
                                       </div>
                                       <div className="postbox__text pt-10">
                                           <div className="postbox__text-meta pb-10">
@@ -157,7 +184,11 @@ class index extends React.Component {
                                               </ul>
                                           </div>
                                           <h4 className="pr-0">
-                                              <a href="#">{articleKidem.makale_baslik}</a>
+                                            <Link href={`/makale-detay?makaleid=${articleKidem.id}&makaleslug=${articleKidem.makale_slug}`} as={`/makale-detay/${articleKidem.makale_slug}/${articleKidem.id}`}>
+                                              <a>
+                                                {articleKidem.makale_baslik}
+                                              </a>
+                                            </Link>
                                           </h4>
                                       </div>
                                   </div>
@@ -174,11 +205,17 @@ class index extends React.Component {
                               return (
                                 <div key={index} className="postbox mb-25">
                                     <div className="postbox__thumb">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/lg1.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${articleIseiade.id}&makaleslug=${articleIseiade.makale_slug}`} as={`/makale-detay/${articleIseiade.makale_slug}/${articleIseiade.id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/lg1.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                         <span className="post-cat post-absolute">
-                                            <a href="#">{articleIseiade.makale_kategori}</a>
+                                          <Link href={`/makale-detay?makaleid=${articleIseiade.id}&makaleslug=${articleIseiade.makale_slug}`} as={`/makale-detay/${articleIseiade.makale_slug}/${articleIseiade.id}`}>
+                                            <a>
+                                              {articleIseiade.makale_kategori}
+                                            </a>
+                                          </Link>
                                         </span>
                                     </div>
                                     <div className="postbox__text pt-10">
@@ -191,7 +228,11 @@ class index extends React.Component {
                                             </ul>
                                         </div>
                                         <h4 className="title-16 pr-0">
-                                            <a href="#">{articleIseiade.makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${articleIseiade.id}&makaleslug=${articleIseiade.makale_slug}`} as={`/makale-detay/${articleIseiade.makale_slug}/${articleIseiade.id}`}>
+                                            <a>
+                                              {articleIseiade.makale_baslik}
+                                            </a>
+                                          </Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -207,7 +248,7 @@ class index extends React.Component {
                           {this.props.articles.map((article, index) =>
                             <div key={index} className="post__small mb-30">
                                 <div className="post__small-thumb f-left">
-                                    <a href="#">
+                                    <a href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
                                         <img src="/static/img/trendy/xs/xs-1.jpg" alt="hero image"/>
                                     </a>
                                 </div>
@@ -216,7 +257,11 @@ class index extends React.Component {
                                         <a href="#">{article.makale_kategori}</a>
                                     </span>
                                     <h4 className="title-13 pr-0">
-                                        <a href="#">{article.makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
+                                        <a>
+                                          {article.makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h4>
                                     <div className="post__small-text-meta">
                                         <ul>
@@ -239,9 +284,11 @@ class index extends React.Component {
                                 return (
                                   <div key={index} className="postbox mb-25">
                                       <div className="postbox__thumb">
-                                          <a href="#">
-                                              <img src="/static/img/trendy/sm4.jpg" alt="hero image"/>
+                                        <Link href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
+                                          <a>
+                                            <img src="/static/img/trendy/sm4.jpg" alt="hero image"/>
                                           </a>
+                                        </Link>
                                       </div>
                                       <div className="postbox__text pt-10">
                                           <div className="postbox__text-meta pb-10">
@@ -253,7 +300,11 @@ class index extends React.Component {
                                               </ul>
                                           </div>
                                           <h4 className="pr-0">
-                                              <a href="#">{article.makale_baslik}</a>
+                                            <Link href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
+                                              <a>
+                                                {article.makale_baslik}
+                                              </a>
+                                            </Link>
                                           </h4>
                                       </div>
                                   </div>
@@ -281,13 +332,19 @@ class index extends React.Component {
 
                             <div className="postbox mb-25">
                                 <div className="postbox__thumb">
-                                    <a href="#">
+                                  <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[0].id}&makaleslug=${this.props.articlesKidem[0].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[0].makale_slug}/${this.props.articlesKidem[0].id}`}>
+                                    <a>
                                         <img src="/static/img/cat/cat1.jpg" alt="hero image"/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">{this.props.articlesKidem[0].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[0].id}&makaleslug=${this.props.articlesKidem[0].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[0].makale_slug}/${this.props.articlesKidem[0].id}`}>
+                                        <a>
+                                          {this.props.articlesKidem[0].makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
@@ -303,13 +360,19 @@ class index extends React.Component {
                             <div className="cat-sm-post">
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-12.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[1].id}&makaleslug=${this.props.articlesKidem[1].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[1].makale_slug}/${this.props.articlesKidem[1].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-12.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesKidem[1].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[1].id}&makaleslug=${this.props.articlesKidem[1].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[1].makale_slug}/${this.props.articlesKidem[1].id}`}>
+                                            <a>
+                                              {this.props.articlesKidem[1].makale_baslik}
+                                            </a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -323,13 +386,19 @@ class index extends React.Component {
                                 </div>
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-11.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[2].id}&makaleslug=${this.props.articlesKidem[2].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[2].makale_slug}/${this.props.articlesKidem[2].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-11.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesKidem[2].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[2].id}&makaleslug=${this.props.articlesKidem[2].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[2].makale_slug}/${this.props.articlesKidem[2].id}`}>
+                                            <a>
+                                              {this.props.articlesKidem[2].makale_baslik}
+                                            </a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -350,13 +419,19 @@ class index extends React.Component {
 
                             <div className="postbox mb-25">
                                 <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/cat/cat2.jpg" alt="hero image"/>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[0].id}&makaleslug=${this.props.articlesIseiade[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[0].makale_slug}/${this.props.articlesIseiade[0].id}`}>
+                                    <a>
+                                      <img src="/static/img/cat/cat2.jpg" alt="hero image"/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">{this.props.articlesIseiade[0].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[0].id}&makaleslug=${this.props.articlesIseiade[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[0].makale_slug}/${this.props.articlesIseiade[0].id}`}>
+                                        <a>
+                                          {this.props.articlesIseiade[0].makale_baslik}
+                                        </a>
+                                      </Link>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
@@ -373,13 +448,17 @@ class index extends React.Component {
 
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-7.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[1].id}&makaleslug=${this.props.articlesIseiade[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[1].makale_slug}/${this.props.articlesIseiade[1].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-7.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesIseiade[1].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[1].id}&makaleslug=${this.props.articlesIseiade[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[1].makale_slug}/${this.props.articlesIseiade[1].id}`}>
+                                            <a>{this.props.articlesIseiade[1].makale_baslik}</a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -394,13 +473,17 @@ class index extends React.Component {
 
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-8.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[2].id}&makaleslug=${this.props.articlesIseiade[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[2].makale_slug}/${this.props.articlesIseiade[2].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-8.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesIseiade[2].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[2].id}&makaleslug=${this.props.articlesIseiade[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[2].makale_slug}/${this.props.articlesIseiade[2].id}`}>
+                                            <a>{this.props.articlesIseiade[2].makale_baslik}</a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -421,13 +504,17 @@ class index extends React.Component {
 
                             <div className="postbox mb-25">
                                 <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/cat/cat3.jpg" alt="hero image"/>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[0].id}&makaleslug=${this.props.articlesIhbartazminati[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[0].makale_slug}/${this.props.articlesIhbartazminati[0].id}`}>
+                                    <a>
+                                      <img src="/static/img/cat/cat3.jpg" alt="hero image"/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">{this.props.articlesIhbartazminati[0].makale_baslik}</a>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[0].id}&makaleslug=${this.props.articlesIhbartazminati[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[0].makale_slug}/${this.props.articlesIhbartazminati[0].id}`}>
+                                        <a>{this.props.articlesIhbartazminati[0].makale_baslik}</a>
+                                      </Link>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
@@ -443,13 +530,19 @@ class index extends React.Component {
                             <div className="cat-sm-post">
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-10.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[1].id}&makaleslug=${this.props.articlesIhbartazminati[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[1].makale_slug}/${this.props.articlesIhbartazminati[1].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-10.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesIhbartazminati[1].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[1].id}&makaleslug=${this.props.articlesIhbartazminati[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[1].makale_slug}/${this.props.articlesIhbartazminati[1].id}`}>
+                                            <a>
+                                              {this.props.articlesIhbartazminati[1].makale_baslik}
+                                            </a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -463,13 +556,19 @@ class index extends React.Component {
                                 </div>
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-9.jpg" alt="hero image"/>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[2].id}&makaleslug=${this.props.articlesIhbartazminati[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[2].makale_slug}/${this.props.articlesIhbartazminati[2].id}`}>
+                                        <a>
+                                          <img src="/static/img/trendy/xs/xs-9.jpg" alt="hero image"/>
                                         </a>
+                                      </Link>
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">{this.props.articlesIhbartazminati[2].makale_baslik}</a>
+                                          <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[2].id}&makaleslug=${this.props.articlesIhbartazminati[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[2].makale_slug}/${this.props.articlesIhbartazminati[2].id}`}>
+                                            <a>
+                                              {this.props.articlesIhbartazminati[2].makale_baslik}
+                                            </a>
+                                          </Link>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
@@ -505,7 +604,7 @@ class index extends React.Component {
                             </div>
                         </div>
                     </div>
-              
+
             </section>
 
         </main>
