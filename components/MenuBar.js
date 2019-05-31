@@ -43,9 +43,9 @@ class MenuBar extends React.Component {
                             <Nav className="mr-auto" navbar>
                               <li><Link href="/"><a>Ana Sayfa</a></Link></li>
                               <li><a href="#">Avukata Danışın</a></li>
-                              <li><Link href="/hukuki-yayinlar?kategori=kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
-                              <li><Link href="/hukuki-yayinlar?kategori=ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
-                              <li><Link href="/hukuki-yayinlar?kategori=iseiadedavasi"><a>İşe İade</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade</a></Link></li>
                               <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color : 'black', padding: '20px'}} nav caret>
                                   Yayınlar
@@ -53,39 +53,39 @@ class MenuBar extends React.Component {
                                 <DropdownMenu style={{backgroundColor: '#f8f9fa', border: 'none'}} className="submenu" left="true">
 
                                   <Link href="/hukuki-yayinlar">
-                                    <DropdownItem style={{backgroundColor : '#d8d8d8'}} className='custom-dropdown'>
+                                    <a style={{backgroundColor : '#d8d8d8'}} className='custom-dropdown'>
                                       Tümünü Gör
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
-                                  <Link href="/hukuki-yayinlar?kategori=kidemtazminati">
-                                    <DropdownItem className='custom-dropdown'>
+                                  <Link href="/hukuki-yayinlar/kategori/kidemtazminati">
+                                    <a className='custom-dropdown'>
                                       Kıdem Tazminatı
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
-                                  <Link href="/hukuki-yayinlar?kategori=ihbartazminati">
-                                    <DropdownItem className='custom-dropdown'>
+                                  <Link href="/hukuki-yayinlar/kategori/ihbartazminati">
+                                    <a className='custom-dropdown'>
                                       İhbar Tazminatı
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
-                                  <Link href="/hukuki-yayinlar?kategori=iseiadedavasi">
-                                    <DropdownItem className='custom-dropdown'>
+                                  <Link href="/hukuki-yayinlar/kategori/iseiadedavasi">
+                                    <a className='custom-dropdown'>
                                       İşe İade Davası
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
-                                  <Link href="/hukuki-yayinlar?kategori=hizmettespitdavasi">
-                                    <DropdownItem className='custom-dropdown'>
+                                  <Link href="/hukuki-yayinlar/kategori/hizmettespitdavasi">
+                                    <a className='custom-dropdown'>
                                       Hizmet Tespit Davaları
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
-                                  <Link href="/hukuki-yayinlar?kategori=genelsagliksigortasi">
-                                    <DropdownItem className='custom-dropdown'>
+                                  <Link href="/hukuki-yayinlar/kategori/genelsagliksigortasi">
+                                    <a className='custom-dropdown'>
                                       Genel Sağlık Sigortası
-                                    </DropdownItem>
+                                    </a>
                                   </Link>
 
                                 </DropdownMenu>

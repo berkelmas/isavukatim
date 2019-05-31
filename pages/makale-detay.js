@@ -35,30 +35,8 @@ function makaledetay(props){
         <MenuBar />
 
 
-        <div className="page-title-area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="page-title text-center">
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item">
-                                        <Link href="/"><a>Ana Sayfa</a></Link>
-                                    </li>
-                                    <li className="breadcrumb-item">
-                                        <Link href="/hukuki-yayinlar"><a>Yayınlar</a></Link>
-                                    </li>
-                                    <li className="breadcrumb-item active" aria-current="page">{props.makale.makale_baslik}</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-        <section className="post-details-area pb-30">
+        <section className="post-details-area pb-30 pt-30">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8">
@@ -211,7 +189,7 @@ function makaledetay(props){
                             <h3 className="widget-title">Popüler Yayınlar</h3>
 
                           {props.articles.map((res, index) =>
-                            <div className={index !== 3 ? 'post__small mb-30' : 'post__small'}>
+                            <div key={index} className={index !== 3 ? 'post__small mb-30' : 'post__small'}>
                                 <div className="post__small-thumb f-left">
                                     <a href="#">
                                         <img src="/static/img/trendy/xs/xs-3.jpg" alt="hero image"/>

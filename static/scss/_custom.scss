@@ -1,0 +1,10 @@
+.custom-dropdown {
+
+  &:active {
+    background-color: red!important;
+  }
+
+  &:hover {
+    background-color: gray;
+  }
+}

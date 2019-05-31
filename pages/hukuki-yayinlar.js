@@ -25,21 +25,6 @@ function hukukiyayinlar(props) {
         <NavbarUst/>
         <MenuBar/>
 
-      <div className="page-banner-area mt-60">
-          <div className="container">
-              <div className="row">
-                  <div className="col-12">
-                      <div className="page-title-bar text-center pt-60 pb-60 makale-title-bar">
-                          <h1>İş Hukuku Yayınlarımız</h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-
-
       <section className="news-area pt-60 pb-60">
 
           <div className="container">

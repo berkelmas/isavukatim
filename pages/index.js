@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
+import Moment from 'react-moment';
+import 'moment/locale/tr';
 
 import fetch from 'isomorphic-unfetch';
 import getConfig from 'next/config';
@@ -12,10 +14,33 @@ import MenuBar from '../components/MenuBar';
 class index extends React.Component {
   static async getInitialProps(){
     const {publicRuntimeConfig} = getConfig();
-    const res = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter`);
+
+    // gets the last 6 articles
+    const res = await fetch(`${publicRuntimeConfig.apiEndpoint}makalesixitem`);
     const result = await res.json();
     const articles = result.results;
-    return {articles}
+
+    // gets the kidem tazminati articles
+    const resKidem= await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=kidemtazminati`);
+    const resultKidem = await resKidem.json();
+    const articlesKidem = resultKidem.results;
+
+    // gets the ise iade davasi articles
+    const resIseiade = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=iseiadedavasi`);
+    const resultIseiade = await resIseiade.json();
+    const articlesIseiade = resultIseiade.results;
+
+    // gets genel saglik sigortasi articles
+    const resGenelsaglik = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=genelsagliksigortasi`);
+    const resultGenelsaglik = await resGenelsaglik.json();
+    const articlesGenelsaglik = resultGenelsaglik.results;
+
+    // gets ihbar tazminati articles
+    const resIhbartazminati = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=ihbartazminati`);
+    const resultIhbartazminati = await resIhbartazminati.json();
+    const articlesIhbartazminati = resultIhbartazminati.results;
+
+    return {articles, articlesKidem, articlesIseiade, articlesGenelsaglik, articlesIhbartazminati};
   }
 
   render() {
@@ -112,138 +137,75 @@ class index extends React.Component {
                 <div className="container">
                     <div className="row row-10">
                         <div className="col-20">
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm1.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial Documents</a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm2.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Rina Sawayama Is Not the Asian Britney Spears</a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm3.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Receiving the Summer Sols tice the Swedish Way</a>
-                                    </h4>
-                                </div>
-                            </div>
+
+                          {this.props.articlesKidem.map((articleKidem, index) => {
+                            if (index < 3) {
+                                return (
+                                  <div key={index} className="postbox mb-25">
+                                      <div className="postbox__thumb">
+                                          <a href="#">
+                                              <img src="/static/img/trendy/sm1.jpg" alt="hero image"/>
+                                          </a>
+                                      </div>
+                                      <div className="postbox__text pt-10">
+                                          <div className="postbox__text-meta pb-10">
+                                              <ul>
+                                                  <li>
+                                                      <i className="fas fa-calendar-alt"></i>
+                                                      <span><Moment format="D MMM YYYY">{articleKidem.makale_yayintarihi}</Moment></span>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                          <h4 className="pr-0">
+                                              <a href="#">{articleKidem.makale_baslik}</a>
+                                          </h4>
+                                      </div>
+                                  </div>
+                                )
+                              }
+                            }
+                          )}
+
                         </div>
                         <div className="col-40">
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/lg1.jpg" alt="hero image"/>
-                                    </a>
-                                    <span className="post-cat post-absolute">
-                                        <a href="#">politic</a>
-                                    </span>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="title-16 pr-0">
-                                        <a href="#">Trump’s Inaccurate Claims About High ways the world, Immigration and Beyoncé.</a>
-                                    </h4>
-                                </div>
-                            </div>
 
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/lg2.jpg" alt="hero image"/>
-                                    </a>
-                                    <span className="post-cat post-absolute">
-                                        <a href="#">travel</a>
-                                    </span>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
+                          {this.props.articlesIseiade.map((articleIseiade, index) => {
+                            if (index < 2) {
+                              return (
+                                <div key={index} className="postbox mb-25">
+                                    <div className="postbox__thumb">
+                                        <a href="#">
+                                            <img src="/static/img/trendy/lg1.jpg" alt="hero image"/>
+                                        </a>
+                                        <span className="post-cat post-absolute">
+                                            <a href="#">{articleIseiade.makale_kategori}</a>
+                                        </span>
                                     </div>
-                                    <h4 className="title-16 pr-0">
-                                        <a href="#">Moving From Buyer to Seller, Major League Soccer Revenue In The World Wide Claims About.</a>
-                                    </h4>
+                                    <div className="postbox__text pt-10">
+                                        <div className="postbox__text-meta pb-10">
+                                            <ul>
+                                                <li>
+                                                    <i className="fas fa-calendar-alt"></i>
+                                                    <span><Moment format="D MMM YYYY">{articleIseiade.makale_yayintarihi}</Moment></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 className="title-16 pr-0">
+                                            <a href="#">{articleIseiade.makale_baslik}</a>
+                                        </h4>
+                                    </div>
                                 </div>
-                            </div>
+                              )
+                            }
+                          })}
+
                         </div>
+
+
                         <div className="col-20 d-md-none d-xl-block">
-                            <div className="post__small mb-30">
+
+                          {this.props.articles.map((article, index) =>
+                            <div key={index} className="post__small mb-30">
                                 <div className="post__small-thumb f-left">
                                     <a href="#">
                                         <img src="/static/img/trendy/xs/xs-1.jpg" alt="hero image"/>
@@ -251,213 +213,55 @@ class index extends React.Component {
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">
-                                        <a href="#">Kıdem Tazminatı</a>
+                                        <a href="#">{article.makale_kategori}</a>
                                     </span>
                                     <h4 className="title-13 pr-0">
-                                        <a href="#">Kıdem Tazminatındaki Yenilikler</a>
+                                        <a href="#">{article.makale_baslik}</a>
                                     </h4>
                                     <div className="post__small-text-meta">
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Eyl 2018</span>
+                                                <span><Moment format="DD MMM YYYY">{article.makale_yayintarihi}</Moment></span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-2.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">İhbar Tazminatı</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">İhbar Tazminatı Nasıl Hesaplanır?</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-3.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Fashion</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">Nahan dow plays Lieral lership..</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-4.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Travel</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">Weinstein pushs for dismissal.</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-5.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Politic</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">New Season Tiets Seat Optional.</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post__small mb-30">
-                                <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-6.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="post__small-text fix pl-10">
-                                    <span className="sm-cat">
-                                        <a href="#">Study</a>
-                                    </span>
-                                    <h4 className="title-13 pr-0">
-                                        <a href="#">For Marilyn St Any Place Can Be..</a>
-                                    </h4>
-                                    <div className="post__small-text-meta">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="post-btn mb-30">
-                               <a href="#" className="btn btn-border">view more</a>
-                            </div>
+                          )}
                         </div>
+
+
                         <div className="col-20 ">
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm4.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Paul Manafort’s Accountant Testifies She Helped Alter Financial Documents</a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm5.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Rina Sawayama Is Not the Asian Britney Spears</a>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/sm6.jpg" alt="hero image"/>
-                                    </a>
-                                </div>
-                                <div className="postbox__text pt-10">
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h4 className="pr-0">
-                                        <a href="#">Receiving the Summer Sols tice the Swedish Way</a>
-                                    </h4>
-                                </div>
-                            </div>
+                          {this.props.articlesGenelsaglik.map((article, index) =>
+                            {
+                              if (index < 3) {
+                                return (
+                                  <div key={index} className="postbox mb-25">
+                                      <div className="postbox__thumb">
+                                          <a href="#">
+                                              <img src="/static/img/trendy/sm4.jpg" alt="hero image"/>
+                                          </a>
+                                      </div>
+                                      <div className="postbox__text pt-10">
+                                          <div className="postbox__text-meta pb-10">
+                                              <ul>
+                                                  <li>
+                                                      <i className="fas fa-calendar-alt"></i>
+                                                      <span><Moment format="DD MMM YYYY">{article.makale_yayintarihi}</Moment></span>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                          <h4 className="pr-0">
+                                              <a href="#">{article.makale_baslik}</a>
+                                          </h4>
+                                      </div>
+                                  </div>
+                                )
+                              }
+                            }
+                          )}
+
                         </div>
                     </div>
                 </div>
@@ -465,79 +269,6 @@ class index extends React.Component {
             </section>
 
 
-            <section className="cat-area pb-30">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="section-title mb-30">
-                                <h2>video news</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6 col-lg-6 col-md-6">
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb" data-overlay="dark" data-opacity="2">
-                                    <a href="#">
-                                        <img src="/static/img/video/video.jpg" alt="hero image"/>
-                                    </a>
-                                    <div className="video-play">
-                                        <a href="https://www.youtube.com/watch?v=kvld2Ik429A" className="popup-video"><i className="fas fa-play"></i></a>
-                                    </div>
-                                </div>
-                                <div className="postbox__text pt-20">
-                                    <h4 className="title-22 pr-0">
-                                        <a href="#">Group continues to sell and market memberships to Premier country club despite.</a>
-                                    </h4>
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6">
-                            <div className="postbox mb-25">
-                                <div className="postbox__thumb" data-overlay="dark" data-opacity="2">
-                                    <a href="#">
-                                        <img src="/static/img/video/video-2.jpg" alt="hero image"/>
-                                    </a>
-                                    <div className="video-play">
-                                        <a href="https://www.youtube.com/watch?v=kvld2Ik429A" className="popup-video"><i className="fas fa-play"></i></a>
-                                    </div>
-                                </div>
-                                <div className="postbox__text pt-20">
-                                    <h4 className="title-22 pr-0">
-                                        <a href="#">Group continues to sell and market memberships to Premier country club despite.</a>
-                                    </h4>
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
             <section className="cat-area pb-30">
@@ -545,7 +276,7 @@ class index extends React.Component {
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 col-md-6">
                             <div className="section-title mb-30">
-                                <h2>Science</h2>
+                                <h2>KIDEM TAZMİNATI</h2>
                             </div>
 
                             <div className="postbox mb-25">
@@ -556,17 +287,13 @@ class index extends React.Component {
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">Mustify Winner Is Rtired Because of Weaths Bads Ankle World Wide.</a>
+                                        <a href="#">{this.props.articlesKidem[0].makale_baslik}</a>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
+                                                <span><Moment format="DD MMM YYYY">{this.props.articlesKidem[0].makale_yayintarihi}</Moment></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -582,13 +309,13 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Hobots or Job Training: Mnutuers Grapple With How to Improve.</a>
+                                            <a href="#">{this.props.articlesKidem[1].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesKidem[1].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -602,13 +329,13 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Robots or Job Training: Manutues Grapple With How to Improve..</a>
+                                            <a href="#">{this.props.articlesKidem[2].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesKidem[2].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -618,7 +345,7 @@ class index extends React.Component {
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6">
                             <div className="section-title mb-30">
-                                <h2>travel</h2>
+                                <h2>İŞE İADE DAVASI</h2>
                             </div>
 
                             <div className="postbox mb-25">
@@ -629,17 +356,13 @@ class index extends React.Component {
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">Robots or Job Training: Manutues Grapple With How to Improve.</a>
+                                        <a href="#">{this.props.articlesIseiade[0].makale_baslik}</a>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
+                                                <span><Moment format="DD MMM YYYY">{this.props.articlesIseiade[0].makale_yayintarihi}</Moment></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -647,6 +370,7 @@ class index extends React.Component {
                             </div>
 
                             <div className="cat-sm-post">
+
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
                                         <a href="#">
@@ -655,18 +379,19 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Canadian Shoppers Pay When Visa and MasterCard.</a>
+                                            <a href="#">{this.props.articlesIseiade[1].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesIseiade[1].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="post__small mb-30">
                                     <div className="post__small-thumb f-left">
                                         <a href="#">
@@ -675,13 +400,13 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Who is next football Super Hero. Check the future star</a>
+                                            <a href="#">{this.props.articlesIseiade[2].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesIseiade[2].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -691,7 +416,7 @@ class index extends React.Component {
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6 d-md-none d-lg-block">
                             <div className="section-title mb-30">
-                                <h2>lifestyle</h2>
+                                <h2>İHBAR TAZMİNATI</h2>
                             </div>
 
                             <div className="postbox mb-25">
@@ -702,17 +427,13 @@ class index extends React.Component {
                                 </div>
                                 <div className="postbox__text pt-20">
                                     <h4 className="title-18 pr-0">
-                                        <a href="#">Denying passports to Americans along the border throwing their citizens.</a>
+                                        <a href="#">{this.props.articlesIhbartazminati[0].makale_baslik}</a>
                                     </h4>
                                     <div className="postbox__text-meta pb-10">
                                         <ul>
                                             <li>
                                                 <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
+                                                <span><Moment format="DD MMM YYYY">{this.props.articlesIhbartazminati[0].makale_yayintarihi}</Moment></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -728,13 +449,13 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Hobots or Job Training: Mnutuers Grapple With How to Improve.</a>
+                                            <a href="#">{this.props.articlesIhbartazminati[1].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesIhbartazminati[1].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -748,13 +469,13 @@ class index extends React.Component {
                                     </div>
                                     <div className="post__small-text fix pl-10">
                                         <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Robots or Job Training: Manutues Grapple With How to Improve..</a>
+                                            <a href="#">{this.props.articlesIhbartazminati[2].makale_baslik}</a>
                                         </h4>
                                         <div className="post__small-text-meta">
                                             <ul>
                                                 <li>
                                                     <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
+                                                    <span><Moment format="DD MMM YYYY">{this.props.articlesIhbartazminati[2].makale_yayintarihi}</Moment></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -765,223 +486,9 @@ class index extends React.Component {
                     </div>
                 </div>
             </section>
-
-
-            <section className="add-area pb-30">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-4 col-lg-4 col-md-6 d-md-none d-xl-block">
-                            <div className="section-title mb-30">
-                                <h2>advertisement</h2>
-                            </div>
-                            <div className="add-banner mb-30">
-                                <a href="#"><img src="/static/img/add/add.jpg" alt=""/></a>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-lg-8 col-md-6">
-                            <div className="section-title mb-30">
-                                <h2>Magazine</h2>
-                            </div>
-                            <div className="cat-sm-post mb-30">
-                                <div className="post__small mb-25">
-                                    <div className="post__small-thumb f-left">
-                                        <a href="#">
-                                            <img src="/static/img/trendy/xs/xs-7.jpg" alt="hero image"/>
-                                        </a>
-                                    </div>
-                                    <div className="post__small-text fix pl-10">
-                                        <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Robots or Job Training: Manuturers Grapple With How to Improve Their Economic Fortunes</a>
-                                        </h4>
-                                        <div className="post__small-text-meta">
-                                            <ul>
-                                                <li>
-                                                    <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="post__small mb-25">
-                                    <div className="post__small-text fix">
-                                        <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Japanese Medical School Accused of With How to Improve Their Economic Fortunes Riggmisions to Keep Women Out world.</a>
-                                        </h4>
-                                        <div className="post__small-text-meta">
-                                            <ul>
-                                                <li>
-                                                    <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="post__small mb-25">
-                                    <div className="post__small-text fix">
-                                        <h4 className="title-16 pr-0 mt-0">
-                                            <a href="#">Leslie Moonves Speaks on CBS Earnings Cabunsot About Harassment Allegations</a>
-                                        </h4>
-                                        <div className="post__small-text-meta">
-                                            <ul>
-                                                <li>
-                                                    <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-xl-4 col-lg-4 col-md-6 d-md-none d-xl-block">
-                            <div className="section-title mb-30">
-                                <h2>advertisement</h2>
-                            </div>
-                            <div className="add-banner mb-30">
-                                <a href="#"><img src="/static/img/add/add.jpg" alt=""/></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section className="latest-area pb-30">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="section-title mb-30">
-                                <h2>latest news</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-xl-7 col-lg-12">
-                            <div className="row">
-                                <div className="col-xl-6 col-lg-4 col-md-6">
-                                    <div className="postbox mb-30">
-                                        <div className="postbox__thumb">
-                                            <a href="#">
-                                                <img src="/static/img/latest/latest-1.jpg" alt="hero image"/>
-                                            </a>
-                                            <span className="post-cat post-absolute">
-                                                <a href="#">politic</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6 col-lg-8 col-md-6">
-                                    <div className="postbox__text mb-30">
-                                        <h4 className="title-16 pr-0">
-                                            <a href="#">Succession finale: jeremy strong keall’s struggles what comes next.</a>
-                                        </h4>
-                                        <div className="postbox__text-meta pb-10">
-                                            <ul>
-                                                <li>
-                                                    <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
-                                                </li>
-                                                <li>
-                                                    <i className="far fa-comment"></i>
-                                                    <span>(03)</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="desc-text mb-20">
-                                            <p>But I must explain to you how all this mistaken idea of denouncing sure and praising pain was born
-                                                and I will give you a complete account.</p>
-                                        </div>
-                                        <a href="#" className="btn btn-soft">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-xl-6 col-lg-4 col-md-6">
-                                    <div className="postbox mb-30">
-                                        <div className="postbox__thumb">
-                                            <a href="#">
-                                                <img src="/static/img/latest/latest-2.jpg" alt="hero image"/>
-                                            </a>
-                                            <span className="post-cat post-absolute">
-                                                <a href="#">politic</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6 col-lg-8 col-md-6">
-                                    <div className="postbox__text mb-30">
-                                        <h4 className="title-16 pr-0">
-                                            <a href="#">Critic’s notebook: deep dives into jutice from shakespeare and atticus finch</a>
-                                        </h4>
-                                        <div className="postbox__text-meta pb-10">
-                                            <ul>
-                                                <li>
-                                                    <i className="fas fa-calendar-alt"></i>
-                                                    <span>01 Sep 2018</span>
-                                                </li>
-                                                <li>
-                                                    <i className="far fa-comment"></i>
-                                                    <span>(03)</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="desc-text mb-20">
-                                            <p>But I must explain to you how all this mistaken idea of denouncing sure and praising pain was born
-                                                and I will give you a complete account.</p>
-                                        </div>
-                                        <a href="#" className="btn btn-soft">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-5">
-                            <div className="postbox mb-30">
-                                <div className="postbox__thumb">
-                                    <a href="#">
-                                        <img className="img-100" src="/static/img/latest/latest-lg.jpg" alt="hero image"/>
-                                    </a>
-                                    <span className="post-cat post-absolute">
-                                        <a href="#">politic</a>
-                                    </span>
-                                </div>
-                                <div className="postbox__text pt-25">
-                                    <h4 className="title-16 pr-0">
-                                        <a href="#">Trump administration officials, have used veto power over other companies, forcing them to buy their
-                                            products instead of .
-                                        </a>
-                                    </h4>
-                                    <div className="postbox__text-meta pb-10">
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-calendar-alt"></i>
-                                                <span>01 Sep 2018</span>
-                                            </li>
-                                            <li>
-                                                <i className="far fa-comment"></i>
-                                                <span>(03)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="desc-text mb-20">
-                                        <p>But I must explain to you how all this mistaken idea of denouncing sure and praising Group continues
-                                            to sell and market memberships to Premier country club despite. pain was born and I will give you
-                                            a complete account. </p>
-                                    </div>
-                                    <a href="#" className="btn btn-soft">read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
 
             <section className="app-area pb-60">
-                <div className="container">
+
                     <div className="grey-bg pt-55 pb-55 pl-60 pr-60">
                         <div className="row">
                             <div className="col-xl-6 col-lg-12">
@@ -998,7 +505,7 @@ class index extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+              
             </section>
 
         </main>
