@@ -9,7 +9,11 @@ function Footer() {
                     <div className="row">
                         <div className="col-xl-2 col-lg-12">
                             <div className="footer-logo mb-30">
-                                <a href="#"><img src="/static/img/isavukatim-logo-beyaz-kucuk.png" alt=""/></a>
+                              <Link href="/">
+                                <a>
+                                  <img src="/static/img/isavukatim-logo-beyaz-kucuk.png" alt=""/>
+                                </a>
+                              </Link>
                             </div>
                         </div>
                         <div className="col-xl-10 col-lg-12">

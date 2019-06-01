@@ -1854,6 +1854,41 @@ label {
   }
 }
 
+.avukata-danis-container {
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.avukata-danis-button {
+  color: white;
+  background-color: gray;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  position: relative;
+}
+.avukata-danis-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.avukata-danis-button:hover {
+  color: white;
+}
+.avukata-danis-button:hover::before {
+  opacity: 0;
+  transform: scale(1.2);
+}
+.avukata-danis-h1 {
+  color: gray;
+}
+
 /* 2. Overlay */
 [data-overlay] {
   position: relative;

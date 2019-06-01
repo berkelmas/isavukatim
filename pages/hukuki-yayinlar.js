@@ -73,11 +73,6 @@ function hukukiyayinlar(props) {
 
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-12">
-                      <div className="widget mb-40">
-                          <a href="#">
-                              <img src="/static/img/add/add-sidebar.jpg" alt=""/>
-                          </a>
-                      </div>
                       <div className="widget widget-border mb-40">
                           <h3 className="widget-title">Popüler Yayınlar</h3>
 

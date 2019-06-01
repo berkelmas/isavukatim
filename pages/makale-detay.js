@@ -119,18 +119,22 @@ function makaledetay(props){
                                    <div className="row">
                                        <div className="col-md-6">
                                             <div className="s-content__prev mb-30">
-                                                <a href="#0" rel="prev">
-                                                    <span>Previous Post</span>
-                                                     Farmers plead for bullets to put down emaciated stock
+                                              <Link href={`/makale-detay?makaleid=${props.articles[0].id}&makaleslug=${props.articles[0].makale_slug}`} as={`/makale-detay/${props.articles[0].makale_slug}/${props.articles[0].id}`}>
+                                                <a>
+                                                  <span>ÖNCEKİ HUKUKİ YAYIN</span>
+                                                   {props.articles[0].makale_baslik}
                                                 </a>
+                                              </Link>
                                             </div>
                                        </div>
                                        <div className="col-md-6">
                                             <div className="s-content__next mb-30 text-left text-md-right">
-                                                <a href="#0" rel="next">
-                                                    <span>Next Post</span>
-                                                     Nahan downplays Liberal lership tensions after white ant
+                                              <Link href={`/makale-detay?makaleid=${props.articles[1].id}&makaleslug=${props.articles[1].makale_slug}`} as={`/makale-detay/${props.articles[1].makale_slug}/${props.articles[1].id}`}>
+                                                <a>
+                                                  <span>SONRAKİ HUKUKİ YAYIN</span>
+                                                   {props.articles[1].makale_baslik}
                                                 </a>
+                                              </Link>
                                             </div>
                                        </div>
                                    </div>
@@ -182,9 +186,6 @@ function makaledetay(props){
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4">
-                        <div className="widget mb-40">
-                            <a href="#"><img src="/static/img/add/add-sidebar.jpg" alt=""/></a>
-                        </div>
                         <div className="widget widget-border mb-40">
                             <h3 className="widget-title">Popüler Yayınlar</h3>
 

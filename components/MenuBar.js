@@ -42,7 +42,7 @@ class MenuBar extends React.Component {
                           <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
                               <li><Link href="/"><a>Ana Sayfa</a></Link></li>
-                              <li><a href="#">Avukata Danışın</a></li>
+                              <li><Link href="/avukata-danis"><a>Avukata Danışın</a></Link></li>
                               <li><Link href="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
                               <li><Link href="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
                               <li><Link href="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade</a></Link></li>
