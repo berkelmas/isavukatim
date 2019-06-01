@@ -13,6 +13,8 @@ import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
 import MenuBar from '../components/MenuBar';
 
+import apiEndpoints from '../apiEndpoints';
+
 function makaledetay(props){
 
   if (props.makale === 'null') {
@@ -24,7 +26,8 @@ function makaledetay(props){
     return(
       <div>
         <Head>
-          <title>İş Avukatından Makale Detay</title>
+          <title>İş Avukatım {props.makale.makale_baslik}</title>
+          <meta name="description" content={props.makale.makale_meta_description}/>
           <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
           <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
           <link rel="stylesheet" href="/static/css/style.css"/>
@@ -33,8 +36,6 @@ function makaledetay(props){
         <TopHeader />
         <NavbarUst />
         <MenuBar />
-
-
 
         <section className="post-details-area pb-30 pt-30">
             <div className="container">
@@ -60,7 +61,7 @@ function makaledetay(props){
                             </div>
 
                             <div className="post-thumb mb-25">
-                                <img src="/static/img/details/post.jpg" alt=""/>
+                                <img className="postbox-img-843-420" src={`${apiEndpoints.mediaURL}${props.makale.image625x400}`} alt={props.makale.makale_kategori}/>
                             </div>
 
 
@@ -69,7 +70,7 @@ function makaledetay(props){
                             <div className="content__tags mt-30">
                                 <span>Anahtar Kelimeler:</span>
                                 <span className="tags-list">
-                                    {props.makale.tag.map((res, index) => <p key={index}>{res}</p>)}
+                                    {props.makale.tag.map((res, index) => <span className="makale-tags" key={index}>{res}</span>)}
                                 </span>
                             </div>
                             <br/>
@@ -88,27 +89,14 @@ function makaledetay(props){
                             <div className="author-meta  mt-60">
                                 <div className="media flex-column flex-md-row">
                                     <div className="media-left">
-                                        <a href="#"><img src="/static/img/user/user-03.jpg" alt=""/> </a>
+                                        <img className="postbox-img-300x300" src={`${apiEndpoints.mediaURL}${props.makale.yazaravukat.avukat_resim300x300}`} alt={props.makale.yazaravukat.avukat_name} />
                                     </div>
                                     <div className="media-body">
                                         <span className="media-heading">
-                                            <a href="#">{props.makale.yazaravukat.avukat_name}</a>
+                                          {props.makale.yazaravukat.avukat_name}
                                         </span>
                                         <p>{props.makale.yazaravukat.avukat_bio}</p>
-                                        <div className="social">
-                                            <a href="https://www.facebook.com/" target="_blank">
-                                                <i className="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a href="https://twitter.com/" target="_blank">
-                                                <i className="fab fa-twitter"></i>
-                                            </a>
-                                            <a href="https://plus.google.com/discover" target="_blank">
-                                                <i className="fab fa-google-plus-g"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/" target="_blank">
-                                                <i className="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +132,7 @@ function makaledetay(props){
 
                             <div className="also-like mt-30">
                                 <div className="section-title mb-30">
-                                    <h2>Önerİlenler</h2>
+                                    <h2>ÖNERİLENLER</h2>
                                 </div>
                                 <div className="row">
                                   {/* Makale sayısını 3 yapmak için index ile şart koydum. */}
@@ -192,9 +180,11 @@ function makaledetay(props){
                           {props.articles.map((res, index) =>
                             <div key={index} className={index !== 3 ? 'post__small mb-30' : 'post__small'}>
                                 <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-3.jpg" alt="hero image"/>
+                                  <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                                    <a>
+                                      <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${res.image100x85}`} alt="hero image"/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">

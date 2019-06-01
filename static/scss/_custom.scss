@@ -50,3 +50,32 @@
 
   object-fit: cover;
 }
+
+.postbox-img-300x300 {
+  width: 150px;
+  height: 150px;
+
+  object-fit: cover;
+}
+
+.postbox-img-843-420 {
+  width: 843px;
+  height: 420px;
+
+  object-fit: cover;
+}
+
+.makale-tags {
+  color: gray;
+  border: 1px solid gray;
+  padding: .35rem;
+  border-radius: 10px;
+  cursor: default;
+  transition: all .5s;
+
+  &:hover {
+    color: white;
+    background-color: lighten(gray, .1);
+  }
+
+}
