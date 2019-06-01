@@ -530,10 +530,17 @@ label {
     padding: 1rem;
     border: 1px solid transparentize(gray, .8);
     box-shadow: 0 0 1rem rgba(black, .2);
-    text-align: center;
   }
 
-  &-button {
+  &-button-container {
+    text-align: center;
+    padding: 15px 5px;
+  }
+
+  &-button,
+  &-button:active,
+  &-button:visited,
+  &-button:link {
     color: white;
     background-color: gray;
     padding: .5rem 1rem;

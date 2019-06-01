@@ -165,7 +165,7 @@
         & a{
             & img{
                 width: 100%;
-                object-fit: cover;
+
                 @media #{$xs}{
                     width: 100%;
                 }

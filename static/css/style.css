@@ -1858,16 +1858,19 @@ label {
   padding: 1rem;
   border: 1px solid rgba(128, 128, 128, 0.2);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
-.avukata-danis-button {
+.avukata-danis-button-container {
+  text-align: center;
+  padding: 15px 5px;
+}
+.avukata-danis-button, .avukata-danis-button:active, .avukata-danis-button:visited, .avukata-danis-button:link {
   color: white;
   background-color: gray;
   padding: 0.5rem 1rem;
   transition: all 0.3s;
   position: relative;
 }
-.avukata-danis-button::before {
+.avukata-danis-button::before, .avukata-danis-button:active::before, .avukata-danis-button:visited::before, .avukata-danis-button:link::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1878,10 +1881,10 @@ label {
   z-index: -1;
   transition: all 0.5s;
 }
-.avukata-danis-button:hover {
+.avukata-danis-button:hover, .avukata-danis-button:active:hover, .avukata-danis-button:visited:hover, .avukata-danis-button:link:hover {
   color: white;
 }
-.avukata-danis-button:hover::before {
+.avukata-danis-button:hover::before, .avukata-danis-button:active:hover::before, .avukata-danis-button:visited:hover::before, .avukata-danis-button:link:hover::before {
   opacity: 0;
   transform: scale(1.2);
 }
@@ -2441,7 +2444,6 @@ label {
 }
 .postbox__thumb a img {
   width: 100%;
-  object-fit: cover;
 }
 @media (max-width: 767px) {
   .postbox__thumb a img {
@@ -3422,6 +3424,24 @@ blockquote footer::before {
 
 .postbox-img500x258 {
   height: 258px;
+}
+
+.postbox-img-100x85 {
+  width: 100px;
+  height: 85px;
+  object-fit: cover;
+}
+
+.postbox-img-240x160 {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.postbox-img-406x270 {
+  width: 406px;
+  height: 270px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

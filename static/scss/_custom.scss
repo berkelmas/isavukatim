@@ -12,3 +12,24 @@
 .postbox-img500x258 {
   height: 258px;
 }
+
+.postbox-img-100x85 {
+  width: 100px;
+  height: 85px;
+
+  object-fit: cover;
+}
+
+.postbox-img-240x160 {
+  width: 240px;
+  height: 160px;
+
+  object-fit: cover;
+}
+
+.postbox-img-406x270 {
+  width: 406px;
+  height: 270px;
+
+  object-fit: cover;
+}

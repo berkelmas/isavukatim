@@ -14,7 +14,7 @@ function TopHeader() {
                               </Link>
                             </li>
                             <li>
-                              <Link href="#">
+                              <Link href="/gizlilik-politikasi">
                                 <a>Gizlilik Politikası</a>
                               </Link>
                             </li>

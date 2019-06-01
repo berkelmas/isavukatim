@@ -176,7 +176,7 @@ class index extends React.Component {
                                       <div className="postbox__thumb">
                                         <Link href={`/makale-detay?makaleid=${articleKidem.id}&makaleslug=${articleKidem.makale_slug}`} as={`/makale-detay/${articleKidem.makale_slug}/${articleKidem.id}`}>
                                           <a>
-                                            <img src={`${apiEndpoints.mediaURL}${articleKidem.image240x160}`} alt={articleKidem.makale_kategori} />
+                                            <img className="postbox-img-240x160" src={`${apiEndpoints.mediaURL}${articleKidem.image240x160}`} alt={articleKidem.makale_kategori} />
                                           </a>
                                         </Link>
                                       </div>
@@ -255,7 +255,7 @@ class index extends React.Component {
                             <div key={index} className="post__small mb-30">
                                 <div className="post__small-thumb f-left">
                                     <a href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
-                                        <img src="/static/img/trendy/xs/xs-1.jpg" alt="hero image"/>
+                                        <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${article.image100x85}`} alt={article.makale_kategori}/>
                                     </a>
                                 </div>
                                 <div className="post__small-text fix pl-10">
@@ -292,7 +292,7 @@ class index extends React.Component {
                                       <div className="postbox__thumb">
                                         <Link href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
                                           <a>
-                                            <img src="/static/img/trendy/sm4.jpg" alt="hero image"/>
+                                            <img className="postbox-img-240x160" src={`${apiEndpoints.mediaURL}${article.image240x160}`} alt={article.makale_kategori}/>
                                           </a>
                                         </Link>
                                       </div>
@@ -340,7 +340,7 @@ class index extends React.Component {
                                 <div className="postbox__thumb">
                                   <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[0].id}&makaleslug=${this.props.articlesKidem[0].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[0].makale_slug}/${this.props.articlesKidem[0].id}`}>
                                     <a>
-                                        <img src="/static/img/cat/cat1.jpg" alt="hero image"/>
+                                        <img className="postbox-img-406x270" src={`${apiEndpoints.mediaURL}${this.props.articlesKidem[0].image500x287}`} alt={this.props.articlesKidem[0].makale_kategori}/>
                                     </a>
                                   </Link>
                                 </div>
@@ -368,7 +368,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[1].id}&makaleslug=${this.props.articlesKidem[1].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[1].makale_slug}/${this.props.articlesKidem[1].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-12.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesKidem[1].image100x85}`} alt={`${this.props.articlesKidem[1].makale_kategori}`}/>
                                         </a>
                                       </Link>
                                     </div>
@@ -394,7 +394,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesKidem[2].id}&makaleslug=${this.props.articlesKidem[2].makale_slug}`} as={`/makale-detay/${this.props.articlesKidem[2].makale_slug}/${this.props.articlesKidem[2].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-11.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesKidem[2].image100x85}`} alt={`${this.props.articlesKidem[2].makale_kategori}`}/>
                                         </a>
                                       </Link>
                                     </div>
@@ -427,7 +427,7 @@ class index extends React.Component {
                                 <div className="postbox__thumb">
                                   <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[0].id}&makaleslug=${this.props.articlesIseiade[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[0].makale_slug}/${this.props.articlesIseiade[0].id}`}>
                                     <a>
-                                      <img src="/static/img/cat/cat2.jpg" alt="hero image"/>
+                                      <img className="postbox-img-406x270" src={`${apiEndpoints.mediaURL}${this.props.articlesIseiade[0].image500x287}`} alt={this.props.articlesIseiade[0].makale_kategori}/>
                                     </a>
                                   </Link>
                                 </div>
@@ -456,7 +456,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[1].id}&makaleslug=${this.props.articlesIseiade[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[1].makale_slug}/${this.props.articlesIseiade[1].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-7.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesIseiade[1].image100x85}`} alt={this.props.articlesIseiade[1].makale_kategori}/>
                                         </a>
                                       </Link>
                                     </div>
@@ -481,7 +481,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesIseiade[2].id}&makaleslug=${this.props.articlesIseiade[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIseiade[2].makale_slug}/${this.props.articlesIseiade[2].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-8.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesIseiade[2].image100x85}`} alt={this.props.articlesIseiade[2].makale_kategori}/>
                                         </a>
                                       </Link>
                                     </div>
@@ -512,7 +512,7 @@ class index extends React.Component {
                                 <div className="postbox__thumb">
                                   <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[0].id}&makaleslug=${this.props.articlesIhbartazminati[0].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[0].makale_slug}/${this.props.articlesIhbartazminati[0].id}`}>
                                     <a>
-                                      <img src="/static/img/cat/cat3.jpg" alt="hero image"/>
+                                      <img className="postbox-img-406x270" src={`${apiEndpoints.mediaURL}${this.props.articlesIhbartazminati[0].image500x287}`} alt={this.props.articlesIhbartazminati[0].makale_kategori}/>
                                     </a>
                                   </Link>
                                 </div>
@@ -538,7 +538,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[1].id}&makaleslug=${this.props.articlesIhbartazminati[1].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[1].makale_slug}/${this.props.articlesIhbartazminati[1].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-10.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesIhbartazminati[1].image100x85}`} alt={this.props.articlesIhbartazminati[1].makale_kategori} />
                                         </a>
                                       </Link>
                                     </div>
@@ -564,7 +564,7 @@ class index extends React.Component {
                                     <div className="post__small-thumb f-left">
                                       <Link href={`/makale-detay?makaleid=${this.props.articlesIhbartazminati[2].id}&makaleslug=${this.props.articlesIhbartazminati[2].makale_slug}`} as={`/makale-detay/${this.props.articlesIhbartazminati[2].makale_slug}/${this.props.articlesIhbartazminati[2].id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/xs/xs-9.jpg" alt="hero image"/>
+                                          <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${this.props.articlesIhbartazminati[2].image100x85}`} alt={this.props.articlesIhbartazminati[2].makale_kategori}/>
                                         </a>
                                       </Link>
                                     </div>

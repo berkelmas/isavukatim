@@ -1,24 +1,26 @@
 import Head from 'next/head';
+
 import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
 import MenuBar from '../components/MenuBar';
+
 import Footer from '../components/Footer';
 
-function avukatadanis(props) {
+function gizlilikpolitikasi(props) {
   return (
     <div>
       <Head>
-      <title>İş Avukatım - Avukata Danış</title>
-      <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
-      <link rel="stylesheet" href="/static/css/style.css"/>
-      <script dangerouslySetInnerHTML={{ __html:`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;
-        s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        `}}/>
+        <title>İş Avukatım - Gizlilik Politikası</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
+        <link rel="stylesheet" href="/static/css/style.css"/>
+        <script dangerouslySetInnerHTML={{ __html:`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;
+          s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+          })();
+          `}}/>
       </Head>
 
       <header className="header">
@@ -46,8 +48,10 @@ function avukatadanis(props) {
       </div>
 
       <Footer/>
+
     </div>
   )
 }
 
-export default avukatadanis;
+
+export default gizlilikpolitikasi;
