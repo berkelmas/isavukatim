@@ -3858,6 +3858,9 @@ blockquote footer::before {
   border-bottom: 1px solid #363636;
   color: #ffffff;
 }
+.subscribe-form form input::placeholder {
+  color: gray;
+}
 .subscribe-form form button {
   position: absolute;
   top: 0;

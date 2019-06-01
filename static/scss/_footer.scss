@@ -20,6 +20,7 @@
         }
     }
 }
+
 .subscribe-form{
     & form{
         position: relative;
@@ -30,6 +31,10 @@
             height: 35px;
             border-bottom: 1px solid #363636;
             color: $white;
+
+            &::placeholder {
+              color: gray;
+            }
         }
         & button{
             position: absolute;

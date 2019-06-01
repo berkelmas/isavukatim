@@ -84,7 +84,13 @@ class index extends React.Component {
                                   </Link>
                                 </div>
                                 <div className="hero__text">
-                                    <span className="post-cat mb-10"><a href="#">{this.props.articles[0].makale_kategori}</a></span>
+                                    <span className="post-cat mb-10">
+                                      <Link href={`/hukuki-yayinlar/kategori/${this.props.articles[0].makale_kategori_nondisplay}`}>
+                                        <a href="#">
+                                          {this.props.articles[0].makale_kategori}
+                                        </a>
+                                      </Link>
+                                    </span>
                                     <h3 className="pr-100">
                                       <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
                                         <a>

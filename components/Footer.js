@@ -9,7 +9,7 @@ function Footer() {
                     <div className="row">
                         <div className="col-xl-2 col-lg-12">
                             <div className="footer-logo mb-30">
-                                <a href="#"><img src="/static/img/kucuklogo.png" alt=""/></a>
+                                <a href="#"><img src="/static/img/isavukatim-logo-beyaz-kucuk.png" alt=""/></a>
                             </div>
                         </div>
                         <div className="col-xl-10 col-lg-12">
@@ -52,7 +52,7 @@ function Footer() {
                     <div className="col-xl-3">
                         <div className="widget-box mb-30">
                             <div className="row">
-                                <div className="col-xl-6 col-lg-6">
+                                <div className="col-xl-12 col-lg-12">
                                     <div className="footer-widget mb-30">
                                         <h3>Yayın Kategorileri</h3>
                                         <ul>
