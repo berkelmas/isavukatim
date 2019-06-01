@@ -3423,7 +3423,9 @@ blockquote footer::before {
 }
 
 .postbox-img500x258 {
+  width: 500px;
   height: 258px;
+  object-fit: cover;
 }
 
 .postbox-img-100x85 {
@@ -3441,6 +3443,18 @@ blockquote footer::before {
 .postbox-img-406x270 {
   width: 406px;
   height: 270px;
+  object-fit: cover;
+}
+
+.postbox-img-625x400 {
+  width: 625px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.postbox-img-345x225 {
+  width: 345px;
+  height: 225px;
   object-fit: cover;
 }
 

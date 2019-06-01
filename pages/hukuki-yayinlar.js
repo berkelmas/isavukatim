@@ -11,11 +11,13 @@ import fetch from 'isomorphic-unfetch';
 import truncateHtml from 'truncate-html';
 
 import getConfig from 'next/config';
+import apiEndpoints from '../apiEndpoints';
 
 function hukukiyayinlar(props) {
   return(
     <div>
       <Head>
+        <title>İş Avukatım Yayınlar</title>
         <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
         <link rel="stylesheet" href="/static/css/style.css"/>
@@ -36,9 +38,11 @@ function hukukiyayinlar(props) {
                     (
                       <div key={index} className="postbox mb-40">
                           <div className="postbox__thumb mb-25">
-                              <a href="#">
-                                  <img src="/static/img/hero/part1/hero1.jpg" alt="hero image"/>
+                            <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                              <a>
+                                <img className="postbox-img-625x400" src={`${apiEndpoints.mediaURL}${res.image625x400}`} alt={res.makale_kategori}/>
                               </a>
+                            </Link>
                           </div>
                           <div className="postbox__text">
                               <div className="postbox__text-meta pb-20">
@@ -62,7 +66,7 @@ function hukukiyayinlar(props) {
                                 </Link>
                               </h4>
 
-                                <div className="desc-text mb-20" dangerouslySetInnerHTML={{ __html: truncateHtml(res.makale_mesaj, 1, {byWords : true}) }} />
+                                <div className="desc-text mb-20" dangerouslySetInnerHTML={{ __html: truncateHtml(res.makale_mesaj, 20, {byWords : true}) }} />
                             <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
                               <a className="read-more">Daha Fazla Oku</a>
                             </Link>
@@ -80,9 +84,11 @@ function hukukiyayinlar(props) {
                           (
                             <div key={index} className="post__small mb-30">
                                 <div className="post__small-thumb f-left">
-                                    <a href="#">
-                                        <img src="/static/img/trendy/xs/xs-1.jpg" alt="hero image"/>
+                                  <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
+                                    <a>
+                                      <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${res.image100x85}`} alt={res.makale_kategori}/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">
@@ -111,7 +117,7 @@ function hukukiyayinlar(props) {
                               <div className="postbox__thumb">
                                 <Link href={`/makale-detay?makaleid=${props.popularArticles.results[0].id}&makaleslug=${props.popularArticles.results[0].makale_slug}`} as={`/makale-detay/${props.popularArticles.results[0].makale_slug}/${props.popularArticles.results[0].id}`}>
                                   <a>
-                                    <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
+                                    <img className="postbox-img-345x225" src={`${apiEndpoints.mediaURL}${props.popularArticles.results[0].image625x400}`} alt={props.popularArticles.results[0].makale_kategori}/>
                                   </a>
                                 </Link>
                               </div>

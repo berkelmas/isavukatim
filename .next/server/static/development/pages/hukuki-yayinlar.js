@@ -93,6 +93,22 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./apiEndpoints.js":
+/*!*************************!*\
+  !*** ./apiEndpoints.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var apiEndpoints = {
+  mediaURL: 'http://localhost:8000/media/'
+};
+/* harmony default export */ __webpack_exports__["default"] = (apiEndpoints);
+
+/***/ }),
+
 /***/ "./components/Footer.js":
 /*!******************************!*\
   !*** ./components/Footer.js ***!
@@ -449,6 +465,39 @@ function TopHeader() {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/from */ "core-js/library/fn/array/from");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "core-js/library/fn/is-iterable");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
@@ -501,6 +550,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "core-js/library/fn/object/set-prototype-of");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "core-js/library/fn/parse-int");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
 
 /***/ }),
 
@@ -592,6 +663,31 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithoutHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
@@ -608,6 +704,58 @@ function _assertThisInitialized(self) {
   }
 
   return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _asyncToGenerator; });
+/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
+/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
 }
 
 /***/ }),
@@ -720,6 +868,44 @@ function _inherits(subClass, superClass) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _iterableToArray(iter) {
+  if (_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
 /*!**************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
@@ -764,6 +950,28 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
+/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js");
+
+
+
+function _toConsumableArray(arr) {
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -945,6 +1153,18 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/regenerator/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/regenerator/index.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "regenerator-runtime");
+
 
 /***/ }),
 
@@ -1213,23 +1433,42 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/gizlilik-politikasi.js":
-/*!**************************************!*\
-  !*** ./pages/gizlilik-politikasi.js ***!
-  \**************************************/
+/***/ "./pages/hukuki-yayinlar.js":
+/*!**********************************!*\
+  !*** ./pages/hukuki-yayinlar.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
-/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
-/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_TopHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/TopHeader */ "./components/TopHeader.js");
+/* harmony import */ var _components_NavbarUst__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/NavbarUst */ "./components/NavbarUst.js");
+/* harmony import */ var _components_MenuBar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/MenuBar */ "./components/MenuBar.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-moment */ "react-moment");
+/* harmony import */ var react_moment__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_moment__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! moment/locale/tr */ "moment/locale/tr");
+/* harmony import */ var moment_locale_tr__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(moment_locale_tr__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var truncate_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! truncate-html */ "truncate-html");
+/* harmony import */ var truncate_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(truncate_html__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! next/config */ "next/config");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _apiEndpoints__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../apiEndpoints */ "./apiEndpoints.js");
 
 
 
@@ -1237,51 +1476,313 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function gizlilikpolitikasi(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "\u0130\u015F Avukat\u0131m - Gizlilik Politikas\u0131"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+
+
+
+
+
+
+
+
+
+
+
+function hukukiyayinlar(props) {
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("title", null, "\u0130\u015F Avukat\u0131m Yay\u0131nlar"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
     rel: "stylesheet",
     href: "/static/css/bootstrap.min.css"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
     rel: "stylesheet",
     href: "/static/css/fontawesome-all.min.css"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("link", {
     rel: "stylesheet",
     href: "/static/css/style.css"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-    dangerouslySetInnerHTML: {
-      __html: "var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];s1.async=true;\n          s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';\n          s1.charset='UTF-8';\n          s1.setAttribute('crossorigin','*');\n          s0.parentNode.insertBefore(s1,s0);\n          })();\n          "
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_TopHeader__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_NavbarUst__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_MenuBar__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("section", {
+    className: "news-area pt-60 pb-60"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "avukata-danis-container col-md-12 mb-30 mt-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "avukata-danis-h1"
-  }, "\u0130\u015F Hukukunda Profesyonel Destek"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "isavukatim.com i\u015F\xE7i ve i\u015F veren uyu\u015Fmazl\u0131klar\u0131nda k\u0131dem tazminat\u0131,ihbar tazminat\u0131,i\u015Fe iade davalar\u0131 gibi i\u015F hukukunun uzmanl\u0131k gerektiren dallar\u0131nda sizi bilgilendiriyor, uzman ekibimizle birlikte davan\u0131z\u0131n s\xFCre\xE7lerini en ba\u015F\u0131ndan sonuna kadar y\xF6netmenizde destek oluyor ve davan\u0131za en uygun en uzman i\u015F hukuku avukatlar\u0131m\u0131z\u0131n sizlere destek olmas\u0131n\u0131 sa\u011Fl\u0131yoruz."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Bunlar\u0131n yan\u0131nda isavukatim.com i\u015F hukuku profes\xF6rleri ile anla\u015Fmal\u0131 olup davan\u0131za uygun m\xFCtala yazd\u0131rabilir ve g\xF6r\xFC\u015F alabilir."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ayr\u0131ca isavukat\u0131m.com uzman arabuluculuk kadrosu ile i\u015F hukukunda yeni diyebilece\u011Fimiz zorunlu arabuluculuk m\xFCessesinde arabuluculuk hizmeti de vermektedir."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Y\xFCksek dava kazanma oranlar\u0131 ve tecr\xFCbemiz ile siz de\u011Ferli hukuk camias\u0131 ve m\xFCvekkillerimize yard\u0131mc\u0131 olmak i\xE7in buraday\u0131z. \u0130savukatim.com \xFCzerinden t\xFCm uyu\u015Fmazl\u0131klar\u0131n\u0131z \xE7\xF6z\xFCm\xFC i\xE7in web sitemizde bulunan canl\u0131 destek k\u0131sm\u0131ndan yararlanabilir veya bizi sabit hatt\u0131m\u0131zdan arayabilirsiniz."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "avukata-danis-button-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "avukata-danis-button mb-30 mt-30",
-    href: "tel:+908508408276"
-  }, "Hemen Ara"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "col-xl-8 col-lg-8 col-md-12"
+  }, props.articles.results.map(function (res, index) {
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      key: index,
+      className: "postbox mb-40"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "postbox__thumb mb-25"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+      as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
+      className: "postbox-img-625x400",
+      src: "".concat(_apiEndpoints__WEBPACK_IMPORTED_MODULE_16__["default"].mediaURL).concat(res.image625x400),
+      alt: res.makale_kategori
+    })))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "postbox__text"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "postbox__text-meta pb-20"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+      className: "post-cat"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "/hukuki-yayinlar?kategori=".concat(res.makale_kategori_nondisplay),
+      as: "/hukuki-yayinlar/kategori/".concat(res.makale_kategori_nondisplay)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, res.makale_kategori)))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
+      className: "fas fa-calendar-alt"
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
+      fromNow: true
+    }, res.makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+      className: "title-30 font-600 pr-0"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+      as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, res.makale_baslik))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "desc-text mb-20",
+      dangerouslySetInnerHTML: {
+        __html: truncate_html__WEBPACK_IMPORTED_MODULE_14___default()(res.makale_mesaj, 20, {
+          byWords: true
+        })
+      }
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+      as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
+      className: "read-more"
+    }, "Daha Fazla Oku"))));
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "col-xl-4 col-lg-4 col-md-12"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "widget widget-border mb-40"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Pop\xFCler Yay\u0131nlar"), props.popularArticles.results.map(function (res, index) {
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      key: index,
+      className: "post__small mb-30"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "post__small-thumb f-left"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: "/makale-detay?makaleid=".concat(res.id, "&makaleslug=").concat(res.makale_slug),
+      as: "/makale-detay/".concat(res.makale_slug, "/").concat(res.id)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
+      className: "postbox-img-100x85",
+      src: "".concat(_apiEndpoints__WEBPACK_IMPORTED_MODULE_16__["default"].mediaURL).concat(res.image100x85),
+      alt: res.makale_kategori
+    })))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "post__small-text fix pl-10"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+      className: "sm-cat"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
+      href: "#"
+    }, res.makale_kategori)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+      className: "title-13 pr-0"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
+      href: "#"
+    }, res.makale_baslik)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "post__small-text-meta"
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
+      className: "fas fa-calendar-alt"
+    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
+      locale: "tr",
+      fromNow: true
+    }, res.makale_yayintarihi)))))));
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "widget widget-border mb-40"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "En \xC7ok Okunan"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "postbox"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "postbox__thumb"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/makale-detay?makaleid=".concat(props.popularArticles.results[0].id, "&makaleslug=").concat(props.popularArticles.results[0].makale_slug),
+    as: "/makale-detay/".concat(props.popularArticles.results[0].makale_slug, "/").concat(props.popularArticles.results[0].id)
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
+    className: "postbox-img-345x225",
+    src: "".concat(_apiEndpoints__WEBPACK_IMPORTED_MODULE_16__["default"].mediaURL).concat(props.popularArticles.results[0].image625x400),
+    alt: props.popularArticles.results[0].makale_kategori
+  })))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "postbox__text pt-15"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "postbox__text-meta pb-10"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("i", {
+    className: "fas fa-calendar-alt"
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_moment__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    fromNow: true
+  }, props.popularArticles.results[0].makale_yayintarihi))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+    className: "title-16 pr-0"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/makale-detay?makaleid=".concat(props.popularArticles.results[0].id, "&makaleslug=").concat(props.popularArticles.results[0].makale_slug),
+    as: "/makale-detay/".concat(props.popularArticles.results[0].makale_slug, "/").concat(props.popularArticles.results[0].id)
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, props.popularArticles.results[0].makale_baslik)))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "widget widget-border mb-40"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h3", {
+    className: "widget-title"
+  }, "Yay\u0131n Kategorileri"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "T\xFCm\xFCn\xFC G\xF6r"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar?kategori=kidemtazminati",
+    as: "/hukuki-yayinlar/kategori/kidemtazminati"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "K\u0131dem Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar?kategori=ihbartazminati",
+    as: "/hukuki-yayinlar/kategori/ihbartazminati"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "\u0130hbar Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar?kategori=iseiadedavasi",
+    as: "/hukuki-yayinlar/kategori/iseiadedavasi"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "\u0130\u015Fe \u0130ade Davasi"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar?kategori=hizmettespitdavasi",
+    as: "/hukuki-yayinlar/kategori/hizmettespitdavasi"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "Hizmet Tespit Davas\u0131"))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: "/hukuki-yayinlar?kategori=genelsagliksigortasi",
+    as: "/hukuki-yayinlar/kategori/genelsagliksigortasi"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "Genel Sa\u011Fl\u0131k Sigortas\u0131"))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "row mt-10"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "col-xl-12"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    className: "pagination"
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, props.articles.previous && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: props.kategori ? "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1, "&kategori=").concat(props.kategori) : "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1),
+    as: props.kategori ? "/hukuki-yayinlar/kategori/".concat(props.kategori, "/").concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1) : "/hukuki-yayinlar/".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) - 1)
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "\xD6nceki"))), Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(Array(props.articles.totalpages)).map(function (res, i) {
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
+      key: i,
+      className: props.page == i + 1 ? 'active' : 'none'
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      href: props.kategori ? "?page=".concat(i + 1, "&kategori=").concat(props.kategori) : "?page=".concat(i + 1),
+      as: props.kategori ? "/hukuki-yayinlar/kategori/".concat(props.kategori, "/").concat(i + 1) : "/hukuki-yayinlar/".concat(i + 1)
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", null, i + 1))));
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", null, props.articles.next && react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    href: props.kategori ? "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1, "&kategori=").concat(props.kategori) : "?page=".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1),
+    as: props.kategori ? "/hukuki-yayinlar/kategori/".concat(props.kategori, "/").concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1) : "/hukuki-yayinlar/".concat(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(props.page) + 1)
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", null, "Sonraki"))))))))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], null));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (gizlilikpolitikasi);
+hukukiyayinlar.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+    var query, _getConfig, publicRuntimeConfig, deneme, resArticles, articles, resPopular, popularArticles;
+
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            query = _ref.query;
+            _getConfig = next_config__WEBPACK_IMPORTED_MODULE_15___default()(), publicRuntimeConfig = _getConfig.publicRuntimeConfig; //const resArticles = await fetch(query.kategori ? query.page ? `http://localhost:8000/kategorifilter/?kategori=${query.kategori}&page=${query.page}` : `http://localhost:8000/kategorifilter/?page=${query.page}` : `http://localhost:8000/kategorifilter/` );
+
+            deneme = function deneme() {
+              if (query.kategori) {
+                if (query.page) {
+                  var _resArticles = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?kategori=").concat(query.kategori, "&page=").concat(query.page));
+
+                  return _resArticles;
+                } else {
+                  var _resArticles2 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?kategori=").concat(query.kategori));
+
+                  return _resArticles2;
+                }
+              } else {
+                if (query.page) {
+                  var _resArticles3 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/?page=").concat(query.page));
+
+                  return _resArticles3;
+                } else {
+                  var _resArticles4 = isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
+
+                  return _resArticles4;
+                }
+              }
+            };
+
+            _context.next = 5;
+            return deneme();
+
+          case 5:
+            resArticles = _context.sent;
+            _context.next = 8;
+            return resArticles.json();
+
+          case 8:
+            articles = _context.sent;
+            _context.next = 11;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default()("".concat(publicRuntimeConfig.apiEndpoint, "kategorifilter/"));
+
+          case 11:
+            resPopular = _context.sent;
+            _context.next = 14;
+            return resPopular.json();
+
+          case 14:
+            popularArticles = _context.sent;
+            return _context.abrupt("return", {
+              articles: articles,
+              popularArticles: popularArticles,
+              page: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_3___default()(query.page) ? query.page : 1,
+              kategori: query.kategori && query.kategori
+            });
+
+          case 16:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function (_x) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (hukukiyayinlar);
 
 /***/ }),
 
 /***/ 3:
-/*!********************************************!*\
-  !*** multi ./pages/gizlilik-politikasi.js ***!
-  \********************************************/
+/*!****************************************!*\
+  !*** multi ./pages/hukuki-yayinlar.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/berkelmas/Desktop/isavukatim/pages/gizlilik-politikasi.js */"./pages/gizlilik-politikasi.js");
+module.exports = __webpack_require__(/*! /Users/berkelmas/Desktop/isavukatim/pages/hukuki-yayinlar.js */"./pages/hukuki-yayinlar.js");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/array/from":
+/*!************************************************!*\
+  !*** external "core-js/library/fn/array/from" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/from");
+
+/***/ }),
+
+/***/ "core-js/library/fn/array/is-array":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/array/is-array" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "core-js/library/fn/is-iterable":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/is-iterable" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/is-iterable");
 
 /***/ }),
 
@@ -1340,6 +1841,28 @@ module.exports = require("core-js/library/fn/object/set-prototype-of");
 
 /***/ }),
 
+/***/ "core-js/library/fn/parse-int":
+/*!***********************************************!*\
+  !*** external "core-js/library/fn/parse-int" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/parse-int");
+
+/***/ }),
+
+/***/ "core-js/library/fn/promise":
+/*!*********************************************!*\
+  !*** external "core-js/library/fn/promise" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
 /***/ "core-js/library/fn/symbol":
 /*!********************************************!*\
   !*** external "core-js/library/fn/symbol" ***!
@@ -1362,6 +1885,28 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
+
+/***/ }),
+
+/***/ "moment/locale/tr":
+/*!***********************************!*\
+  !*** external "moment/locale/tr" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment/locale/tr");
+
+/***/ }),
+
 /***/ "next-server/dist/lib/utils":
 /*!*********************************************!*\
   !*** external "next-server/dist/lib/utils" ***!
@@ -1370,6 +1915,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("next-server/dist/lib/utils");
+
+/***/ }),
+
+/***/ "next/config":
+/*!******************************!*\
+  !*** external "next/config" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/config");
 
 /***/ }),
 
@@ -1428,6 +1984,17 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-moment":
+/*!*******************************!*\
+  !*** external "react-moment" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-moment");
+
+/***/ }),
+
 /***/ "reactstrap":
 /*!*****************************!*\
   !*** external "reactstrap" ***!
@@ -1436,6 +2003,28 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("reactstrap");
+
+/***/ }),
+
+/***/ "regenerator-runtime":
+/*!**************************************!*\
+  !*** external "regenerator-runtime" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("regenerator-runtime");
+
+/***/ }),
+
+/***/ "truncate-html":
+/*!********************************!*\
+  !*** external "truncate-html" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("truncate-html");
 
 /***/ }),
 
@@ -1451,4 +2040,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=gizlilik-politikasi.js.map
+//# sourceMappingURL=hukuki-yayinlar.js.map

@@ -28,8 +28,8 @@ function avukatadanis(props) {
       </header>
 
       <div className="container">
-        <div className="row">
-          <div className="avukata-danis-container col-md-12 mb-30 mt-30">
+        <div className="row d-flex justify-content-center">
+          <div className="avukata-danis-container col-md-8 mb-30 mt-30">
             <h1 className="avukata-danis-h1">İş Hukukunda Profesyonel Destek</h1>
             <p>isavukatim.com işçi ve iş veren uyuşmazlıklarında kıdem tazminatı,ihbar tazminatı,işe iade davaları gibi iş hukukunun uzmanlık gerektiren dallarında sizi bilgilendiriyor, uzman ekibimizle birlikte davanızın süreçlerini en başından sonuna kadar yönetmenizde destek oluyor ve davanıza en uygun en uzman iş hukuku avukatlarımızın sizlere destek olmasını sağlıyoruz.</p>
             <p>Bunların yanında isavukatim.com iş hukuku profesörleri ile anlaşmalı olup davanıza uygun mütala yazdırabilir ve görüş alabilir.</p>
