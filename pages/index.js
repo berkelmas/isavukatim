@@ -7,6 +7,8 @@ import 'moment/locale/tr';
 import fetch from 'isomorphic-unfetch';
 import getConfig from 'next/config';
 
+import apiEndpoints from '../apiEndpoints';
+
 import Footer from '../components/Footer';
 import TopHeader from '../components/TopHeader';
 import NavbarUst from '../components/NavbarUst';
@@ -66,10 +68,8 @@ class index extends React.Component {
           <MenuBar/>
         </header>
 
-
         <main>
           <br/>
-
           {/* HERO SECTION */}
             <section className="hero-area">
                 <div className="container">
@@ -79,7 +79,7 @@ class index extends React.Component {
                                 <div className="hero__thumb" data-overlay="dark-gradient">
                                   <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
                                     <a>
-                                      <img src={'/static/img/hero/part1/hero1.jpg'} alt="hero image"/>
+                                      <img src={`${apiEndpoints.mediaURL}${this.props.articles[0].image625x400}`} alt="hero image"/>
                                     </a>
                                   </Link>
                                 </div>
@@ -105,7 +105,7 @@ class index extends React.Component {
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
                                     <a href="#">
-                                        <img src="/static/img/hero/part1/hero2.jpg" alt="hero image"/>
+                                        <img src={`${apiEndpoints.mediaURL}${this.props.articles[1].image297x400}`} alt={this.props.articles[1].makale_kategori}/>
                                     </a>
                                 </div>
                                 <div className="hero__text hero__text-small">
@@ -128,7 +128,7 @@ class index extends React.Component {
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
                                     <a href="#">
-                                        <img src="/static/img/hero/part1/hero3.jpg" alt="hero image"/>
+                                        <img src={`${apiEndpoints.mediaURL}${this.props.articles[2].image297x400}`} alt={this.props.articles[2].makale_kategori}/>
                                     </a>
                                 </div>
                                 <div className="hero__text hero__text-small">
@@ -176,7 +176,7 @@ class index extends React.Component {
                                       <div className="postbox__thumb">
                                         <Link href={`/makale-detay?makaleid=${articleKidem.id}&makaleslug=${articleKidem.makale_slug}`} as={`/makale-detay/${articleKidem.makale_slug}/${articleKidem.id}`}>
                                           <a>
-                                            <img src="/static/img/trendy/sm1.jpg" alt="hero image"/>
+                                            <img src={`${apiEndpoints.mediaURL}${articleKidem.image240x160}`} alt={articleKidem.makale_kategori} />
                                           </a>
                                         </Link>
                                       </div>
@@ -213,11 +213,11 @@ class index extends React.Component {
                                     <div className="postbox__thumb">
                                       <Link href={`/makale-detay?makaleid=${articleIseiade.id}&makaleslug=${articleIseiade.makale_slug}`} as={`/makale-detay/${articleIseiade.makale_slug}/${articleIseiade.id}`}>
                                         <a>
-                                          <img src="/static/img/trendy/lg1.jpg" alt="hero image"/>
+                                          <img className="postbox-img500x258" src={`${apiEndpoints.mediaURL}${articleIseiade.image500x287}`} alt={articleIseiade.makale_kategori} />
                                         </a>
                                       </Link>
                                         <span className="post-cat post-absolute">
-                                          <Link href={`/makale-detay?makaleid=${articleIseiade.id}&makaleslug=${articleIseiade.makale_slug}`} as={`/makale-detay/${articleIseiade.makale_slug}/${articleIseiade.id}`}>
+                                          <Link href={`/hukuki-yayinlar/kategori/${articleIseiade.makale_kategori_nondisplay}`}>
                                             <a>
                                               {articleIseiade.makale_kategori}
                                             </a>
@@ -260,7 +260,7 @@ class index extends React.Component {
                                 </div>
                                 <div className="post__small-text fix pl-10">
                                     <span className="sm-cat">
-                                        <a href="#">{article.makale_kategori}</a>
+                                        <a href={`/hukuki-yayinlar/kategori/${article.makale_kategori_nondisplay}`}>{article.makale_kategori}</a>
                                     </span>
                                     <h4 className="title-13 pr-0">
                                       <Link href={`/makale-detay?makaleid=${article.id}&makaleslug=${article.makale_slug}`} as={`/makale-detay/${article.makale_slug}/${article.id}`}>
