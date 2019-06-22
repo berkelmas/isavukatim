@@ -604,8 +604,8 @@ class index extends React.Component {
                             </div>
                             <div className="col-xl-6 col-lg-12">
                                 <div className="app-store text-center text-xl-right">
-                                    <a href="#"><img src="/static/img/store/apple.png" alt=""/></a>
-                                    <a href="#"><img src="/static/img/store/google.png" alt=""/></a>
+                                    <img className="mr-2 mb-1" src="/static/img/store/apple.png" alt="apple store app"/>
+                                    <img src="/static/img/store/google.png" alt="play store app"/>
                                 </div>
                             </div>
                         </div>

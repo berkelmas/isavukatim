@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,103 +118,189 @@ var apiEndpoints = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/config */ "next/config");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
-function Footer() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    className: "footer-bg"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subscribe-area pt-100 pb-80"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subscribe-separator pt-50 pb-20"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-2 col-lg-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-logo mb-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/img/isavukatim-logo-beyaz-kucuk.png",
-    alt: ""
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-10 col-lg-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-7 col-lg-7"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subscribe-title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "B\xFClten\u0130m\u0130ze Abone Olun"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-5 col-lg-5"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "subscribe-form mb-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: "#"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "email",
-    placeholder: "Email Adresinizi Girin"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "submit"
-  }, "Abone Ol")))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-bottom-area pb-70"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row d-flex justify-content-between"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-widget mb-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "isavukatim.com hem avukatlara hem i\u015F\xE7i-i\u015Fveren taraf\u0131 ger\xE7ek ve t\xFCzel ki\u015Filere yard\u0131mc\u0131 olmak ve hukuki y\xF6nlendirmeler yapmak amac\u0131yla 2018 y\u0131l\u0131nda kurulmu\u015Ftur. Gerek \u0130\u015F Kanunu gerek ilgili mevzuatlar ve i\xE7tihatlar \xE7er\xE7evesinde size en do\u011Fru \u015Fekilde hukuki destek olmayi ilke haline getirmi\u015Ftir."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "facebook",
-    href: "#"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-facebook-f"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "twitter",
-    href: "#"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-twitter"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "instagram",
-    href: "#"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-instagram"
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "widget-box mb-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-xl-12 col-lg-12"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-widget mb-30"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Yay\u0131n Kategorileri"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "T\xFCm Makaleler"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar/kategori/kidemtazminati"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "K\u0131dem Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar/kategori/ihbartazminati"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0130hbar Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar/kategori/genelsagliksigortasi"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Genel Sa\u011Fl\u0131k Sigortas\u0131"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar/kategori/iseiadedavasi"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\u0130\u015Fe \u0130ade Davas\u0131"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/hukuki-yayinlar/kategori/hizmettespitdavasi"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Hizmet Tespit Davas\u0131")))))))))))));
-}
+
+
+
+
+
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Footer, _React$Component);
+
+  function Footer(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Footer);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Footer).call(this, props));
+    _this.state = {
+      subMail: '',
+      sendingSub: false
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
+    _this.handleChange = _this.handleChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Footer, [{
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      var _this2 = this;
+
+      //console.log(this.state.subMail);
+      //this.setState({subMail: ''});
+      var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_8___default()(),
+          publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+
+      var url = "".concat(publicRuntimeConfig.apiEndpoint, "addsubscriber/");
+      this.setState({
+        sendingSub: true
+      });
+      axios__WEBPACK_IMPORTED_MODULE_9___default.a.post(url, {
+        sub_email: this.state.subMail
+      }).then(function (res) {
+        return _this2.setState({
+          subMail: '',
+          sendingSub: false
+        });
+      }).catch(function (err) {
+        console.log(err);
+
+        _this2.setState({
+          subMail: '',
+          sendingSub: false
+        });
+      });
+      e.preventDefault();
+    }
+  }, {
+    key: "handleChange",
+    value: function handleChange(e) {
+      this.setState({
+        subMail: e.target.value
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("footer", {
+        className: "footer-bg"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "subscribe-area pt-100 pb-80"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "subscribe-separator pt-50 pb-20"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-2 col-lg-12"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "footer-logo mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
+        src: "/static/img/isavukatim-logo-beyaz-kucuk.png",
+        alt: "i\u015F avukat\u0131m logosu"
+      }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-10 col-lg-12"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-7 col-lg-7"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "subscribe-title"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", null, "B\xFClten\u0130m\u0130ze Abone Olun"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-5 col-lg-5"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "subscribe-form mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
+        onChange: this.handleChange,
+        value: this.state.subMail,
+        type: "email",
+        placeholder: "Email Adresinizi Girin",
+        required: true
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+        type: "submit",
+        disabled: this.state.sendingSub ? true : false
+      }, "Abone Ol")))))))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "footer-bottom-area pb-70"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row d-flex justify-content-between"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-4"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "footer-widget mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, "isavukatim.com hem avukatlara hem i\u015F\xE7i-i\u015Fveren taraf\u0131 ger\xE7ek ve t\xFCzel ki\u015Filere yard\u0131mc\u0131 olmak ve hukuki y\xF6nlendirmeler yapmak amac\u0131yla 2018 y\u0131l\u0131nda kurulmu\u015Ftur. Gerek \u0130\u015F Kanunu gerek ilgili mevzuatlar ve i\xE7tihatlar \xE7er\xE7evesinde size en do\u011Fru \u015Fekilde hukuki destek olmayi ilke haline getirmi\u015Ftir."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "footer-social"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "facebook",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        className: "fab fa-facebook-f"
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "twitter",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        className: "fab fa-twitter"
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "instagram",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        className: "fab fa-instagram"
+      }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-3"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "widget-box mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "col-xl-12 col-lg-12"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "footer-widget mb-30"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h3", null, "Yay\u0131n Kategorileri"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "T\xFCm Makaleler"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar/kategori/kidemtazminati"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "K\u0131dem Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar/kategori/ihbartazminati"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "\u0130hbar Tazminat\u0131"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar/kategori/genelsagliksigortasi"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "Genel Sa\u011Fl\u0131k Sigortas\u0131"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar/kategori/iseiadedavasi"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "\u0130\u015Fe \u0130ade Davas\u0131"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        href: "/hukuki-yayinlar/kategori/hizmettespitdavasi"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", null, "Hizmet Tespit Davas\u0131")))))))))))));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
@@ -1867,17 +1953,14 @@ function (_React$Component) {
         className: "col-xl-6 col-lg-12"
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("div", {
         className: "app-store text-center text-xl-right"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
+        className: "mr-2 mb-1",
         src: "/static/img/store/apple.png",
-        alt: ""
-      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
+        alt: "apple store app"
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
         src: "/static/img/store/google.png",
-        alt: ""
-      })))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_15__["default"], null));
+        alt: "play store app"
+      }))))))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_15__["default"], null));
     }
   }], [{
     key: "getInitialProps",
@@ -1983,15 +2066,26 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/berkelmas/Desktop/isavukatim/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\ITopya\Desktop\isavukatim\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 
