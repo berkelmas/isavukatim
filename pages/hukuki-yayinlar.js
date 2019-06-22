@@ -18,6 +18,7 @@ function hukukiyayinlar(props) {
     <div>
       <Head>
         <title>İş Avukatım Yayınlar</title>
+        <meta name="description" content="İş Avukatım platformundaki hukuki yardım amaçlı yazılmış makalelerdir."/>
         <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
         <link rel="stylesheet" href="/static/css/style.css"/>

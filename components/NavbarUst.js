@@ -9,7 +9,7 @@ function NavbarUst(){
                     <div className="header__logo text-center text-md-left mb-20">
                       <Link href="/">
                         <a>
-                          <img src="/static/img/isavukatim-logo-kucuk.png" alt="Header Logo"/>
+                          <img src="/static/img/isavukatim-logo-kucuk.png" alt="İş Avukatım Logosu"/>
                         </a>
                       </Link>
                     </div>

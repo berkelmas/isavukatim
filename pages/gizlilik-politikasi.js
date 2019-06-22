@@ -11,6 +11,7 @@ function gizlilikpolitikasi(props) {
     <div>
       <Head>
         <title>İş Avukatım - Gizlilik Politikası</title>
+        <meta name="description" content="İş Avukatım platformunun gizlilik politikası burada sunulmaktadır."/>
         <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
         <link rel="stylesheet" href="/static/css/style.css"/>

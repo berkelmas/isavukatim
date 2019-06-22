@@ -386,7 +386,7 @@ function NavbarUst() {
     href: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/isavukatim-logo-kucuk.png",
-    alt: "Header Logo"
+    alt: "\u0130\u015F Avukat\u0131m Logosu"
   }))))))));
 }
 
@@ -45698,7 +45698,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CITopya%5CDesktop%5Cisavukatim%5Cpages%5Cindex.js ***!
   \********************************************************************************************************************************/
@@ -45721,5 +45721,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
