@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
+    "build": "next build",
+    "prod_start": "node server.js",
     "sass": "sass static/scss/main.scss static/css/style.css --watch"
   },
   "keywords": [],
