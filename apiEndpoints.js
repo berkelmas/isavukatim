@@ -1,5 +1,5 @@
 const apiEndpoints = {
-  mediaURL : 'http://localhost:8000/media/'
+  mediaURL : 'https://api.isavukatim.com/media/'
 }
 
 export default apiEndpoints;

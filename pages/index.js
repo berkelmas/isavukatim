@@ -34,7 +34,7 @@ class index extends React.Component {
     const articlesIseiade = resultIseiade.results;
 
     // gets genel saglik sigortasi articles
-    const resGenelsaglik = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=genelsagliksigortasi`);
+    const resGenelsaglik = await fetch(`${publicRuntimeConfig.apiEndpoint}kategorifilter?kategori=hizmettespitdavasi`);
     const resultGenelsaglik = await resGenelsaglik.json();
     const articlesGenelsaglik = resultGenelsaglik.results;
 
@@ -50,17 +50,11 @@ class index extends React.Component {
     return(
       <div>
         <Head>
-          <title>İş Avukatından İş Hukuku</title>
+          <title>İş Avukatım</title>
+          <meta name="description" content="İş Avukatım ile iş davalarınıza kıdem, ihbar, işe iade ve sigorta gibi konularda çözümler bulun."/>
           <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
           <link rel="stylesheet" href="/static/css/fontawesome-all.min.css"/>
           <link rel="stylesheet" href="/static/css/style.css"/>
-          <script dangerouslySetInnerHTML={{ __html:`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;
-            s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-            })();
-            `}}/>
         </Head>
         <header className="header">
           <TopHeader/>
@@ -77,22 +71,22 @@ class index extends React.Component {
                         <div className="col-lg-6 col-md-12">
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
-                                  <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`} prefetch>
                                     <a>
-                                      <img src={`${apiEndpoints.mediaURL}${this.props.articles[0].image625x400}`} alt="hero image"/>
+                                      <img className="main-page-first-img" src={`${apiEndpoints.mediaURL}${this.props.articles[0].image625x400}`} alt="hero image"/>
                                     </a>
                                   </Link>
                                 </div>
                                 <div className="hero__text">
                                     <span className="post-cat mb-10">
-                                      <Link href={`/hukuki-yayinlar/kategori/${this.props.articles[0].makale_kategori_nondisplay}`}>
-                                        <a href="#">
+                                      <Link href={`/hukuki-yayinlar/kategori/${this.props.articles[0].makale_kategori_nondisplay}`} prefetch>
+                                        <a>
                                           {this.props.articles[0].makale_kategori}
                                         </a>
                                       </Link>
                                     </span>
                                     <h3 className="pr-100">
-                                      <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`}>
+                                      <Link href={`/makale-detay?makaleid=${this.props.articles[0].id}&makaleslug=${this.props.articles[0].makale_slug}`} as={`/makale-detay/${this.props.articles[0].makale_slug}/${this.props.articles[0].id}`} prefetch>
                                         <a>
                                           {this.props.articles[0].makale_baslik}
                                         </a>
@@ -104,9 +98,11 @@ class index extends React.Component {
                         <div className="col-lg-3 col-md-6">
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
-                                    <a href="#">
-                                        <img src={`${apiEndpoints.mediaURL}${this.props.articles[1].image297x400}`} alt={this.props.articles[1].makale_kategori}/>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articles[1].id}&makaleslug=${this.props.articles[1].makale_slug}`} as={`/makale-detay/${this.props.articles[1].makale_slug}/${this.props.articles[1].id}`}>
+                                    <a>
+                                        <img className="postbox-img-297x400" src={`${apiEndpoints.mediaURL}${this.props.articles[1].image297x400}`} alt={this.props.articles[1].makale_kategori}/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">
@@ -127,9 +123,11 @@ class index extends React.Component {
                         <div className="col-lg-3 col-md-6">
                             <div className="hero pos-relative mb-30">
                                 <div className="hero__thumb" data-overlay="dark-gradient">
-                                    <a href="#">
-                                        <img src={`${apiEndpoints.mediaURL}${this.props.articles[2].image297x400}`} alt={this.props.articles[2].makale_kategori}/>
+                                  <Link href={`/makale-detay?makaleid=${this.props.articles[2].id}&makaleslug=${this.props.articles[2].makale_slug}`} as={`/makale-detay/${this.props.articles[2].makale_slug}/${this.props.articles[2].id}`}>
+                                    <a>
+                                        <img className="postbox-img-297x400" src={`${apiEndpoints.mediaURL}${this.props.articles[2].image297x400}`} alt={this.props.articles[2].makale_kategori}/>
                                     </a>
+                                  </Link>
                                 </div>
                                 <div className="hero__text hero__text-small">
                                     <span className="post-cat mb-10">

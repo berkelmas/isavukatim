@@ -49,10 +49,6 @@ function makaledetay(props){
                             <div className="postbox__text-meta pb-30">
                                 <ul>
                                     <li>
-                                        <i className="far fa-user-circle"></i>
-                                        <span>{props.makale.yazaravukat.avukat_name}</span>
-                                    </li>
-                                    <li>
                                         <i className="fas fa-calendar-alt"></i>
                                         <span><Moment fromNow>{props.makale.makale_yayintarihi}</Moment></span>
                                     </li>
@@ -75,32 +71,16 @@ function makaledetay(props){
                             </div>
                             <br/>
                             <div className="share-post-link mb-30">
-                                <a className="facebook" href="#">
+                                <a>
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
-                                <a className="twitter" href="#">
+                                <a>
                                     <i className="fab fa-twitter"></i>
                                 </a>
-                                <a className="instagram" href="#">
+                                <a>
                                     <i className="fab fa-instagram"></i>
                                 </a>
                             </div>
-
-                            <div className="author-meta  mt-60">
-                                <div className="media flex-column flex-md-row">
-                                    <div className="media-left">
-                                        <img className="postbox-img-300x300" src={`${apiEndpoints.mediaURL}${props.makale.yazaravukat.avukat_resim300x300}`} alt={props.makale.yazaravukat.avukat_name} />
-                                    </div>
-                                    <div className="media-body">
-                                        <span className="media-heading">
-                                          {props.makale.yazaravukat.avukat_name}
-                                        </span>
-                                        <p>{props.makale.yazaravukat.avukat_bio}</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
 
                             <div className="s-content__pagenav mt-60">
                                 <div className="s-content__nav">
@@ -142,7 +122,7 @@ function makaledetay(props){
                                         <div className="postbox mb-30">
                                             <div className="postbox__thumb">
                                                 <a href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
-                                                    <img className="img-100" src="/static/img/trendy/sm3.jpg" alt="hero image"/>
+                                                    <img className="img-100" src={`${apiEndpoints.mediaURL}${res.image240x160}`} alt={res.makale_kategori}/>
                                                 </a>
                                             </div>
                                             <div className="postbox__text pt-10">
@@ -182,7 +162,7 @@ function makaledetay(props){
                                 <div className="post__small-thumb f-left">
                                   <Link href={`/makale-detay?makaleid=${res.id}&makaleslug=${res.makale_slug}`} as={`/makale-detay/${res.makale_slug}/${res.id}`}>
                                     <a>
-                                      <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${res.image100x85}`} alt="hero image"/>
+                                      <img className="postbox-img-100x85" src={`${apiEndpoints.mediaURL}${res.image100x85}`} alt={res.makale_kategori}/>
                                     </a>
                                   </Link>
                                 </div>
@@ -234,7 +214,7 @@ function makaledetay(props){
                                 <div className="postbox__thumb">
                                   <Link href={`/makale-detay?makaleid=${props.articles[0].id}&makaleslug=${props.articles[0].makale_slug}`} as={`/makale-detay/${props.articles[0].makale_slug}/${props.articles[0].id}`}>
                                     <a>
-                                      <img src="/static/img/details/sidebar-post.jpg" alt="hero image"/>
+                                      <img src={`${apiEndpoints.mediaURL}${props.articles[0].image625x400}`} alt={props.articles[0].makale_kategori}/>
                                     </a>
                                   </Link>
                                 </div>

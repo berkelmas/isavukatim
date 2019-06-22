@@ -41,18 +41,18 @@ class MenuBar extends React.Component {
                           <NavbarToggler className="ml-auto float-sm-right" onClick={this.toggle} />
                           <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="mr-auto" navbar>
-                              <li><Link href="/"><a>Ana Sayfa</a></Link></li>
-                              <li><Link href="/avukata-danis"><a>Avukata Danışın</a></Link></li>
-                              <li><Link href="/hukuki-yayinlar/kategori/kidemtazminati"><a>Kıdem Tazminatı</a></Link></li>
-                              <li><Link href="/hukuki-yayinlar/kategori/ihbartazminati"><a>İhbar Tazminatı</a></Link></li>
-                              <li><Link href="/hukuki-yayinlar/kategori/iseiadedavasi"><a>İşe İade</a></Link></li>
+                              <li><Link href="/" prefetch><a>Ana Sayfa</a></Link></li>
+                              <li><Link href="/avukata-danis" prefetch><a>Avukata Danışın</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/kidemtazminati" prefetch><a>Kıdem Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/ihbartazminati" prefetch><a>İhbar Tazminatı</a></Link></li>
+                              <li><Link href="/hukuki-yayinlar/kategori/iseiadedavasi" prefetch><a>İşe İade</a></Link></li>
                               <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color : 'black', padding: '20px'}} nav caret>
                                   Yayınlar
                                 </DropdownToggle>
                                 <DropdownMenu style={{backgroundColor: '#f8f9fa', border: 'none'}} className="submenu" left="true">
 
-                                  <Link href="/hukuki-yayinlar">
+                                  <Link href="/hukuki-yayinlar" prefetch>
                                     <a style={{backgroundColor : '#d8d8d8'}} className='custom-dropdown'>
                                       Tümünü Gör
                                     </a>

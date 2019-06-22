@@ -3351,6 +3351,7 @@ blockquote footer::before {
   width: 500px;
   height: 258px;
   object-fit: cover;
+  object-position: left;
 }
 
 .postbox-img-100x85 {
@@ -3363,24 +3364,31 @@ blockquote footer::before {
   width: 240px;
   height: 160px;
   object-fit: cover;
+  object-position: top;
 }
 
 .postbox-img-406x270 {
   width: 406px;
   height: 270px;
   object-fit: cover;
+  object-position: left;
 }
 
 .postbox-img-625x400 {
   width: 625px;
   height: 400px;
   object-fit: cover;
+  object-position: left top;
 }
 
 .postbox-img-345x225 {
   width: 345px;
   height: 225px;
   object-fit: cover;
+}
+
+.desc-text h2 {
+  font-size: 18px;
 }
 
 .postbox-img-300x300 {
@@ -3393,6 +3401,21 @@ blockquote footer::before {
   width: 843px;
   height: 420px;
   object-fit: cover;
+  object-position: top left;
+}
+
+.postbox-img-297x400 {
+  width: 297px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.main-page-first-img {
+  width: 625px;
+  height: 400px;
+  object-fit: cover;
+  object-position: left top;
 }
 
 .makale-tags {

@@ -86,9 +86,9 @@ class Footer extends React.Component {
                             <div className="footer-widget mb-30">
                                 <p>isavukatim.com hem avukatlara hem işçi-işveren tarafı gerçek ve tüzel kişilere yardımcı olmak ve hukuki yönlendirmeler yapmak amacıyla 2018 yılında kurulmuştur. Gerek İş Kanunu gerek ilgili mevzuatlar ve içtihatlar çerçevesinde size en doğru şekilde hukuki destek olmayi ilke haline getirmiştir.</p>
                                 <div className="footer-social">
-                                    <a className="facebook" href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="twitter" href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="instagram" href="#"><i className="fab fa-instagram"></i></a>
+                                    <a><i className="fab fa-facebook-f"></i></a>
+                                    <a><i className="fab fa-twitter"></i></a>
+                                    <a><i className="fab fa-instagram"></i></a>
 
                                 </div>
                             </div>

@@ -2279,6 +2279,10 @@ function (_Document) {
         rel: "stylesheet",
         type: "text/css",
         href: "/static/css/nprogress.css"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        dangerouslySetInnerHTML: {
+          __html: "var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];s1.async=true;\n            s1.src='https://embed.tawk.to/5cb4a0c1c1fe2560f3feed5f/default';\n            s1.charset='UTF-8';\n            s1.setAttribute('crossorigin','*');\n            s0.parentNode.insertBefore(s1,s0);\n            })();\n            "
+        }
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null)));
     }
   }], [{
