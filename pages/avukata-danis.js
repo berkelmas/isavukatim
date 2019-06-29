@@ -31,11 +31,8 @@ function avukatadanis(props) {
 
             <p>Ayrıca isavukatım.com uzman arabuluculuk kadrosu ile iş hukukunda yeni diyebileceğimiz zorunlu arabuluculuk müessesinde arabuluculuk hizmeti de vermektedir.</p>
             <p>Yüksek dava kazanma oranları ve tecrübemiz ile siz değerli hukuk camiası ve müvekkillerimize yardımcı olmak için buradayız.
-            İsavukatim.com üzerinden tüm uyuşmazlıklarınız çözümü için web sitemizde bulunan canlı destek kısmından yararlanabilir veya bizi sabit hattımızdan arayabilirsiniz.</p>
+            İsavukatim.com üzerinden tüm uyuşmazlıklarınız çözümü için web sitemizde bulunan canlı destek kısmından yararlanabilirsiniz.</p>
 
-            <div className="avukata-danis-button-container">
-              <a className="avukata-danis-button mb-30 mt-30" href="tel:+908508408276">Hemen Ara</a>
-            </div>
           </div>
         </div>
       </div>
