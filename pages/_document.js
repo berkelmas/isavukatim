@@ -1,19 +1,24 @@
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Head, Main, NextScript, Html } from "next/document";
 
 export default class MyDocument extends Document {
-  static async getInitialProps (ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
-  }
-
-  render () {
+  render() {
     return (
-      <html>
+      <Html>
         <Head>
           {/* Import CSS for nprogress */}
-          <link rel="shortcut icon" type="image/png" href="/static/img/isavukatimfavicon.png"/>
-          <link rel='stylesheet' type='text/css' href='/static/css/nprogress.css' />
-          <script dangerouslySetInnerHTML={{ __html:`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          <link
+            rel="shortcut icon"
+            type="image/png"
+            href="/static/img/isavukatimfavicon.png"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/static/css/nprogress.css"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
@@ -22,13 +27,15 @@ export default class MyDocument extends Document {
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
             })();
-            `}}/>
+            `,
+            }}
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
-    )
+      </Html>
+    );
   }
 }

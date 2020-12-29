@@ -1,1 +1,13 @@
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/avukata-danis":"static/development/pages/avukata-danis.js"}
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/avukata-danis": "pages/avukata-danis.html",
+  "/gizlilik-politikasi": "pages/gizlilik-politikasi.html",
+  "/hukuki-yayinlar/kategori/[kategori]/[page]": "pages/hukuki-yayinlar/kategori/[kategori]/[page].js",
+  "/hukuki-yayinlar/kategori/[kategori]": "pages/hukuki-yayinlar/kategori/[kategori].js",
+  "/hukuki-yayinlar/kategori": "pages/hukuki-yayinlar/kategori.js",
+  "/": "pages/index.js",
+  "/makale-detay/[makale-slug]/[makaleid]": "pages/makale-detay/[makale-slug]/[makaleid].js",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
