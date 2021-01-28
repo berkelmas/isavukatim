@@ -17,6 +17,10 @@ export default class MyDocument extends Document {
             href="/static/css/nprogress.css"
           />
           <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-CTS7DKRVWJ"
+          ></script>
+          <script
             dangerouslySetInnerHTML={{
               __html: `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
@@ -27,6 +31,17 @@ export default class MyDocument extends Document {
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
             })();
+            `,
+            }}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-CTS7DKRVWJ');
             `,
             }}
           />

@@ -370,7 +370,7 @@ export async function getServerSideProps({ query }) {
       articles,
       popularArticles,
       page: parseInt(query.page) ? query.page : 1,
-      kategori: query.kategori && query.kategori,
+      kategori: query.kategori ? query.kategori : null,
     },
   };
 }

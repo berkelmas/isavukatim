@@ -3408,24 +3408,24 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
                     inNavbar: true,
                     children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(reactstrap__WEBPACK_IMPORTED_MODULE_3__["DropdownToggle"], {
                       style: {
-                        color: 'black',
-                        padding: '20px'
+                        color: "black",
+                        padding: "20px"
                       },
                       nav: true,
                       caret: true,
                       children: "Yay\u0131nlar"
                     }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(reactstrap__WEBPACK_IMPORTED_MODULE_3__["DropdownMenu"], {
                       style: {
-                        backgroundColor: '#f8f9fa',
-                        border: 'none'
+                        backgroundColor: "#f8f9fa",
+                        border: "none"
                       },
                       className: "submenu",
                       left: "true",
                       children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-                        href: "/hukuki-yayinlar",
+                        href: "/hukuki-yayinlar/kategori",
                         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
                           style: {
-                            backgroundColor: '#d8d8d8'
+                            backgroundColor: "#d8d8d8"
                           },
                           className: "custom-dropdown",
                           children: "T\xFCm\xFCn\xFC G\xF6r"

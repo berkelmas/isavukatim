@@ -134,6 +134,9 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
           type: "text/css",
           href: "/static/css/nprogress.css"
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("script", {
+          async: true,
+          src: "https://www.googletagmanager.com/gtag/js?id=G-CTS7DKRVWJ"
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("script", {
           dangerouslySetInnerHTML: {
             __html: `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
@@ -144,6 +147,16 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
             })();
+            `
+          }
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("script", {
+          dangerouslySetInnerHTML: {
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-CTS7DKRVWJ');
             `
           }
         })]

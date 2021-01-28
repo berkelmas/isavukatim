@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/-RW-ElUq5icsJ_F83tnhT/_buildManifest.js",
-    "static/-RW-ElUq5icsJ_F83tnhT/_ssgManifest.js"
+    "static/piQk9_3i58iUC4SmVCrcG/_buildManifest.js",
+    "static/piQk9_3i58iUC4SmVCrcG/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -14,7 +14,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/fd72584dc9f3cd642602c36da88bfdce3bde0256.dba8fa5dfaedd5582c81.js",
       "static/chunks/pages/index-f597ae3caf61b67e69d6.js"
     ],
@@ -37,7 +37,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/pages/avukata-danis-103ef6fceec436d27b71.js"
     ],
     "/gizlilik-politikasi": [
@@ -45,7 +45,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/pages/gizlilik-politikasi-b6dbeeabb903cd93a172.js"
     ],
     "/hukuki-yayinlar/kategori": [
@@ -53,7 +53,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/fd72584dc9f3cd642602c36da88bfdce3bde0256.dba8fa5dfaedd5582c81.js",
       "static/chunks/e56a0985b0520b32009a1d15f5114cc5fd2110c0.32c9ddc8b5251c6646d8.js",
       "static/chunks/pages/hukuki-yayinlar/kategori-9357b62c3b7daeebd217.js"
@@ -63,7 +63,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/fd72584dc9f3cd642602c36da88bfdce3bde0256.dba8fa5dfaedd5582c81.js",
       "static/chunks/e56a0985b0520b32009a1d15f5114cc5fd2110c0.32c9ddc8b5251c6646d8.js",
       "static/chunks/pages/hukuki-yayinlar/kategori/[kategori]-26dc1ecfad664c2437f6.js"
@@ -73,7 +73,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/fd72584dc9f3cd642602c36da88bfdce3bde0256.dba8fa5dfaedd5582c81.js",
       "static/chunks/e56a0985b0520b32009a1d15f5114cc5fd2110c0.32c9ddc8b5251c6646d8.js",
       "static/chunks/pages/hukuki-yayinlar/kategori/[kategori]/[page]-c1c96e014e5d34aec10a.js"
@@ -83,7 +83,7 @@
       "static/chunks/webpack-95c2b224bccf352ee870.js",
       "static/chunks/framework.d5c40154faba711288df.js",
       "static/chunks/commons.ebecd7642d3f391eea94.js",
-      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.7ab8048e82eee7a1bf39.js",
+      "static/chunks/4d00ea326300f11dd7cf281d99f90a6338dd14a1.a806c110beb4ed22f03f.js",
       "static/chunks/fd72584dc9f3cd642602c36da88bfdce3bde0256.dba8fa5dfaedd5582c81.js",
       "static/chunks/pages/makale-detay/[makale-slug]/[makaleid]-3d6ef442cc3398e80e31.js"
     ]
